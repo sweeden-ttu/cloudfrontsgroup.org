@@ -1,5 +1,5 @@
 (function(){
-var glossaryData = [
+window.glossaryData = window.glossaryData || [
   {term:"ALN (Assistance Listing Number)", definition:"A five-digit number identifying a specific Federal funding program on SAM.gov. The HUD Housing Policy Research Grant ALN is 14.536."},
   {term:"Allocable Costs", definition:"Costs that can be fairly assigned to a federal award based on the benefit the award receives. Must be tracked and documented."},
   {term:"Allowable Costs", definition:"Costs permitted to be charged to a Federal award — must be necessary, reasonable, consistent, and adequately documented per 2 CFR Part 200."},
@@ -132,7 +132,7 @@ function initSearch() {
       return;
     }
 
-    var matches = glossaryData.filter(function(item){
+    var matches = window.glossaryData.filter(function(item){
       return item.term.toLowerCase().indexOf(q) !== -1 ||
              item.definition.toLowerCase().indexOf(q) !== -1;
     });

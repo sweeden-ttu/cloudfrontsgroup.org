@@ -42,6 +42,7 @@
   <div class="inner">
     <h1>&#9729; Cloud Fronts <span>Group</span></h1>
     <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">☾</button>
     <nav aria-label="Main navigation">
       <a href="index.html" class="active" aria-current="page">Home</a>
       <a href="cloud-fronts-summary.html">About</a>
@@ -191,16 +192,38 @@
     </div>
   </div>
 
+  <h2>Blog &amp; Updates</h2>
+  <div class="card-grid">
+    <div class="card">
+      <p style="font-size:.82rem;color:var(--hud-gray);margin-bottom:.5rem;">May 25, 2026</p>
+      <h3 style="margin:0 0 .5rem;"><a href="blog/understanding-usda-farm-loans.html">Understanding USDA Farm Loans for Central Texas Producers</a></h3>
+      <p style="font-size:.88rem;color:var(--hud-gray);margin:0;">An overview of direct and guaranteed farm loan programs available through USDA FSA.</p>
+    </div>
+    <div class="card">
+      <p style="font-size:.82rem;color:var(--hud-gray);margin-bottom:.5rem;">May 18, 2026</p>
+      <h3 style="margin:0 0 .5rem;"><a href="blog/hud-nofo-timeline-2026.html">HUD NOFO Timeline 2026 — Key Deadlines</a></h3>
+      <p style="font-size:.88rem;color:var(--hud-gray);margin:0;">Tracking key application dates for HUD research funding opportunities.</p>
+    </div>
+  </div>
+  <p><a href="blog/" class="btn btn-outline">View All Posts</a></p>
+
+  <h2>Get in Touch</h2>
+  <div class="callout" style="text-align:center;">
+    <p style="margin:0 0 .75rem;">Have questions about our research, analytics, or community programs? We'd love to hear from you.</p>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+  </div>
+
 </div>
 
 <footer>
   <p>Cloud Fronts Group &mdash; Central Texas Technology Access &amp; Innovation Delivery Partnership</p>
-  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a></p>
+  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a> | <a href="sitemap.xml">Sitemap</a> | <a href="blog/">Blog</a> | <a href="contact.html">Contact</a></p>
   <p style="margin-top:.5rem;font-size:.72rem;">Scott Weeden: <a href="#" class="eml" data-eml="sweeden" data-dom="cloudfronts.group">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="jcking" data-dom="cloudfronts.group">click to reveal</a> &middot; Phone: 254-317-6688</p>
+  <p class="last-updated">Last updated: May 2026</p>
+  <button id="print-btn" class="print-btn">⎙ Print</button>
   <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
-<script>document.querySelector('.menu-toggle')?.addEventListener('click',function(){document.querySelector('header nav').classList.toggle('open');});</script>
-<script>document.querySelectorAll('.eml').forEach(function(e){var a=e.dataset.eml+'@'+e.dataset.dom;e.href='mailto:'+a;e.textContent=a;e.removeAttribute('data-eml');e.removeAttribute('data-dom');});</script>
+<script src="site.js" defer></script>
 </body>
 </html>

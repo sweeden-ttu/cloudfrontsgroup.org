@@ -549,3 +549,37 @@ p { margin-bottom: .75rem; }
   th, td { padding: .5rem .6rem; font-size: .82rem; }
   .stats-bar { grid-template-columns: 1fr 1fr; }
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: var(--hud-blue);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  z-index: 100;
+  transition: opacity .15s;
+  opacity: .85;
+}
+#back-to-top:hover { opacity: 1; color: #fff; }
+
+.skip-link {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  z-index: 1000;
+  background: var(--hud-gold);
+  color: var(--hud-blue);
+  padding: .5rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}

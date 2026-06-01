@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#003a70">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,26 +19,40 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas">
     <meta name="twitter:description" content="Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas">
+    <link rel="canonical" href="https://cloudfrontsgroup.org/foreclosures.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cloud Fronts Group",
+      "url": "https://cloudfrontsgroup.org",
+      "description": "Central Texas Technology Access & Innovation Delivery Partnership — AI/ML research, HUD data analytics, Section 3 compliance, and community technology programs.",
+      "email": "sweeden@cloudfronts.group",
+      "areaServed": "Central Texas",
+      "foundingDate": "2026"
+    }
+    </script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header>
   <div class="inner">
     <h1>&#9729; Cloud Fronts <span>Group</span></h1>
     <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
-    <nav>
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="cloud-fronts-summary.html">About</a>
       <a href="research-grant.html">AAAI Research</a>
       <a href="hud-analytics.html">HUD Analytics</a>
       <a href="section3.html">Compliance</a>
-      <a href="foreclosures.html" class="active">Community Data</a>
+      <a href="foreclosures.html" class="active" aria-current="page">Community Data</a>
       <a href="volunteer-corps.html">Volunteer</a>
       <a href="activist-investing.html">Activist Investing</a>
       <a href="links.html">Links</a>
     </nav>
   </div>
 </header>
-<div class="container">
+<div class="container" id="main-content">
 
   <div class="callout callout-warn">
     <strong>Non-HUD reference.</strong> These addresses were parsed from Bell County weekly foreclosure-notice PDFs (OCR). Each row links to the <strong>exact PDF</strong> that contained that notice. Verify on the official document before relying on any line.
@@ -410,5 +425,6 @@
   <p style="margin-top:.5rem;font-size:.72rem;">I am a data researcher, not a lawyer. This is not legal advice.</p>
 </footer>
 <script>document.querySelector('.menu-toggle')?.addEventListener('click',function(){document.querySelector('header nav').classList.toggle('open');});</script>
+<a href="#" id="back-to-top" title="Back to top">&uarr; Top</a>
 </body>
 </html>

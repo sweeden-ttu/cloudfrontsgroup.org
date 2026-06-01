@@ -1,0 +1,299 @@
+[
+  {
+    "month": "July",
+    "day": 4,
+    "url": "https://cms3.revize.com/revize/bellcountytx/July%204.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/July_4.pdf",
+    "text_chars": 30577,
+    "ocr": true,
+    "bytes": 1037576,
+    "addresses": [
+      "1219E AVENUE H, NOLANVILLE, TX 76559",
+      "4709 WESTCLIFF ROAD. KILLEEN. TX 76541"
+    ],
+    "address_count": 2
+  },
+  {
+    "month": "July",
+    "day": 3,
+    "url": "https://cms3.revize.com/revize/bellcountytx/July%203.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/July_3.pdf",
+    "text_chars": 26458,
+    "ocr": true,
+    "bytes": 588366,
+    "addresses": [
+      "5203 LIONS GATE LANE KILLEEN, TEXAS 76549",
+      "708 ROWDY DR KILLEEN. TX 76542"
+    ],
+    "address_count": 2
+  },
+  {
+    "month": "July",
+    "day": 2,
+    "url": "https://cms3.revize.com/revize/bellcountytx/July%202.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/July_2.pdf",
+    "text_chars": 8091,
+    "ocr": true,
+    "bytes": 315966,
+    "addresses": [
+      "01426 710 CARLA CIR, BELTON, TX 76513"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "July",
+    "day": 1,
+    "url": "https://cms3.revize.com/revize/bellcountytx/July%201.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/July_1.pdf",
+    "text_chars": 26432,
+    "ocr": true,
+    "bytes": 1095689,
+    "addresses": [
+      "1 // 3825 OAK VALLEY, KILLEEN, TX 76542"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "May",
+    "day": 8,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%208.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_8.pdf",
+    "text_chars": 72088,
+    "ocr": true,
+    "bytes": 3388559,
+    "addresses": [
+      "1 (1940 LIVELY LN.) // SEE LEGAL DESCRIPTION, TEMPLE, TX 76502",
+      "1004 S 6\" Street, Killeen, Tx 76541",
+      "1306 Metropolitan Dr, Killeen, TX 76541",
+      "1504 LEADER DR, KILLEEN, TX 76549",
+      "3911 ANTELOPE TRAIL, TEMPLE, TX 76504",
+      "4210 Lake Road, Killeen, Texas 76543",
+      "4707 Causeway Ct, Killeen, TX 76549",
+      "608 Patton, Killeen, Tx 76541",
+      "912 Westend Dr, Temple, TX 76502",
+      "9405 GLYNHILL CT, KILLEEN, TX 76542"
+    ],
+    "address_count": 10
+  },
+  {
+    "month": "May",
+    "day": 7,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%207.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_7.pdf",
+    "text_chars": 52377,
+    "ocr": true,
+    "bytes": 2216229,
+    "addresses": [
+      "2106 BIRD CREEK DRIVE, TEMPLE, TEXAS 76502",
+      "2906 Boyd Avenue, Killeen, TX 76543-5958",
+      "410) ADOLPH AVE, KILLEEN. TX 76549"
+    ],
+    "address_count": 3
+  },
+  {
+    "month": "May",
+    "day": 6,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%206.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_6.pdf",
+    "text_chars": 94971,
+    "ocr": true,
+    "bytes": 2636187,
+    "addresses": [
+      "1 // 2686 TEAKWOOD LANE, BELTON, TX 76513",
+      "15072 Armstrong Rd., Salado, TX 76571",
+      "2179 PIRTLE DR SALADO, TEXAS 76571-6195",
+      "2902 JASMINE LN, KILLEEN, TX 76549",
+      "2905 TRANSIT DRIVE KILLEEN. TEXAS 76543",
+      "403 Bumblebee Drive, Little River Academy, Texas 76554",
+      "603 North Eighth Street, Killeen, Texas 76541",
+      "7 // 7015 KEVIN DR, TEMPLE, TX 76502",
+      "7608 MELANITE DR KILLEEN, TEXAS 76542",
+      "8606 Surrey Dr, Temple, TX 76502"
+    ],
+    "address_count": 10
+  },
+  {
+    "month": "May",
+    "day": 5,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%205.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_5.pdf",
+    "text_chars": 14855,
+    "ocr": true,
+    "bytes": 287522,
+    "addresses": [
+      "7613 Iridium Dr, Killeen, TX 76542"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "May",
+    "day": 4,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%204.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_4.pdf",
+    "text_chars": 48054,
+    "ocr": true,
+    "bytes": 1082059,
+    "addresses": [
+      "2106 LAGO TRAIL, KILLEEN, TX 76543",
+      "2502 LIMESTONE TRL, Harker Heights, TX 76548",
+      "2606 BLUE JAY DRIVE, TEMPLE, TX 76502",
+      "3210 SHAWLANDS RD, KILLEEN, TX 76542"
+    ],
+    "address_count": 4
+  },
+  {
+    "month": "May",
+    "day": 3,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%203.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_3.pdf",
+    "text_chars": 13036,
+    "ocr": true,
+    "bytes": 345785,
+    "addresses": [
+      "3401 E. Rancier Killeen, TX 76543."
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "May",
+    "day": 2,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%202.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_2.pdf",
+    "text_chars": 17827,
+    "ocr": true,
+    "bytes": 458290,
+    "addresses": [
+      "6131 RATTLESNAKE TRAIL, BELTON, TX 76513"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "May",
+    "day": 1,
+    "url": "https://cms3.revize.com/revize/bellcountytx/May%201.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/May_1.pdf",
+    "text_chars": 4145,
+    "ocr": true,
+    "bytes": 101922,
+    "addresses": [],
+    "address_count": 0
+  },
+  {
+    "month": "June",
+    "day": 8,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%208.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_8.pdf",
+    "text_chars": 110359,
+    "ocr": true,
+    "bytes": 7048612,
+    "addresses": [
+      "202 Red Oak Drive, Harker Heights, TX 76548",
+      "202 RED OAK, Harker Heights, TX 76548",
+      "2513 CORRADINO ST. Harker Heights, FX 76548",
+      "3802 BULL RUN DR, KILLEEN , TX 76549",
+      "4501 INDIGO DR, KILLEEN, TX 76542",
+      "9606 GLYNHILL COURT . KILLEEN . TX 76542"
+    ],
+    "address_count": 6
+  },
+  {
+    "month": "June",
+    "day": 7,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%207.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_7.pdf",
+    "text_chars": 34526,
+    "ocr": true,
+    "bytes": 1105754,
+    "addresses": [
+      "1 // 1210 CAMPBELLTON DR, TEMPLE, TX 76504"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "June",
+    "day": 6,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%206.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_6.pdf",
+    "text_chars": 61090,
+    "ocr": true,
+    "bytes": 2485459,
+    "addresses": [
+      "2609 BOSWELL DR, KILLEEN. TX 76543",
+      "3504 OGLALA TRL, TEMPLE, TX 76502",
+      "4350 Royal Street, Salado, TX 76571",
+      "4401 ADOLPH AVE KILLEEN. TEXAS 76549"
+    ],
+    "address_count": 4
+  },
+  {
+    "month": "June",
+    "day": 5,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%205.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_5.pdf",
+    "text_chars": 44450,
+    "ocr": true,
+    "bytes": 1877457,
+    "addresses": [
+      "01117 2611 SCHWALD RD, KILLEEN, TX 76543",
+      "1 / 1306 CAMPBELLTON DRIVE, TEMPLE, TX 76504",
+      "3805 Mockingbird Ln, Temple, TX 76502",
+      "8998 Wedel Cemetery Road , Temple, TX 76501"
+    ],
+    "address_count": 4
+  },
+  {
+    "month": "June",
+    "day": 4,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%204.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_4.pdf",
+    "text_chars": 42755,
+    "ocr": true,
+    "bytes": 1193176,
+    "addresses": [
+      "1 // 3509 SALT FORK DR, KILLEEN, TX 76549-0000",
+      "2008 Continental Dr, Killeen, TX 76543",
+      "6404 SILTSTONE LOOP, KILLEEN, TX 76542"
+    ],
+    "address_count": 3
+  },
+  {
+    "month": "June",
+    "day": 3,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%203.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_3.pdf",
+    "text_chars": 26221,
+    "ocr": true,
+    "bytes": 623137,
+    "addresses": [
+      "714 Tumbleweed Trl, Temple, TX 76502"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "June",
+    "day": 2,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%202.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_2.pdf",
+    "text_chars": 15711,
+    "ocr": true,
+    "bytes": 327953,
+    "addresses": [
+      "410 SUNRISE BLF TEMPLE, TEXAS 76502-7069"
+    ],
+    "address_count": 1
+  },
+  {
+    "month": "June",
+    "day": 1,
+    "url": "https://cms3.revize.com/revize/bellcountytx/June%201.pdf",
+    "pdf": "/Users/sweeden/hud/data/bell_foreclosure_ocr/June_1.pdf",
+    "text_chars": 12070,
+    "ocr": true,
+    "bytes": 292594,
+    "addresses": [
+      "1521 HILLSIDE DR, TEMPLE, TX 76502",
+      "4000 BULL RUN DR, KILLEEN, TX 76549"
+    ],
+    "address_count": 2
+  }
+]

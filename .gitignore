@@ -1,0 +1,7 @@
+*.tar.gz
+*.zip
+.DS_Store
+._*
+Thumbs.db
+*.log
+backup-*

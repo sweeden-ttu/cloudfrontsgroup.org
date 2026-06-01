@@ -6,6 +6,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>HUD Compliance Services — Section 3 &amp; Economic Opportunity | Cloud Fronts Group</title>
 <meta name="description" content="Cloud Fronts Group provides HUD compliance services including Section 3 strategic planning, benchmarking, reporting, and technical assistance for housing authorities and HUD recipients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
     <meta property="og:title" content="HUD Compliance Services — Section 3 &amp; Economic Opportunity | Cloud Fronts Group">
     <meta property="og:description" content="Cloud Fronts Group provides HUD compliance services including Section 3 strategic planning, benchmarking, reporting, and technical assistance for housing authorities and HUD recipients.">
@@ -22,13 +25,13 @@
 <header>
   <div class="inner">
     <h1>&#9729; Cloud Fronts <span>Group</span></h1>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
     <nav>
       <a href="index.html">Home</a>
       <a href="cloud-fronts-summary.html">About</a>
       <a href="research-grant.html">AAAI Research</a>
       <a href="hud-analytics.html">HUD Analytics</a>
       <a href="section3.html" class="active">Compliance</a>
-      <a href="foreclosures.html">Community Data</a>
       <a href="foreclosures.html">Community Data</a>
       <a href="volunteer-corps.html">Volunteer</a>
       <a href="activist-investing.html">Activist Investing</a>
@@ -135,8 +138,10 @@
 <footer>
   <p>Cloud Fronts Group &mdash; Central Texas Technology Access &amp; Innovation Delivery Partnership</p>
   <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="activist-investing.html">Activist Investing</a> | <a href="links.html">Links</a></p>
-  <p style="margin-top:.5rem;font-size:.72rem;">Contact: <a href="mailto:sweeden@cloudfronts.group">sweeden@cloudfronts.group</a></p>
+  <p style="margin-top:.5rem;font-size:.72rem;">Contact: <a href="#" class="eml" data-eml="sweeden" data-dom="cloudfronts.group">click to reveal</a></p>
 </footer>
 
+<script>document.querySelector('.menu-toggle')?.addEventListener('click',function(){document.querySelector('header nav').classList.toggle('open');});</script>
+<script>document.querySelectorAll('.eml').forEach(function(e){var a=e.dataset.eml+'@'+e.dataset.dom;e.href='mailto:'+a;e.textContent=a;e.removeAttribute('data-eml');e.removeAttribute('data-dom');});</script>
 </body>
 </html>

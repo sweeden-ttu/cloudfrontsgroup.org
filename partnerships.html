@@ -6,6 +6,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Partnerships — Cloud Fronts Group | Academic, Civic &amp; Community Collaborations</title>
 <meta name="description" content="Cloud Fronts Group partnerships include AAAI 2026 research collaboration with Dr. Akbar Namin, civic platform Legalluminary.com, and community investment advisory relationships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
     <meta property="og:title" content="Partnerships — Cloud Fronts Group | Academic, Civic &amp; Community Collaborations">
     <meta property="og:description" content="Cloud Fronts Group partnerships include AAAI 2026 research collaboration with Dr. Akbar Namin, civic platform Legalluminary.com, and community investment advisory relationships.">
@@ -22,6 +25,7 @@
 <header>
   <div class="inner">
     <h1>&#9729; Cloud Fronts <span>Group</span></h1>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
     <nav>
       <a href="index.html">Home</a>
       <a href="cloud-fronts-summary.html">About</a>
@@ -91,5 +95,6 @@
   <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="activist-investing.html">Activist Investing</a> | <a href="links.html">Links</a></p>
 </footer>
 
+<script>document.querySelector('.menu-toggle')?.addEventListener('click',function(){document.querySelector('header nav').classList.toggle('open');});</script>
 </body>
 </html>

@@ -508,6 +508,23 @@ p { margin-bottom: .75rem; }
 .glossary dd p:first-child { color: var(--hud-gray); font-style: italic; font-size: .88rem; }
 .glossary dd p:last-child { margin-bottom: 0; }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: .25rem .5rem;
+  line-height: 1;
+}
+@media (max-width: 700px) {
+  .menu-toggle { display: block; }
+  header nav { display: none; flex-direction: column; width: 100%; gap: .25rem; }
+  header nav.open { display: flex; }
+  header .inner { flex-wrap: wrap; }
+}
+
 @media print {
   header { display: none; }
   footer { display: none; }

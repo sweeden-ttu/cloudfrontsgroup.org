@@ -250,6 +250,31 @@ p { margin-bottom: .75rem; }
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+.fc-entity {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--hud-gray);
+  margin-top: 0.2rem;
+  line-height: 1.3;
+}
+.fc-trustee {
+  color: var(--hud-red);
+}
+.entity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.entity-tags .tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
 
 .hero {
   background: linear-gradient(135deg, var(--hud-blue) 0%, #002244 100%);

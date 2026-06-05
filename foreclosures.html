@@ -4,46 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#003a70">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <title>Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Foreclosure Data — Bell County, Central Texas | Cloud Fronts Group</title>
+  <meta name="description" content="Bell County foreclosure notices with mortgage servicer, substitute trustee, and noteholder information. OCR-parsed from weekly county posting PDFs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-    <meta property="og:title" content="Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas">
-    <meta property="og:description" content="Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cloudfrontsgroup.org/foreclosures.html">
-    <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
-    <meta property="og:site_name" content="Cloud Fronts Group">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas">
-    <meta name="twitter:description" content="Foreclosures — Bell, Coryell, McLennan, Williamson, Burnet, Milam, Lampasas">
-    <link rel="canonical" href="https://cloudfrontsgroup.org/foreclosures.html">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Cloud Fronts Group",
-      "url": "https://cloudfrontsgroup.org",
-      "description": "Central Texas Technology Access & Innovation Delivery Partnership — AI/ML research, HUD data analytics, Section 3 compliance, and community technology programs.",
-      "email": ["scottweeden@cloudfrontsgroup.org", "johnathanking@cloudfrontsgroup.org"],
-      "telephone": "+1-254-317-6688",
-      "areaServed": "Central Texas",
-      "foundingDate": "2026"
-    }
-    </script>
+  <link rel="canonical" href="https://cloudfrontsgroup.org/foreclosures.html">
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header>
   <div class="inner">
     <h1>&#9729; Cloud Fronts <span>Group</span></h1>
     <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">☾</button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">&#9790;</button>
     <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="cloud-fronts-summary.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
       <a href="research-grant.html">AAAI Research</a>
       <a href="hud-analytics.html">HUD Analytics</a>
       <a href="section3.html">Compliance</a>
@@ -54,383 +36,192 @@
     </nav>
   </div>
 </header>
-<nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Foreclosures</li></ol></nav>
+
+<nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Foreclosure Data</li></ol></nav>
+
 <div class="container" id="main-content">
 
+  <h2>Bell County Foreclosure Notices</h2>
+  <p class="subtitle">OCR-parsed foreclosure postings from Bell County Clerk — with mortgage servicer, trustee, and noteholder entities identified</p>
+
   <div class="callout callout-warn">
-    <strong>Non-HUD reference.</strong> These addresses were parsed from Bell County weekly foreclosure-notice PDFs (OCR). Each row links to the <strong>exact PDF</strong> that contained that notice. Verify on the official document before relying on any line.
+    <strong>Non-HUD reference.</strong> These addresses were parsed from Bell County weekly foreclosure-notice PDFs via OCR. Each row links to the exact PDF that contained that notice. Entity names (servicer, trustee) are extracted from the OCR text — verify on the official document before relying on any data. This is not legal advice.
   </div>
 
-  <p class="foreclosure-meta">
-    County index:
-    <a href="https://www.bellcountytx.com/county_government/county_clerk/foreclosures.php" target="_blank" rel="noreferrer noopener">Bell County Clerk &mdash; foreclosure notices</a>.
-    Data file: <code>data/bell_foreclosure_ocr/results.json</code> &mdash; regenerate this page with <code>python3 scripts/build_foreclosures_page.py</code>.
+  <p style="margin-bottom:1.5rem;">
+    Source: <a href="https://www.bellcountytx.com/county_government/county_clerk/foreclosures.php" target="_blank" rel="noreferrer noopener">Bell County Clerk — Foreclosure Notices</a>.
+    Data regenerated with <code>python3 scripts/parse_foreclosure_entities.py && python3 scripts/build_foreclosures_page_v2.py</code>.
   </p>
 
-  <h2>Bell County Foreclosures</h2>
-  <p><strong>58</strong> properties. The address opens the source PDF in a new tab; <strong>[View Map]</strong> opens Google Maps for the same string. Both use <code>target=&quot;_blank&quot;</code> and <code>rel=&quot;noreferrer noopener&quot;</code> (no referrer, no <code>window.opener</code>).</p>
+  <h3>Summary: 58 Properties Listed</h3>
+
+    <div class="callout">
+    <h3 style="margin-top:0;">Mortgage Servicers Detected (16)</h3>
+    <p style="font-size:0.9rem;color:var(--hud-gray);margin-bottom:0.75rem;">
+      These companies are listed as the mortgage servicer or debt collector in the foreclosure notices.
+    </p>
+    <div class="entity-tags">
+          <span class="tag">Caliber Home Loans</span>
+          <span class="tag">Carrington Mortgage Services, LLC</span>
+          <span class="tag">First United Bank and Trust</span>
+          <span class="tag">Freedom Mortgage Corporation</span>
+          <span class="tag">Lakeview Loan Servicing, LLC</span>
+          <span class="tag">LoanCare, LLC</span>
+          <span class="tag">M&amp;T Bank</span>
+          <span class="tag">MidFirst Bank</span>
+          <span class="tag">Mr. Cooper</span>
+          <span class="tag">Nationstar Mortgage</span>
+          <span class="tag">NewRez LLC</span>
+          <span class="tag">Onity Mortgage</span>
+          <span class="tag">PHH Mortgage</span>
+          <span class="tag">PennyMac Loan Services, LLC</span>
+          <span class="tag">ServiceMac</span>
+          <span class="tag">Shellpoint Mortgage Servicing</span>
+    </div>
+  </div>
+
+    <div class="callout callout-ml">
+    <h3 style="margin-top:0;">Substitute Trustees / Law Firms (15)</h3>
+    <p style="font-size:0.9rem;color:var(--hud-gray);margin-bottom:0.75rem;">
+      These law firms and trustee companies are appointed to conduct the foreclosure sales.
+    </p>
+    <div class="entity-tags">
+          <span class="tag tag-security">Agency Sales and Posting LLC</span>
+          <span class="tag tag-security">Auction.com, LLC</span>
+          <span class="tag tag-security">Barrett Daffin Frappier Turner &amp; Engel, LLP</span>
+          <span class="tag tag-security">Codilis &amp; Moody, P.c.</span>
+          <span class="tag tag-security">De Cubas &amp; Lewis, P.c.</span>
+          <span class="tag tag-security">Marinosci Law Group, P.c.</span>
+          <span class="tag tag-security">McCarthy &amp; Holthus, LLP</span>
+          <span class="tag tag-security">NFPDS-TX LLC</span>
+          <span class="tag tag-security">Nestor Solutions, LLC</span>
+          <span class="tag tag-security">Prestige Posting And Publishing Llc</span>
+          <span class="tag tag-security">Prestige Posting and Publishing, LLC</span>
+          <span class="tag tag-security">Resolve Trustee Services, LLC</span>
+          <span class="tag tag-security">Tejas Corporate Services LLC</span>
+          <span class="tag tag-security">Vylla Solutions, LLC</span>
+          <span class="tag tag-security">Xome Inc.</span>
+    </div>
+  </div>
+
+    <div class="callout callout-teal">
+    <h3 style="margin-top:0;">Noteholders / Mortgagees (6)</h3>
+    <p style="font-size:0.9rem;color:var(--hud-gray);margin-bottom:0.75rem;">
+      The current holder of the promissory note and deed of trust.
+    </p>
+    <div class="entity-tags">
+          <span class="tag tag-guardrail">Carrington Mortgage Services, LLC</span>
+          <span class="tag tag-guardrail">First United Bank and Trust</span>
+          <span class="tag tag-guardrail">Freedom Mortgage Corporation</span>
+          <span class="tag tag-guardrail">Lakeview Loan Servicing, LLC</span>
+          <span class="tag tag-guardrail">Mortgage Electronic Registration Systems, Inc. (MERS)</span>
+          <span class="tag tag-guardrail">PennyMac Loan Services, LLC</span>
+    </div>
+  </div>
+
+  <h2>Foreclosure Property List</h2>
+  <p><strong>58</strong> properties. Address links open the source PDF; <strong>[Map]</strong> opens Google Maps. Entity info (servicer / trustee) shown below each address when available.</p>
 
   <ul class="foreclosure-list">
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/July%204.pdf" target="_blank" rel="noreferrer noopener">1219E AVENUE H, NOLANVILLE, TX 76559</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1219E+AVENUE+H%2C+NOLANVILLE%2C+TX+76559" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">July 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/July%204.pdf" target="_blank" rel="noreferrer noopener">4709 WESTCLIFF ROAD. KILLEEN. TX 76541</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4709+WESTCLIFF+ROAD.+KILLEEN.+TX+76541" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">July 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/July%203.pdf" target="_blank" rel="noreferrer noopener">5203 LIONS GATE LANE KILLEEN, TEXAS 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=5203+LIONS+GATE+LANE+KILLEEN%2C+TEXAS+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">July 3</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/July%203.pdf" target="_blank" rel="noreferrer noopener">708 ROWDY DR KILLEEN. TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=708+ROWDY+DR+KILLEEN.+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">July 3</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/July%202.pdf" target="_blank" rel="noreferrer noopener">01426 710 CARLA CIR, BELTON, TX 76513</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=01426+710+CARLA+CIR%2C+BELTON%2C+TX+76513" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">July 2</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/July%201.pdf" target="_blank" rel="noreferrer noopener">1 // 3825 OAK VALLEY, KILLEEN, TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1+%2F%2F+3825+OAK+VALLEY%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">July 1</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1 (1940 LIVELY LN.) // SEE LEGAL DESCRIPTION, TEMPLE, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1+%281940+LIVELY+LN.%29+%2F%2F+SEE+LEGAL+DESCRIPTION%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1004 S 6" Street, Killeen, Tx 76541</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1004+S+6%22+Street%2C+Killeen%2C+Tx+76541" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1306 Metropolitan Dr, Killeen, TX 76541</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1306+Metropolitan+Dr%2C+Killeen%2C+TX+76541" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1504 LEADER DR, KILLEEN, TX 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1504+LEADER+DR%2C+KILLEEN%2C+TX+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">3911 ANTELOPE TRAIL, TEMPLE, TX 76504</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=3911+ANTELOPE+TRAIL%2C+TEMPLE%2C+TX+76504" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">4210 Lake Road, Killeen, Texas 76543</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4210+Lake+Road%2C+Killeen%2C+Texas+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">4707 Causeway Ct, Killeen, TX 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4707+Causeway+Ct%2C+Killeen%2C+TX+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">608 Patton, Killeen, Tx 76541</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=608+Patton%2C+Killeen%2C+Tx+76541" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">912 Westend Dr, Temple, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=912+Westend+Dr%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">9405 GLYNHILL CT, KILLEEN, TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=9405+GLYNHILL+CT%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%207.pdf" target="_blank" rel="noreferrer noopener">2106 BIRD CREEK DRIVE, TEMPLE, TEXAS 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2106+BIRD+CREEK+DRIVE%2C+TEMPLE%2C+TEXAS+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 7</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%207.pdf" target="_blank" rel="noreferrer noopener">2906 Boyd Avenue, Killeen, TX 76543-5958</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2906+Boyd+Avenue%2C+Killeen%2C+TX+76543-5958" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 7</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%207.pdf" target="_blank" rel="noreferrer noopener">410) ADOLPH AVE, KILLEEN. TX 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=410%29+ADOLPH+AVE%2C+KILLEEN.+TX+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 7</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">1 // 2686 TEAKWOOD LANE, BELTON, TX 76513</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1+%2F%2F+2686+TEAKWOOD+LANE%2C+BELTON%2C+TX+76513" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">15072 Armstrong Rd., Salado, TX 76571</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=15072+Armstrong+Rd.%2C+Salado%2C+TX+76571" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">2179 PIRTLE DR SALADO, TEXAS 76571-6195</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2179+PIRTLE+DR+SALADO%2C+TEXAS+76571-6195" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">2902 JASMINE LN, KILLEEN, TX 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2902+JASMINE+LN%2C+KILLEEN%2C+TX+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">2905 TRANSIT DRIVE KILLEEN. TEXAS 76543</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2905+TRANSIT+DRIVE+KILLEEN.+TEXAS+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">403 Bumblebee Drive, Little River Academy, Texas 76554</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=403+Bumblebee+Drive%2C+Little+River+Academy%2C+Texas+76554" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">603 North Eighth Street, Killeen, Texas 76541</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=603+North+Eighth+Street%2C+Killeen%2C+Texas+76541" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">7 // 7015 KEVIN DR, TEMPLE, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=7+%2F%2F+7015+KEVIN+DR%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">7608 MELANITE DR KILLEEN, TEXAS 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=7608+MELANITE+DR+KILLEEN%2C+TEXAS+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">8606 Surrey Dr, Temple, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=8606+Surrey+Dr%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%205.pdf" target="_blank" rel="noreferrer noopener">7613 Iridium Dr, Killeen, TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=7613+Iridium+Dr%2C+Killeen%2C+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 5</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">2106 LAGO TRAIL, KILLEEN, TX 76543</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2106+LAGO+TRAIL%2C+KILLEEN%2C+TX+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">2502 LIMESTONE TRL, Harker Heights, TX 76548</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2502+LIMESTONE+TRL%2C+Harker+Heights%2C+TX+76548" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">2606 BLUE JAY DRIVE, TEMPLE, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2606+BLUE+JAY+DRIVE%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">3210 SHAWLANDS RD, KILLEEN, TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=3210+SHAWLANDS+RD%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%203.pdf" target="_blank" rel="noreferrer noopener">3401 E. Rancier Killeen, TX 76543.</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=3401+E.+Rancier+Killeen%2C+TX+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 3</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/May%202.pdf" target="_blank" rel="noreferrer noopener">6131 RATTLESNAKE TRAIL, BELTON, TX 76513</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=6131+RATTLESNAKE+TRAIL%2C+BELTON%2C+TX+76513" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">May 2</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">202 Red Oak Drive, Harker Heights, TX 76548</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=202+Red+Oak+Drive%2C+Harker+Heights%2C+TX+76548" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">202 RED OAK, Harker Heights, TX 76548</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=202+RED+OAK%2C+Harker+Heights%2C+TX+76548" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">2513 CORRADINO ST. Harker Heights, FX 76548</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2513+CORRADINO+ST.+Harker+Heights%2C+FX+76548" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">3802 BULL RUN DR, KILLEEN , TX 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=3802+BULL+RUN+DR%2C+KILLEEN+%2C+TX+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">4501 INDIGO DR, KILLEEN, TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4501+INDIGO+DR%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">9606 GLYNHILL COURT . KILLEEN . TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=9606+GLYNHILL+COURT+.+KILLEEN+.+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 8</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%207.pdf" target="_blank" rel="noreferrer noopener">1 // 1210 CAMPBELLTON DR, TEMPLE, TX 76504</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1+%2F%2F+1210+CAMPBELLTON+DR%2C+TEMPLE%2C+TX+76504" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 7</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">2609 BOSWELL DR, KILLEEN. TX 76543</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2609+BOSWELL+DR%2C+KILLEEN.+TX+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">3504 OGLALA TRL, TEMPLE, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=3504+OGLALA+TRL%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">4350 Royal Street, Salado, TX 76571</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4350+Royal+Street%2C+Salado%2C+TX+76571" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">4401 ADOLPH AVE KILLEEN. TEXAS 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4401+ADOLPH+AVE+KILLEEN.+TEXAS+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 6</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">01117 2611 SCHWALD RD, KILLEEN, TX 76543</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=01117+2611+SCHWALD+RD%2C+KILLEEN%2C+TX+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 5</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">1 / 1306 CAMPBELLTON DRIVE, TEMPLE, TX 76504</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1+%2F+1306+CAMPBELLTON+DRIVE%2C+TEMPLE%2C+TX+76504" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 5</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">3805 Mockingbird Ln, Temple, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=3805+Mockingbird+Ln%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 5</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">8998 Wedel Cemetery Road , Temple, TX 76501</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=8998+Wedel+Cemetery+Road+%2C+Temple%2C+TX+76501" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 5</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%204.pdf" target="_blank" rel="noreferrer noopener">1 // 3509 SALT FORK DR, KILLEEN, TX 76549-0000</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1+%2F%2F+3509+SALT+FORK+DR%2C+KILLEEN%2C+TX+76549-0000" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%204.pdf" target="_blank" rel="noreferrer noopener">2008 Continental Dr, Killeen, TX 76543</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=2008+Continental+Dr%2C+Killeen%2C+TX+76543" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%204.pdf" target="_blank" rel="noreferrer noopener">6404 SILTSTONE LOOP, KILLEEN, TX 76542</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=6404+SILTSTONE+LOOP%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 4</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%203.pdf" target="_blank" rel="noreferrer noopener">714 Tumbleweed Trl, Temple, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=714+Tumbleweed+Trl%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 3</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%202.pdf" target="_blank" rel="noreferrer noopener">410 SUNRISE BLF TEMPLE, TEXAS 76502-7069</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=410+SUNRISE+BLF+TEMPLE%2C+TEXAS+76502-7069" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 2</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%201.pdf" target="_blank" rel="noreferrer noopener">1521 HILLSIDE DR, TEMPLE, TX 76502</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=1521+HILLSIDE+DR%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 1</span>
-    </li>
-    <li>
-      <a href="https://cms3.revize.com/revize/bellcountytx/June%201.pdf" target="_blank" rel="noreferrer noopener">4000 BULL RUN DR, KILLEEN, TX 76549</a>
-      <span class="map-sep">·</span>
-      <a href="https://maps.google.com/?q=4000+BULL+RUN+DR%2C+KILLEEN%2C+TX+76549" target="_blank" rel="noreferrer noopener">[View Map]</a>
-      <span class="fc-doc" title="Notice PDF">June 1</span>
-    </li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/July%204.pdf" target="_blank" rel="noreferrer noopener">1219E AVENUE H, NOLANVILLE, TX 76559</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1219E+AVENUE+H%2C+NOLANVILLE%2C+TX+76559" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">July 4</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, ServiceMac, NewRez LLC, Shellpoint Mortgage Servicing, PHH Mortgage, Onity Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Tejas Corporate Services LLC, NFPDS-TX LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/July%204.pdf" target="_blank" rel="noreferrer noopener">4709 WESTCLIFF ROAD. KILLEEN. TX 76541</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4709+WESTCLIFF+ROAD.+KILLEEN.+TX+76541" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">July 4</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, ServiceMac, NewRez LLC, Shellpoint Mortgage Servicing, PHH Mortgage, Onity Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Tejas Corporate Services LLC, NFPDS-TX LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/July%203.pdf" target="_blank" rel="noreferrer noopener">5203 LIONS GATE LANE KILLEEN, TEXAS 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=5203+LIONS+GATE+LANE+KILLEEN%2C+TEXAS+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">July 3</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation</span><br><span class="fc-entity fc-trustee">Trustee: Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting And Publishing Llc, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/July%203.pdf" target="_blank" rel="noreferrer noopener">708 ROWDY DR KILLEEN. TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=708+ROWDY+DR+KILLEEN.+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">July 3</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation</span><br><span class="fc-entity fc-trustee">Trustee: Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting And Publishing Llc, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/July%202.pdf" target="_blank" rel="noreferrer noopener">01426 710 CARLA CIR, BELTON, TX 76513</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=01426+710+CARLA+CIR%2C+BELTON%2C+TX+76513" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">July 2</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, M&amp;T Bank, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, De Cubas &amp; Lewis, P.c., Xome Inc., NFPDS-TX LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/July%201.pdf" target="_blank" rel="noreferrer noopener">1 // 3825 OAK VALLEY, KILLEEN, TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1+%2F%2F+3825+OAK+VALLEY%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">July 1</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Carrington Mortgage Services, LLC, M&amp;T Bank, PHH Mortgage, Onity Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting and Publishing, LLC, Tejas Corporate Services LLC, Vylla Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1 (1940 LIVELY LN.) // SEE LEGAL DESCRIPTION, TEMPLE, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1+%281940+LIVELY+LN.%29+%2F%2F+SEE+LEGAL+DESCRIPTION%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1004 S 6" Street, Killeen, Tx 76541</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1004+S+6%22+Street%2C+Killeen%2C+Tx+76541" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1306 Metropolitan Dr, Killeen, TX 76541</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1306+Metropolitan+Dr%2C+Killeen%2C+TX+76541" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">1504 LEADER DR, KILLEEN, TX 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1504+LEADER+DR%2C+KILLEEN%2C+TX+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">3911 ANTELOPE TRAIL, TEMPLE, TX 76504</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=3911+ANTELOPE+TRAIL%2C+TEMPLE%2C+TX+76504" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">4210 Lake Road, Killeen, Texas 76543</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4210+Lake+Road%2C+Killeen%2C+Texas+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">4707 Causeway Ct, Killeen, TX 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4707+Causeway+Ct%2C+Killeen%2C+TX+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">608 Patton, Killeen, Tx 76541</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=608+Patton%2C+Killeen%2C+Tx+76541" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">912 Westend Dr, Temple, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=912+Westend+Dr%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%208.pdf" target="_blank" rel="noreferrer noopener">9405 GLYNHILL CT, KILLEEN, TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=9405+GLYNHILL+CT%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 8</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%207.pdf" target="_blank" rel="noreferrer noopener">2106 BIRD CREEK DRIVE, TEMPLE, TEXAS 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2106+BIRD+CREEK+DRIVE%2C+TEMPLE%2C+TEXAS+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 7</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Nationstar Mortgage, PHH Mortgage, Onity Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%207.pdf" target="_blank" rel="noreferrer noopener">2906 Boyd Avenue, Killeen, TX 76543-5958</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2906+Boyd+Avenue%2C+Killeen%2C+TX+76543-5958" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 7</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Nationstar Mortgage, PHH Mortgage, Onity Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%207.pdf" target="_blank" rel="noreferrer noopener">410) ADOLPH AVE, KILLEEN. TX 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=410%29+ADOLPH+AVE%2C+KILLEEN.+TX+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 7</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Nationstar Mortgage, PHH Mortgage, Onity Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">1 // 2686 TEAKWOOD LANE, BELTON, TX 76513</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1+%2F%2F+2686+TEAKWOOD+LANE%2C+BELTON%2C+TX+76513" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">15072 Armstrong Rd., Salado, TX 76571</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=15072+Armstrong+Rd.%2C+Salado%2C+TX+76571" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">2179 PIRTLE DR SALADO, TEXAS 76571-6195</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2179+PIRTLE+DR+SALADO%2C+TEXAS+76571-6195" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">2902 JASMINE LN, KILLEEN, TX 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2902+JASMINE+LN%2C+KILLEEN%2C+TX+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">2905 TRANSIT DRIVE KILLEEN. TEXAS 76543</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2905+TRANSIT+DRIVE+KILLEEN.+TEXAS+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">403 Bumblebee Drive, Little River Academy, Texas 76554</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=403+Bumblebee+Drive%2C+Little+River+Academy%2C+Texas+76554" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">603 North Eighth Street, Killeen, Texas 76541</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=603+North+Eighth+Street%2C+Killeen%2C+Texas+76541" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">7 // 7015 KEVIN DR, TEMPLE, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=7+%2F%2F+7015+KEVIN+DR%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">7608 MELANITE DR KILLEEN, TEXAS 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=7608+MELANITE+DR+KILLEEN%2C+TEXAS+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%206.pdf" target="_blank" rel="noreferrer noopener">8606 Surrey Dr, Temple, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=8606+Surrey+Dr%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, Nationstar Mortgage, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Agency Sales and Posting LLC, Prestige Posting And Publishing Llc</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%205.pdf" target="_blank" rel="noreferrer noopener">7613 Iridium Dr, Killeen, TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=7613+Iridium+Dr%2C+Killeen%2C+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 5</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, Nationstar Mortgage</span><br><span class="fc-entity fc-trustee">Trustee: Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">2106 LAGO TRAIL, KILLEEN, TX 76543</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2106+LAGO+TRAIL%2C+KILLEEN%2C+TX+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc.</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">2502 LIMESTONE TRL, Harker Heights, TX 76548</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2502+LIMESTONE+TRL%2C+Harker+Heights%2C+TX+76548" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc.</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">2606 BLUE JAY DRIVE, TEMPLE, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2606+BLUE+JAY+DRIVE%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc.</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%204.pdf" target="_blank" rel="noreferrer noopener">3210 SHAWLANDS RD, KILLEEN, TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=3210+SHAWLANDS+RD%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc.</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%203.pdf" target="_blank" rel="noreferrer noopener">3401 E. Rancier Killeen, TX 76543.</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=3401+E.+Rancier+Killeen%2C+TX+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 3</span><span class="fc-entity fc-trustee">Trustee: Codilis &amp; Moody, P.c., Auction.com, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/May%202.pdf" target="_blank" rel="noreferrer noopener">6131 RATTLESNAKE TRAIL, BELTON, TX 76513</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=6131+RATTLESNAKE+TRAIL%2C+BELTON%2C+TX+76513" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">May 2</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, M&amp;T Bank</span><br><span class="fc-entity fc-trustee">Trustee: Marinosci Law Group, P.c., McCarthy &amp; Holthus, LLP, Resolve Trustee Services, LLC, Xome Inc., Tejas Corporate Services LLC, NFPDS-TX LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">202 Red Oak Drive, Harker Heights, TX 76548</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=202+Red+Oak+Drive%2C+Harker+Heights%2C+TX+76548" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 8</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Onity Mortgage, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">202 RED OAK, Harker Heights, TX 76548</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=202+RED+OAK%2C+Harker+Heights%2C+TX+76548" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 8</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Onity Mortgage, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">2513 CORRADINO ST. Harker Heights, FX 76548</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2513+CORRADINO+ST.+Harker+Heights%2C+FX+76548" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 8</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Onity Mortgage, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">3802 BULL RUN DR, KILLEEN , TX 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=3802+BULL+RUN+DR%2C+KILLEEN+%2C+TX+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 8</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Onity Mortgage, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">4501 INDIGO DR, KILLEEN, TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4501+INDIGO+DR%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 8</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Onity Mortgage, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%208.pdf" target="_blank" rel="noreferrer noopener">9606 GLYNHILL COURT . KILLEEN . TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=9606+GLYNHILL+COURT+.+KILLEEN+.+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 8</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, M&amp;T Bank, Onity Mortgage, First United Bank and Trust</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%207.pdf" target="_blank" rel="noreferrer noopener">1 // 1210 CAMPBELLTON DR, TEMPLE, TX 76504</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1+%2F%2F+1210+CAMPBELLTON+DR%2C+TEMPLE%2C+TX+76504" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 7</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Freedom Mortgage Corporation, NewRez LLC</span><br><span class="fc-entity fc-trustee">Trustee: Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">2609 BOSWELL DR, KILLEEN. TX 76543</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2609+BOSWELL+DR%2C+KILLEEN.+TX+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, ServiceMac, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: McCarthy &amp; Holthus, LLP, Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting And Publishing Llc, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">3504 OGLALA TRL, TEMPLE, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=3504+OGLALA+TRL%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, ServiceMac, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: McCarthy &amp; Holthus, LLP, Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting And Publishing Llc, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">4350 Royal Street, Salado, TX 76571</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4350+Royal+Street%2C+Salado%2C+TX+76571" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, ServiceMac, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: McCarthy &amp; Holthus, LLP, Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting And Publishing Llc, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%206.pdf" target="_blank" rel="noreferrer noopener">4401 ADOLPH AVE KILLEEN. TEXAS 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4401+ADOLPH+AVE+KILLEEN.+TEXAS+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 6</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, Freedom Mortgage Corporation, ServiceMac, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: McCarthy &amp; Holthus, LLP, Auction.com, LLC, Resolve Trustee Services, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting And Publishing Llc, NFPDS-TX LLC, Nestor Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">01117 2611 SCHWALD RD, KILLEEN, TX 76543</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=01117+2611+SCHWALD+RD%2C+KILLEEN%2C+TX+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 5</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">1 / 1306 CAMPBELLTON DRIVE, TEMPLE, TX 76504</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1+%2F+1306+CAMPBELLTON+DRIVE%2C+TEMPLE%2C+TX+76504" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 5</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">3805 Mockingbird Ln, Temple, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=3805+Mockingbird+Ln%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 5</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%205.pdf" target="_blank" rel="noreferrer noopener">8998 Wedel Cemetery Road , Temple, TX 76501</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=8998+Wedel+Cemetery+Road+%2C+Temple%2C+TX+76501" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 5</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, LoanCare, LLC, M&amp;T Bank, NewRez LLC, Shellpoint Mortgage Servicing</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%204.pdf" target="_blank" rel="noreferrer noopener">1 // 3509 SALT FORK DR, KILLEEN, TX 76549-0000</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1+%2F%2F+3509+SALT+FORK+DR%2C+KILLEEN%2C+TX+76549-0000" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Carrington Mortgage Services, LLC, M&amp;T Bank, Nationstar Mortgage, Mr. Cooper, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting and Publishing, LLC, Tejas Corporate Services LLC, Vylla Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%204.pdf" target="_blank" rel="noreferrer noopener">2008 Continental Dr, Killeen, TX 76543</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=2008+Continental+Dr%2C+Killeen%2C+TX+76543" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Carrington Mortgage Services, LLC, M&amp;T Bank, Nationstar Mortgage, Mr. Cooper, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting and Publishing, LLC, Tejas Corporate Services LLC, Vylla Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%204.pdf" target="_blank" rel="noreferrer noopener">6404 SILTSTONE LOOP, KILLEEN, TX 76542</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=6404+SILTSTONE+LOOP%2C+KILLEEN%2C+TX+76542" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 4</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, Carrington Mortgage Services, LLC, M&amp;T Bank, Nationstar Mortgage, Mr. Cooper, MidFirst Bank</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., McCarthy &amp; Holthus, LLP, Codilis &amp; Moody, P.c., Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting and Publishing, LLC, Tejas Corporate Services LLC, Vylla Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%203.pdf" target="_blank" rel="noreferrer noopener">714 Tumbleweed Trl, Temple, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=714+Tumbleweed+Trl%2C+Temple%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 3</span><span class="fc-entity">Servicer: Lakeview Loan Servicing, LLC, LoanCare, LLC, Carrington Mortgage Services, LLC, NewRez LLC, Shellpoint Mortgage Servicing, Nationstar Mortgage, Mr. Cooper</span><br><span class="fc-entity fc-trustee">Trustee: Barrett Daffin Frappier Turner &amp; Engel, LLP, McCarthy &amp; Holthus, LLP, Auction.com, LLC, Agency Sales and Posting LLC, Tejas Corporate Services LLC, Vylla Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%202.pdf" target="_blank" rel="noreferrer noopener">410 SUNRISE BLF TEMPLE, TEXAS 76502-7069</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=410+SUNRISE+BLF+TEMPLE%2C+TEXAS+76502-7069" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 2</span><span class="fc-entity">Servicer: Carrington Mortgage Services, LLC, NewRez LLC, Shellpoint Mortgage Servicing, Caliber Home Loans</span><br><span class="fc-entity fc-trustee">Trustee: Auction.com, LLC, Xome Inc., Agency Sales and Posting LLC, Prestige Posting and Publishing, LLC, Prestige Posting And Publishing Llc, Tejas Corporate Services LLC, Vylla Solutions, LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%201.pdf" target="_blank" rel="noreferrer noopener">1521 HILLSIDE DR, TEMPLE, TX 76502</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=1521+HILLSIDE+DR%2C+TEMPLE%2C+TX+76502" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 1</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., Marinosci Law Group, P.c., Auction.com, LLC, Agency Sales and Posting LLC</span></li>
+    <li><a href="https://cms3.revize.com/revize/bellcountytx/June%201.pdf" target="_blank" rel="noreferrer noopener">4000 BULL RUN DR, KILLEEN, TX 76549</a> <span class="map-sep">·</span> <a href="https://maps.google.com/?q=4000+BULL+RUN+DR%2C+KILLEEN%2C+TX+76549" target="_blank" rel="noreferrer noopener">[Map]</a> <span class="fc-doc" title="Notice PDF">June 1</span><span class="fc-entity">Servicer: PennyMac Loan Services, LLC, Lakeview Loan Servicing, LLC, ServiceMac</span><br><span class="fc-entity fc-trustee">Trustee: De Cubas &amp; Lewis, P.c., Marinosci Law Group, P.c., Auction.com, LLC, Agency Sales and Posting LLC</span></li>
+  </ul>
+
+  <h2>How Texas Foreclosure Notices Work</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Notice of Sale</h3>
+      <p>Filed with the county clerk at least 21 days before sale. Posted at the courthouse. Contains property address, legal description, sale date/time, and the substitute trustee information.</p>
+    </div>
+    <div class="card">
+      <h3>Notice of Default</h3>
+      <p>Before a foreclosure sale can occur, the borrower must be in default. Texas is a non-judicial foreclosure state — most foreclosures proceed under a power of sale clause in the deed of trust, without court supervision, unless the borrower files a lawsuit.</p>
+    </div>
+    <div class="card">
+      <h3>Foreclosure Sale</h3>
+      <p>Held on the first Tuesday of each month between 10 AM and 4 PM at the Bell County Justice Complex, 1201 Huey Drive, Belton, TX. Conducted by the substitute trustee as a public auction to the highest bidder for cash.</p>
+    </div>
+    <div class="card">
+      <h3>Other Counties</h3>
+      <p>Each Central Texas county publishes its own foreclosure notice list. See our <a href="county-foreclosure-resources.html">County Foreclosure Resources</a> page for Coryell, McLennan, Williamson, Burnet, Milam, and Lampasas counties.</p>
+    </div>
+  </div>
+
+  <h2>Related Resources</h2>
+  <ul class="link-list">
+    <li><a href="https://www.bellcountytx.com/county_government/county_clerk/foreclosures.php" target="_blank" rel="noopener">Bell County Clerk — Foreclosure Notices</a><span class="desc">Official source for all Bell County foreclosure posting PDFs</span></li>
+    <li><a href="https://txcourts.gov" target="_blank" rel="noopener">Texas Office of Court Administration</a><span class="desc">Texas Property Code 51.002 — foreclosure sale procedures</span></li>
+    <li><a href="https://statutes.capitol.texas.gov/Docs/PR/htm/PR.51.htm" target="_blank" rel="noopener">Texas Property Code Chapter 51</a><span class="desc">Legal framework for real property foreclosure in Texas</span></li>
+    <li><a href="links.html#hud-data" class="btn btn-outline">HUD Data Sources</a></li>
   </ul>
 
 </div>
+
 <footer>
   <p>Cloud Fronts Group &mdash; Central Texas Technology Access &amp; Innovation Delivery Partnership</p>
-  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a> | <a href="rental-assistance.html">Rent Help</a> | <a href="sitemap.xml">Sitemap</a> | <a href="blog/">Blog</a> | <a href="contact.html">Contact</a>
+  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="services.html">Services</a> | <a href="team.html">Team</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a> | <a href="rental-assistance.html">Rent Help</a> | <a href="sitemap.xml">Sitemap</a> | <a href="blog/">Blog</a> | <a href="contact.html">Contact</a></p>
   <p style="margin-top:.5rem;font-size:.72rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
-  <p style="margin-top:.5rem;font-size:.72rem;">I am a data researcher, not a lawyer. This is not legal advice.</p>
-<button id="print-btn" class="print-btn">⎙ Print</button>
-  <p class="last-updated">Last updated: May 2026</p>
+  <p class="last-updated">Last updated: June 2026</p>
+  <button id="print-btn" class="print-btn">&#9015; Print</button>
+  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
-<a href="#" id="back-to-top" title="Back to top">&uarr; Top</a>
+
 <script src="site.js" defer></script>
 </body>
 </html>

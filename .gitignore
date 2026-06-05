@@ -1,3 +1,13 @@
+# Embedded git repos
+legal-luminary/
+scottweeden.online/
+cloudfrontsgroup.org/
+
+# Deploy script config
+.env
+*.env
+
+# OS files
 *.tar.gz
 *.zip
 .DS_Store

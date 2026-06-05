@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#003a70">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Search — Cloud Fronts Group</title>
+<meta name="description" content="Search Cloud Fronts Group's library of resources on HUD analytics, USDA farming programs, Section 3 compliance, and community technology in Central Texas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Search — Cloud Fronts Group">
+    <meta property="og:description" content="Search Cloud Fronts Group's library of resources on HUD analytics, USDA farming programs, Section 3 compliance, and community technology in Central Texas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cloudfrontsgroup.org/search.html">
+    <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
+    <meta property="og:site_name" content="Cloud Fronts Group">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Search — Cloud Fronts Group">
+    <meta name="twitter:description" content="Search Cloud Fronts Group's library of resources on HUD analytics, USDA farming programs, Section 3 compliance, and community technology in Central Texas.">
+    <link rel="canonical" href="https://cloudfrontsgroup.org/search.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cloud Fronts Group",
+      "url": "https://cloudfrontsgroup.org",
+      "description": "Central Texas Technology Access & Innovation Delivery Partnership — AI/ML research, HUD data analytics, Section 3 compliance, and community technology programs.",
+      "email": ["scottweeden@cloudfrontsgroup.org", "johnathanking@cloudfrontsgroup.org"],
+      "telephone": "+1-254-317-6688",
+      "areaServed": "Central Texas",
+      "foundingDate": "2026"
+    }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+  <div class="inner">
+    <h1>&#9729; Cloud Fronts <span>Group</span></h1>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">&#9790;</button>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="cloud-fronts-summary.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Team</a>
+      <a href="research-grant.html">AAAI Research</a>
+      <a href="hud-analytics.html">HUD Analytics</a>
+      <a href="section3.html">Compliance</a>
+      <a href="foreclosures.html">Community Data</a>
+      <a href="volunteer-corps.html">Volunteer</a>
+      <a href="usda-farming.html">USDA Farming</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </div>
+</header>
+
+<nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Search</li></ol></nav>
+
+<div class="container" id="main-content">
+
+  <h2>Search</h2>
+  <p style="font-size:.95rem;color:var(--hud-gray);margin-bottom:1.5rem;">Search Cloud Fronts Group's library of resources on HUD analytics, USDA farming programs, Section 3 compliance, and community technology in Central Texas.</p>
+
+  <input type="text" id="search-input" placeholder="Search resources, programs, guides..." style="width:100%;padding:.8rem 1rem;border:2px solid var(--hud-gray-light);border-radius:var(--radius);font-family:var(--font-main);font-size:1.05rem;margin-bottom:.75rem;box-sizing:border-box;">
+
+  <p id="result-count" style="font-size:.9rem;color:var(--hud-gray);margin-bottom:1.5rem;"></p>
+
+  <div id="search-results" class="card-grid" style="min-height:200px;"></div>
+
+</div>
+
+<footer>
+  <p>Cloud Fronts Group &mdash; Central Texas Technology Access &amp; Innovation Delivery Partnership</p>
+  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="services.html">Services</a> | <a href="team.html">Team</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a> | <a href="rental-assistance.html">Rent Help</a> | <a href="sitemap.xml">Sitemap</a> | <a href="blog/">Blog</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy</a></p>
+  <p style="margin-top:.5rem;font-size:.72rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
+  <p class="last-updated">Last updated: June 2026</p>
+  <button id="print-btn" class="print-btn">&#9015; Print</button>
+  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
+</footer>
+
+<script src="site.js" defer></script>
+<script>
+const searchIndex = [
+  {title: "Home", url: "index.html", description: "Cloud Fronts Group — Central Texas Technology Access & Innovation Delivery Partnership", category: "Page"},
+  {title: "About", url: "cloud-fronts-summary.html", description: "About Cloud Fronts Group — AI/ML research, HUD analytics, Section 3 compliance, and community technology", category: "Page"},
+  {title: "Services", url: "services.html", description: "Cloud Fronts Group services: HUD analytics, Section 3 compliance, USDA farming, AI/ML research, grant writing", category: "Page"},
+  {title: "Team", url: "team.html", description: "Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, Dr. Akbar Namin", category: "Page"},
+  {title: "AAAI Research", url: "research-grant.html", description: "AAAI 2026 paper on bounded-agent security guardrails for government intelligence reporting", category: "Research"},
+  {title: "HUD Analytics", url: "hud-analytics.html", description: "HUD NOFO data analysis, housing market trends, demographic indicators, and program effectiveness metrics", category: "Services"},
+  {title: "Section 3 Compliance", url: "section3.html", description: "Section 3 compliance support for housing authorities — strategic planning, benchmarking, reporting", category: "Services"},
+  {title: "Community Data", url: "foreclosures.html", description: "Foreclosure market intelligence and community data analysis for Central Texas", category: "Data"},
+  {title: "Volunteer Corps", url: "volunteer-corps.html", description: "Volunteer opportunities with Cloud Fronts Group — tech access, data literacy, community engagement", category: "Community"},
+  {title: "USDA Farming", url: "usda-farming.html", description: "USDA farm loans, conservation programs, rural development grants, and beginning farmer resources", category: "Resources"},
+  {title: "Links & Resources", url: "links.html", description: "Master resource directory of HUD, USDA, contracting, workforce development, and civic resources", category: "Resources"},
+  {title: "Rental Assistance", url: "rental-assistance.html", description: "Rental assistance programs in Central Texas — Housing Choice Vouchers, Public Housing, VASH, LIHTC", category: "Resources"},
+  {title: "Contact", url: "contact.html", description: "Contact Cloud Fronts Group — Scott Weeden, Johnathan King", category: "Page"},
+  {title: "CDBG", url: "cdbg.html", description: "Community Development Block Grant programs — eligible activities, national objectives, application process", category: "Resources"},
+  {title: "Contracting", url: "contracting.html", description: "Federal contracting and small business resources for Central Texas", category: "Resources"},
+  {title: "DSCR Loans", url: "dscr.html", description: "DSCR (Debt Service Coverage Ratio) lender information for real estate investors", category: "Resources"},
+  {title: "FHA Multifamily", url: "fha-multifamily.html", description: "FHA multifamily housing programs and financing options", category: "Resources"},
+  {title: "LIHTC", url: "lihtc.html", description: "Low-Income Housing Tax Credit program information for developers and investors", category: "Resources"},
+  {title: "Opportunity Zones", url: "opportunity-zones.html", description: "Opportunity Zones in Central Texas — tax incentives for community investment", category: "Resources"},
+  {title: "Partnerships", url: "partnerships.html", description: "Cloud Fronts Group partnerships and collaboration opportunities", category: "Page"},
+  {title: "Research Partnerships", url: "research-partnerships.html", description: "Academic and research partnership opportunities with Cloud Fronts Group", category: "Page"},
+  {title: "Glossary", url: "glossary.html", description: "Glossary of HUD, USDA, and community development terms", category: "Resources"},
+  {title: "Case Studies", url: "case-studies.html", description: "Cloud Fronts Group project case studies — Section 3, HUD NOFO, USDA, Tech Access", category: "Page"},
+  {title: "Understanding USDA Farm Loans", url: "blog/understanding-usda-farm-loans.html", description: "Guide to USDA farm loan programs for Central Texas producers", category: "Blog"},
+  {title: "HUD NOFO Timeline 2026", url: "blog/hud-nofo-timeline-2026.html", description: "Key dates for HUD NOFO programs in 2026", category: "Blog"},
+  {title: "Understanding CDBG Programs", url: "blog/understanding-cdbg-programs.html", description: "Guide to Community Development Block Grant programs", category: "Blog"},
+  {title: "Section 3 Compliance Guide", url: "blog/section-3-compliance-guide.html", description: "Practical guide to Section 3 compliance for housing authorities", category: "Blog"}
+];
+
+const fuse = new Fuse(searchIndex, {
+  keys: ['title', 'description', 'category'],
+  threshold: 0.4
+});
+
+const input = document.getElementById('search-input');
+const results = document.getElementById('search-results');
+const count = document.getElementById('result-count');
+
+function renderResults(items) {
+  if (items.length === 0) {
+    results.innerHTML = '<p style="color:var(--hud-gray);">No results found. Try a different search term.</p>';
+    count.textContent = '';
+    return;
+  }
+  count.textContent = items.length + ' result' + (items.length !== 1 ? 's' : '') + ' found';
+  let html = '';
+  items.forEach(function(item) {
+    html += '<div class="card" style="cursor:pointer;" onclick="window.location.href=\'' + item.url + '\'">';
+    html += '<span class="badge" style="margin-bottom:.6rem;display:inline-block;background:var(--hud-blue);color:#fff;font-size:.75rem;padding:.2rem .6rem;border-radius:var(--radius);">' + item.category + '</span>';
+    html += '<h3 style="margin:0 0 .5rem;">' + item.title + '</h3>';
+    html += '<p style="font-size:.88rem;color:var(--hud-gray);margin:0;">' + item.description + '</p>';
+    html += '</div>';
+  });
+  results.innerHTML = html;
+}
+
+input.addEventListener('input', function() {
+  const query = this.value.trim();
+  if (query === '') {
+    results.innerHTML = '';
+    count.textContent = '';
+    return;
+  }
+  const fuseResults = fuse.search(query);
+  const items = fuseResults.map(function(r) { return r.item; });
+  renderResults(items);
+});
+</script>
+</body>
+</html>

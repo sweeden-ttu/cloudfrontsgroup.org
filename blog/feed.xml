@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Cloud Fronts Group Blog</title>
+<link>https://cloudfrontsgroup.org/blog/</link>
+<description>Central Texas Technology Access &amp; Innovation Delivery</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
+<atom:link href="https://cloudfrontsgroup.org/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Housing Market Analysis: Central Texas Trends 2026</title>
+<link>https://cloudfrontsgroup.org/blog/housing-market-analysis-central-texas.html</link>
+<description>Analysis of Central Texas housing market trends in 2026: inventory, prices, demographic shifts, and implications for HUD program planning and community development.</description>
+<guid isPermaLink="true">https://cloudfrontsgroup.org/blog/housing-market-analysis-central-texas.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Understanding USDA Farm Loans for Central Texas Producers</title>
+<link>https://cloudfrontsgroup.org/blog/understanding-usda-farm-loans.html</link>
+<description>A comprehensive guide to USDA farm loan programs for Central Texas producers, covering FSA direct and guaranteed loans, eligibility requirements, and application tips.</description>
+<guid isPermaLink="true">https://cloudfrontsgroup.org/blog/understanding-usda-farm-loans.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>HUD NOFO Timeline 2026: Key Dates for Housing Authorities</title>
+<link>https://cloudfrontsgroup.org/blog/hud-nofo-timeline-2026.html</link>
+<description>Important dates and deadlines for HUD NOFO programs in 2026, including funding opportunity announcements, application windows, and award notifications.</description>
+<guid isPermaLink="true">https://cloudfrontsgroup.org/blog/hud-nofo-timeline-2026.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Understanding Community Development Block Grant Programs</title>
+<link>https://cloudfrontsgroup.org/blog/understanding-cdbg-programs.html</link>
+<description>A guide to CDBG programs administered by HUD: eligible activities, national objectives, application process, and how communities in Central Texas can access funding.</description>
+<guid isPermaLink="true">https://cloudfrontsgroup.org/blog/understanding-cdbg-programs.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Section 3 Compliance Guide for Housing Authorities</title>
+<link>https://cloudfrontsgroup.org/blog/section-3-compliance-guide.html</link>
+<description>A practical guide to Section 3 compliance for public housing authorities: benchmarking, reporting requirements, strategic planning, and best practices for HUD compliance.</description>
+<guid isPermaLink="true">https://cloudfrontsgroup.org/blog/section-3-compliance-guide.html</guid>
+<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+</item>
+</channel>
+</rss>

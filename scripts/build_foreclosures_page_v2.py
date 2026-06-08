@@ -147,8 +147,7 @@ def main() -> int:
       <a href="index.html">Home</a>
       <a href="cloud-fronts-summary.html">About</a>
       <a href="research-grant.html">AAAI Research</a>
-      <a href="hud-analytics.html">HUD Analytics</a>
-      <a href="hud-grant-proposal.html">HUD Grant Proposal</a>
+      <a href="hud-analytics.html">HUD Analytics</a> | <a href="hud-grant-proposal.html">HUD Grant Proposal</a>
       <a href="section3.html">Compliance</a>
       <a href="foreclosures.html" class="active" aria-current="page">Community Data</a>
       <a href="volunteer-corps.html">Volunteer</a>
@@ -221,8 +220,7 @@ def main() -> int:
 
 <footer>
   <p>Cloud Fronts Group &mdash; Central Texas Technology Access &amp; Innovation Delivery Partnership</p>
-  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a>
-      <a href="hud-grant-proposal.html">HUD Grant Proposal</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a> | <a href="rental-assistance.html">Rent Help</a> | <a href="sitemap.xml">Sitemap</a> | <a href="blog/">Blog</a> | <a href="contact.html">Contact</a></p>
+  <p><a href="index.html">Home</a> | <a href="cloud-fronts-summary.html">About</a> | <a href="research-grant.html">Research</a> | <a href="hud-analytics.html">HUD Analytics</a> | <a href="hud-grant-proposal.html">HUD Grant Proposal</a> | <a href="section3.html">Compliance</a> | <a href="foreclosures.html">Community Data</a> | <a href="volunteer-corps.html">Volunteer</a> | <a href="usda-farming.html">USDA Farming</a> | <a href="links.html">Links</a> | <a href="rental-assistance.html">Rent Help</a> | <a href="sitemap.xml">Sitemap</a> | <a href="blog/">Blog</a> | <a href="contact.html">Contact</a></p>
   <p style="margin-top:.5rem;font-size:.72rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
   <p class="last-updated">Last updated: June 2026</p>
   <button id="print-btn" class="print-btn">&#9015; Print</button>

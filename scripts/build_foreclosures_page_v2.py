@@ -70,9 +70,9 @@ def main() -> int:
     if all_trustees:
         tags = "\n          ".join(entity_tag(s, "tag tag-security") for s in sorted(all_trustees))
         trustee_summary = f"""  <div class="callout callout-ml">
-    <h3 style="margin-top:0;">Substitute Trustees / Law Firms ({len(all_trustees)})</h3>
+    <h3 style="margin-top:0;">Substitute Trustees ({len(all_trustees)})</h3>
     <p style="font-size:0.9rem;color:var(--hud-gray);margin-bottom:0.75rem;">
-      These law firms and trustee companies are appointed to conduct the foreclosure sales.
+      These trustees are appointed to conduct the foreclosure sales.
     </p>
     <div class="entity-tags">
           {tags}
@@ -193,15 +193,15 @@ def main() -> int:
   <div class="card-grid">
     <div class="card">
       <h3>Notice of Sale</h3>
-      <p>Filed with the county clerk at least 21 days before sale. Posted at the courthouse. Contains property address, legal description, sale date/time, and the substitute trustee information.</p>
+      <p>Filed with the county clerk at least 21 days before sale. Contains property address, legal description, sale date/time, and the substitute trustee information.</p>
     </div>
     <div class="card">
       <h3>Notice of Default</h3>
-      <p>Before a foreclosure sale can occur, the borrower must be in default. Texas is a non-judicial foreclosure state — most foreclosures proceed under a power of sale clause in the deed of trust, without court supervision, unless the borrower files a lawsuit.</p>
+      <p>Before a foreclosure sale can occur, the borrower must be in default. Most foreclosures proceed under a power of sale clause in the deed of trust, unless the borrower files a lawsuit.</p>
     </div>
     <div class="card">
       <h3>Foreclosure Sale</h3>
-      <p>Held on the first Tuesday of each month between 10 AM and 4 PM at the Bell County Justice Complex, 1201 Huey Drive, Belton, TX. Conducted by the substitute trustee as a public auction to the highest bidder for cash.</p>
+      <p>Held on the first Tuesday of each month between 10 AM and 4 PM at 1201 Huey Drive, Belton, TX. Conducted by the substitute trustee as a public auction to the highest bidder for cash.</p>
     </div>
     <div class="card">
       <h3>Other Counties</h3>
@@ -212,7 +212,6 @@ def main() -> int:
   <h2>Related Resources</h2>
   <ul class="link-list">
     <li><a href="https://www.bellcountytx.com/county_government/county_clerk/foreclosures.php" target="_blank" rel="noopener">Bell County Clerk — Foreclosure Notices</a><span class="desc">Official source for all Bell County foreclosure posting PDFs</span></li>
-    <li><a href="https://txcourts.gov" target="_blank" rel="noopener">Texas Office of Court Administration</a><span class="desc">Texas Property Code 51.002 — foreclosure sale procedures</span></li>
     <li><a href="https://statutes.capitol.texas.gov/Docs/PR/htm/PR.51.htm" target="_blank" rel="noopener">Texas Property Code Chapter 51</a><span class="desc">Legal framework for real property foreclosure in Texas</span></li>
     <li><a href="links.html#hud-data" class="btn btn-outline">HUD Data Sources</a></li>
   </ul>

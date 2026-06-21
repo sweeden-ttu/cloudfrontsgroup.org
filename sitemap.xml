@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://cloudfrontsgroup.org/index.html</loc><priority>1.0</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/cloud-fronts-summary.html</loc><priority>0.9</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/research-grant.html</loc><priority>0.9</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/hud-analytics.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/about-us.html</loc><priority>0.9</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/contact.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/testimonials.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/team.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/services.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/logo-design.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/web-design-hosting.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/design-print-agency.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/pay-per-click-marketing.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/social-media-marketing.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/document-management.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/online-publishing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/domain-names.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/promotional-items.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/site-hosting.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/marketing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/political-advertisements.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/research-grant.html</loc><priority>0.8</priority></url>
   <url><loc>https://cloudfrontsgroup.org/foreclosures.html</loc><priority>0.6</priority></url>
   <url><loc>https://cloudfrontsgroup.org/volunteer-corps.html</loc><priority>0.7</priority></url>
   <url><loc>https://cloudfrontsgroup.org/usda-farming.html</loc><priority>0.7</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/links.html</loc><priority>0.5</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/glossary.html</loc><priority>0.4</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/rental-assistance.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/case-studies.html</loc><priority>0.6</priority></url>
   <url><loc>https://cloudfrontsgroup.org/partnerships.html</loc><priority>0.7</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/contact.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/glossary.html</loc><priority>0.4</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/links.html</loc><priority>0.5</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/search.html</loc><priority>0.4</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/cloud-fronts-summary.html</loc><priority>0.5</priority></url>
   <url><loc>https://cloudfrontsgroup.org/blog/</loc><priority>0.8</priority></url>
   <url><loc>https://cloudfrontsgroup.org/blog/understanding-usda-farm-loans.html</loc><priority>0.6</priority></url>
   <url><loc>https://cloudfrontsgroup.org/blog/hud-nofo-timeline-2026.html</loc><priority>0.6</priority></url>
   <url><loc>https://cloudfrontsgroup.org/blog/understanding-cdbg-programs.html</loc><priority>0.6</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/case-studies.html</loc><priority>0.6</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/rental-assistance.html</loc><priority>0.7</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/services.html</loc><priority>0.8</priority></url>
-  <url><loc>https://cloudfrontsgroup.org/team.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cloudfrontsgroup.org/blog/housing-market-analysis-central-texas.html</loc><priority>0.6</priority></url>
 </urlset>

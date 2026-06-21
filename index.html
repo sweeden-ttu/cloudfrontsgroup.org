@@ -42,7 +42,7 @@
  <div class="inner">
  <h1><i data-lucide="cloud"></i> Cloud Fronts <span>Group</span></h1>
  <button class="menu-toggle" aria-label="Toggle navigation menu"><i data-lucide="menu"></i></button>
- <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><i data-lucide="moon"></i></button>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span></button>
  <nav aria-label="Main navigation">
  <a href="index.html" class="active" aria-current="page">Home</a>
  <div class="dropdown">
@@ -72,6 +72,20 @@
  <a href="social-media-marketing.html">Social Media Marketing</a>
  <a href="document-management.html">Document Management</a>
  <a href="online-publishing.html">Online Publishing</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Research &#9660;</a>
+ <div class="dropdown-content">
+ <a href="research-grant.html">Research Grants</a>
+ <a href="foreclosures.html">Community Data</a>
+ <a href="volunteer-corps.html">Volunteer</a>
+ <a href="usda-farming.html">USDA Farming</a>
+ <a href="rental-assistance.html">Rental Assistance</a>
+ <a href="case-studies.html">Case Studies</a>
+ <a href="blog/">Blog</a>
+ <a href="glossary.html">Glossary</a>
+ <a href="partnerships.html">Partnerships</a>
  </div>
  </div>
  <a href="contact.html">Contact Us</a>
@@ -157,7 +171,35 @@
  </div>
  </div>
 
- <div class="impact-section">
+  <div class="section-heading" style="margin-top:3rem;">
+  <h2>What Our Clients Say</h2>
+  </div>
+
+  <div class="testimonial-grid" style="margin-bottom:2rem;">
+
+  <div class="card testimonial-card" style="display:flex;gap:1.5rem;align-items:flex-start;">
+  <div>
+  <p class="testimonial-text">"Cloud Fronts Group redesigned our entire website and it completely transformed our online presence. Before, we were getting maybe one or two online inquiries a week. Now we're booking five to six new clients every week through the website alone."</p>
+  <div class="testimonial-author">
+  <strong>Maria Garcia</strong>
+  <span>Bella's Boutique, Killeen TX</span>
+  </div>
+  </div>
+  </div>
+
+  <div class="card testimonial-card" style="display:flex;gap:1.5rem;align-items:flex-start;">
+  <div>
+  <p class="testimonial-text">"As a plumbing company, we never really invested in digital marketing — we relied on word of mouth. Cloud Fronts Group convinced us to try a targeted Google Ads campaign and it was the best business decision we've made. Professional, transparent, and worth every penny."</p>
+  <div class="testimonial-author">
+  <strong>James Thompson</strong>
+  <span>Thompson Plumbing, Temple TX</span>
+  </div>
+  </div>
+  </div>
+
+  </div>
+
+  <div class="impact-section">
  <h2>YOU</h2>
  <p>are the reason we are here. We are customer driven and understand that if we do not perform for you, someone else will. We work hard every day to put your best foot forward in your online presence as well as printed and promotional pieces. Our job is to get you noticed and make sure you make a great impression that sets you apart from your competitors.</p>
  </div>
@@ -176,12 +218,27 @@
  <span class="footer-sep">&middot;</span>
  <a href="https://x.com/cloudfrontsgroup" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
  </div>
+ <div style="margin:.5rem 0.5rem;font-size:.82rem;">
+ <a href="services.html">Services</a> &middot;
+ <a href="research-grant.html">Research</a> &middot;
+ <a href="foreclosures.html">Community Data</a> &middot;
+ <a href="volunteer-corps.html">Volunteer</a> &middot;
+ <a href="usda-farming.html">USDA Farming</a> &middot;
+ <a href="links.html">Links</a> &middot;
+ <a href="blog/hud-nofo-timeline-2026.html">Blog</a> &middot;
+ <a href="privacy.html">Privacy</a> &middot;
+ <a href="glossary.html">Glossary</a> &middot;
+ <a href="search.html">Search</a> &middot;
+ <a href="case-studies.html">Case Studies</a> &middot;
+ <a href="partnerships.html">Partnerships</a> &middot;
+ <a href="rental-assistance.html">Rental Assistance</a>
+ </div>
  <p style="margin:.75rem 0.5rem;font-size:.82rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
 <script src="site.js" defer></script>
-<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/lucide@0.468.0"></script>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
  lucide.createIcons();

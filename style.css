@@ -21,8 +21,8 @@
   --brand-gold:       #fff0c7;
   --brand-gold-dark:  #ffea4d;
   --brand-amber:      #ffe0c2;
-  --brand-purple:     #2463eb;
-  --brand-green:      #2463eb;
+  --brand-purple:     #8b5cf6;
+  --brand-green:      #22c55e;
   --brand-red:        hsl(0,   70%, 52%);
 
   /* Semantic surface tokens */
@@ -38,6 +38,9 @@
   --color-text-muted:   hsl(220, 12%, 42%);
   --color-text-faint:   hsl(220, 10%, 60%);
   --color-text-invert:  #ffffff;
+
+  /* Federal blue (legacy reference) */
+  --Federal-blue:       var(--brand-blue);
 
   /* Accent / interactive */
   --color-accent:       var(--brand-blue);
@@ -89,9 +92,19 @@
   color-scheme: light dark;
 }
 
+/* Research & Community section — teal accent overrides (light mode) */
+[data-section="research"] {
+  --color-accent:       #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-link:         #0d9488;
+  --color-link-hover:   #0f766e;
+  --header-nav-active:  #0d9488;
+  --header-dropdown-hover: rgba(13, 148, 136, 0.08);
+}
+
 /* --------------------------------------------------------------------------
-   3. DESIGN TOKENS — Dark Mode (system preference)
-   -------------------------------------------------------------------------- */
+    3. DESIGN TOKENS — Dark Mode (system preference)
+    -------------------------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
   :root {
     --brand-blue:       #2463eb;
@@ -142,6 +155,16 @@
     --callout-ml-bg:      hsla(258, 30%, 25%, 0.3);
     --callout-warn-bg:    hsla(42,  40%, 24%, 0.3);
   }
+
+  /* Research & Community section — teal accent (system dark mode) */
+  [data-section="research"] {
+    --color-accent:       #14b8a6;
+    --color-accent-hover: #5eead4;
+    --color-link:         #14b8a6;
+    --color-link-hover:   #5eead4;
+    --header-nav-active:  #14b8a6;
+    --header-dropdown-hover: hsla(170, 80%, 40%, 0.2);
+  }
 }
 
 /* User-pinned theme via [data-theme] (JS toggle support) */
@@ -151,8 +174,8 @@
   --brand-cyan:       #cceadd;
   --brand-teal:       #def2e8;
   --brand-gold:       #fff0c7;
-  --brand-purple:     #2463eb;
-  --brand-green:      #2463eb;
+  --brand-purple:     #8b5cf6;
+  --brand-green:      #22c55e;
 
   --color-bg:         #0b1528;
   --color-bg-alt:     #111f38;
@@ -194,6 +217,16 @@
   --callout-warn-bg:    hsla(42, 40%, 24%, 0.3);
 
   color-scheme: dark;
+}
+
+/* Research & Community section — teal accent (manual dark mode) */
+[data-theme="dark"][data-section="research"] {
+  --color-accent:       #14b8a6;
+  --color-accent-hover: #5eead4;
+  --color-link:         #14b8a6;
+  --color-link-hover:   #5eead4;
+  --header-nav-active:  #14b8a6;
+  --header-dropdown-hover: hsla(170, 80%, 40%, 0.2);
 }
 
 [data-theme="light"] {
@@ -763,6 +796,22 @@ header nav > a.active {
 }
 .card h3 { margin-top: 0; }
 
+.card-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--brand-blue);
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1008,15 +1057,12 @@ tr:hover td { background: var(--color-bg-alt); }
 /* --------------------------------------------------------------------------
    19. BANNERS
    -------------------------------------------------------------------------- */
-.conference-banner,
-
 .conference-banner {
   background: linear-gradient(135deg, var(--brand-purple), hsl(258, 55%, 30%));
   color: #fff;
 }
 
 .conference-banner h3,
-
 .publication-card:hover { box-shadow: var(--card-shadow-hover); transform: translateY(-2px); }
 .publication-card h3 { margin-top: 0; }
 .publication-card .venue {
@@ -1053,26 +1099,8 @@ tr:hover td { background: var(--color-bg-alt); }
 }
 
 /* --------------------------------------------------------------------------
-   22. MISC UTILITIES
-   -------------------------------------------------------------------------- */
-.who-profiles {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 1.5rem 0;
-}
-.who-profile {
-  background: var(--card-bg); border: 1px solid var(--card-border);
-  border-radius: var(--radius-lg); padding: 2rem; text-align: center;
-  box-shadow: var(--card-shadow);
-}
-.who-photo {
-  width: 100%; max-width: 240px; height: auto;
-  border-radius: 50%; margin: 0 auto 1.25rem; display: block;
-  object-fit: cover; aspect-ratio: 1/1;
-  box-shadow: 0 4px 16px hsla(220, 30%, 20%, 0.2);
-  border: 3px solid var(--card-border);
-}
-.who-profile h3 { margin: 0 0 0.5rem; }
-.who-profile p  { font-size: 0.9rem; color: var(--color-text-muted); text-align: left; line-height: 1.7; }
-
+    22. MISC UTILITIES
+    -------------------------------------------------------------------------- */
 .inline-code {
   background: var(--color-bg-alt); padding: 0.15rem 0.45rem;
   border-radius: var(--radius-sm); font-family: 'SFMono-Regular', Consolas, monospace;
@@ -1173,33 +1201,7 @@ tr:hover td { background: var(--color-bg-alt); }
 
 /* Section verify */
 
-.breadcrumb li { margin: 0; }
-.breadcrumb li + li::before { content: '›'; padding: 0 0.5rem; color: var(--color-border); }
-.breadcrumb a { color: var(--color-link); }
-.breadcrumb [aria-current="page"] { color: var(--color-text-muted); font-weight: 600; }
 
-/* Back to top */
-#back-to-top {
-  position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 100;
-  padding: 0.55rem 1.1rem;
-  background: var(--brand-navy); color: #fff;
-  border-radius: var(--radius); font-size: 0.85rem; font-weight: 600;
-  text-decoration: none; box-shadow: 0 4px 16px hsla(0,0%,0%,0.3);
-  transition: opacity var(--transition), box-shadow var(--transition);
-  opacity: 0.85; border: 1px solid hsl(220, 30%, 22%);
-}
-#back-to-top:hover { opacity: 1; color: #fff; box-shadow: 0 6px 24px hsla(0,0%,0%,0.4); }
-
-/* Print btn */
-.print-btn {
-  display: inline-block; background: none; border: none;
-  color: var(--brand-gold); font-size: 0.72rem; cursor: pointer;
-  text-decoration: underline; padding: 0; font-family: var(--font-main);
-}
-.print-btn:hover { color: #fff; }
-
-/* Last updated */
-.last-updated { font-size: 0.68rem; opacity: 0.55; margin-top: 0.15rem; }
 
 /* --------------------------------------------------------------------------
    23. FOOTER
@@ -1220,9 +1222,6 @@ footer {
 }
 .footer-social a:hover { color: var(--color-accent); }
 .footer-sep { margin: 0 0.6rem; opacity: 0.4; }
-  margin-top: 4rem;
-  border-top: 1px solid var(--footer-border);
-}
 footer p { margin-bottom: 0.5rem; }
 footer a { color: var(--brand-gold); transition: color var(--transition); }
 footer a:hover { color: hsl(42, 90%, 70%); text-decoration: none; }

@@ -9,7 +9,7 @@
 <meta name="description" content="Political advertising services for Central Texas campaigns — voter outreach, targeted messaging, print and digital ads, yard signs, direct mail, social media, and FEC compliance. Cloud Fronts Group.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
   <meta property="og:title" content="Cloud Fronts Group — Political Advertisements | Central Texas Digital Services">
   <meta property="og:description" content="Political advertising services for Central Texas campaigns — voter outreach, targeted messaging, print and digital ads, yard signs, direct mail, social media, and FEC compliance.">
@@ -27,7 +27,7 @@
  "@type": "Organization",
  "name": "Cloud Fronts Group",
  "url": "https://cloudfrontsgroup.org",
- "description": "Central Texas Technology Access & Innovation Delivery Partnership — AI/ML research, community technology programs.",
+ "description": "Central Texas digital services and community research — web design, logo design, marketing, AI/ML research, and community technology programs.",
  "email": ["scottweeden@cloudfrontsgroup.org", "johnathanking@cloudfrontsgroup.org"],
  "telephone": "+1-254-317-6688",
  "areaServed": "Central Texas",
@@ -41,11 +41,11 @@
 
 <header>
  <div class="inner">
- <h1>&#9729; Cloud Fronts <span>Group</span></h1>
- <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
- <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">☾</button>
+ <h1><i data-lucide="cloud"></i> Cloud Fronts <span>Group</span></h1>
+ <button class="menu-toggle" aria-label="Toggle navigation menu"><i data-lucide="menu"></i></button>
+ <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span></button>
  <nav aria-label="Main navigation">
- <a href="index.html" class="active" aria-current="page">Home</a>
+ <a href="index.html">Home</a>
  <div class="dropdown">
  <a href="#" class="dropbtn">About Us ▼</a>
  <div class="dropdown-content">
@@ -75,6 +75,20 @@
  <a href="online-publishing.html">Online Publishing</a>
  </div>
  </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Research &#9660;</a>
+ <div class="dropdown-content">
+ <a href="research-grant.html">Research Grants</a>
+ <a href="foreclosures.html">Community Data</a>
+ <a href="volunteer-corps.html">Volunteer</a>
+ <a href="usda-farming.html">USDA Farming</a>
+ <a href="rental-assistance.html">Rental Assistance</a>
+ <a href="case-studies.html">Case Studies</a>
+ <a href="blog/">Blog</a>
+ <a href="glossary.html">Glossary</a>
+ <a href="partnerships.html">Partnerships</a>
+ </div>
+ </div>
  <a href="contact.html">Contact Us</a>
  </nav>
  </div>
@@ -89,6 +103,8 @@
     <p>For digital campaigns, we offer targeted social media advertising on Facebook, Instagram, and X (Twitter), search engine marketing, geofencing, and programmatic display ads. On the print side, we produce professional yard signs, door hangers, direct mail pieces, brochures, and newspaper ads — all designed with consistent campaign branding and clear calls to action. Every creative asset is produced in-house and coordinated with your campaign calendar.</p>
     <p>We take compliance seriously. All of our political advertising services are designed to comply with FEC regulations and applicable state and local election laws. We provide proper disclaimer statements, "paid for by" attribution, and complete record-keeping for your campaign finance reporting. Whether you are running for city council, county office, or state legislature, Cloud Fronts Group is your non-partisan partner for professional campaign advertising.</p>
   </div>
+</div><!-- end #main-content -->
+
 <div class="container" style="background:var(--color-surface);padding:2rem;border-radius:var(--radius);margin-bottom:2rem;text-align:center;">
  <h3 style="margin-top:0;">Stay Updated</h3>
  <p>Get notified about new blog posts, program updates, and community resources.</p>
@@ -105,10 +121,31 @@
  <span class="footer-sep">&middot;</span>
  <a href="https://x.com/cloudfrontsgroup" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
  </div>
+ <div style="margin:.5rem 0.5rem;font-size:.82rem;">
+ <a href="services.html">Services</a> &middot;
+ <a href="research-grant.html">Research</a> &middot;
+ <a href="foreclosures.html">Community Data</a> &middot;
+ <a href="volunteer-corps.html">Volunteer</a> &middot;
+ <a href="usda-farming.html">USDA Farming</a> &middot;
+ <a href="links.html">Links</a> &middot;
+ <a href="blog/hud-nofo-timeline-2026.html">Blog</a> &middot;
+ <a href="privacy.html">Privacy</a> &middot;
+ <a href="glossary.html">Glossary</a> &middot;
+ <a href="search.html">Search</a> &middot;
+ <a href="case-studies.html">Case Studies</a> &middot;
+ <a href="partnerships.html">Partnerships</a> &middot;
+ <a href="rental-assistance.html">Rental Assistance</a>
+ </div>
  <p style="margin:.75rem 0.5rem;font-size:.82rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
 <script src="site.js" defer></script>
+<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+ lucide.createIcons();
+ });
+</script>
 </body>
 </html>

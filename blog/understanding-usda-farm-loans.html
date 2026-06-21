@@ -9,7 +9,7 @@
 <meta name="description" content="Overview of USDA FSA direct and guaranteed farm loan programs for small and beginning farmers in Central Texas. Covers FLP, ML, OL, and EM loan types.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
  <meta property="og:title" content="Understanding USDA Farm Loans for Central Texas Producers">
  <meta property="og:description" content="Overview of USDA FSA direct and guaranteed farm loan programs for small and beginning farmers in Central Texas.">
@@ -51,27 +51,60 @@
  }
  </script>
 </head>
-<body>
+<body data-section="research">
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <header>
  <div class="inner">
- <h1>&#9729; Cloud Fronts <span>Group</span></h1>
- <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
- <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">&#9790;</button>
+ <h1><i data-lucide="cloud"></i> Cloud Fronts <span>Group</span></h1>
+ <button class="menu-toggle" aria-label="Toggle navigation menu"><i data-lucide="menu"></i></button>
+ <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span></button>
  <nav aria-label="Main navigation">
- <a href="../index.html">Home</a>
- <a href="../cloud-fronts-summary.html">About</a>
- <a href="../services.html">Services</a>
- <a href="../team.html">Team</a>
- <a href="../research-grant.html">AAAI Research</a>
- <a href="../Federal-analytics.html">Community Data</a>
- <a href="../Federal-grant-proposal.html">Federal Grant Proposal</a>
- 
- <a href="../foreclosures.html">Community Data</a>
- <a href="../volunteer-corps.html">Volunteer</a>
- <a href="../usda-farming.html">USDA Farming</a>
- <a href="../links.html">Links</a>
+ <a href="index.html">Home</a>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">About Us ▼</a>
+ <div class="dropdown-content">
+ <a href="about-us.html">About Us</a>
+ <a href="testimonials.html">Testimonials</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Our Products ▼</a>
+ <div class="dropdown-content">
+ <a href="domain-names.html">Domain Names</a>
+ <a href="promotional-items.html">Promotional Items</a>
+ <a href="site-hosting.html">Site Hosting</a>
+ <a href="marketing.html">Marketing</a>
+ <a href="political-advertisements.html">Political Advertisements</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Our Services ▼</a>
+ <div class="dropdown-content">
+ <a href="logo-design.html">Logo Design</a>
+ <a href="web-design-hosting.html">Web Design &amp; Hosting</a>
+ <a href="design-print-agency.html">Design &amp; Print Agency</a>
+ <a href="pay-per-click-marketing.html">Pay Per Click Marketing</a>
+ <a href="social-media-marketing.html">Social Media Marketing</a>
+ <a href="document-management.html">Document Management</a>
+ <a href="online-publishing.html">Online Publishing</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Research &#9660;</a>
+ <div class="dropdown-content">
+ <a href="research-grant.html">Research Grants</a>
+ <a href="foreclosures.html">Community Data</a>
+ <a href="volunteer-corps.html">Volunteer</a>
+ <a href="usda-farming.html">USDA Farming</a>
+ <a href="rental-assistance.html">Rental Assistance</a>
+ <a href="case-studies.html">Case Studies</a>
+ <a href="blog/">Blog</a>
+ <a href="glossary.html">Glossary</a>
+ <a href="partnerships.html">Partnerships</a>
+ </div>
+ </div>
+ <a href="contact.html">Contact Us</a>
  </nav>
  </div>
 </header>
@@ -145,10 +178,31 @@
  <span class="footer-sep">&middot;</span>
  <a href="https://x.com/cloudfrontsgroup" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
  </div>
+ <div style="margin:.5rem 0.5rem;font-size:.82rem;">
+ <a href="services.html">Services</a> &middot;
+ <a href="research-grant.html">Research</a> &middot;
+ <a href="foreclosures.html">Community Data</a> &middot;
+ <a href="volunteer-corps.html">Volunteer</a> &middot;
+ <a href="usda-farming.html">USDA Farming</a> &middot;
+ <a href="links.html">Links</a> &middot;
+ <a href="blog/hud-nofo-timeline-2026.html">Blog</a> &middot;
+ <a href="privacy.html">Privacy</a> &middot;
+ <a href="glossary.html">Glossary</a> &middot;
+ <a href="search.html">Search</a> &middot;
+ <a href="case-studies.html">Case Studies</a> &middot;
+ <a href="partnerships.html">Partnerships</a> &middot;
+ <a href="rental-assistance.html">Rental Assistance</a>
+ </div>
  <p style="margin:.75rem 0.5rem;font-size:.82rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
 <script src="../site.js" defer></script>
+<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+ lucide.createIcons();
+ });
+</script>
 </body>
 </html>

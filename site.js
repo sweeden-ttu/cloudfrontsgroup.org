@@ -8,14 +8,21 @@
     dd.setAttribute('data-theme', 'dark');
   }
   if (themeBtn) {
+    var cur = dd.getAttribute('data-theme');
+    var themeIcon = doc.getElementById('theme-icon');
+    if (themeIcon) {
+      themeIcon.textContent = cur === 'dark' ? '\u2600' : '\u263E';
+    }
+    themeBtn.setAttribute('aria-label', cur === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
     themeBtn.addEventListener('click', function(){
       var isDark = dd.getAttribute('data-theme') === 'dark';
       dd.setAttribute('data-theme', isDark ? 'light' : 'dark');
       localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      if (themeIcon) {
+        themeIcon.textContent = isDark ? '\u2600' : '\u263E';
+      }
+      themeBtn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     });
-    var cur = dd.getAttribute('data-theme');
-    themeBtn.textContent = cur === 'dark' ? '\u2600' : '\u263E';
-    themeBtn.setAttribute('aria-label', cur === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
   }
 
   // Hamburger menu toggle

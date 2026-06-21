@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#003a70">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>Contact — Cloud Fronts Group</title>
-<meta name="description" content="Get in touch with Cloud Fronts Group for questions about Federal analytics, USDA farming programs, research partnerships, and community technology delivery.">
+<title>Cloud Fronts Group — Contact Us | Central Texas Digital Services</title>
+<meta name="description" content="Contact Cloud Fronts Group for web design, logo design, domain registration, hosting, marketing, printing, and digital services in Central Texas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
- <meta property="og:title" content="Contact — Cloud Fronts Group">
- <meta property="og:description" content="Get in touch with Cloud Fronts Group for questions about Federal analytics, USDA farming programs, research partnerships, and community technology delivery.">
+ <meta property="og:title" content="Cloud Fronts Group — Contact Us | Central Texas Digital Services">
+ <meta property="og:description" content="Contact Cloud Fronts Group for web design, logo design, domain registration, hosting, marketing, printing, and digital services in Central Texas.">
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://cloudfrontsgroup.org/contact.html">
  <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
  <meta property="og:site_name" content="Cloud Fronts Group">
  <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:title" content="Contact — Cloud Fronts Group">
- <meta name="twitter:description" content="Get in touch with Cloud Fronts Group for questions about Federal analytics, USDA farming programs, research partnerships, and community technology delivery.">
+ <meta name="twitter:title" content="Cloud Fronts Group — Contact Us | Central Texas Digital Services">
+ <meta name="twitter:description" content="Contact Cloud Fronts Group for web design, logo design, domain registration, hosting, marketing, printing, and digital services in Central Texas.">
  <link rel="canonical" href="https://cloudfrontsgroup.org/contact.html">
  <script type="application/ld+json">
  {
@@ -27,7 +27,7 @@
  "@type": "Organization",
  "name": "Cloud Fronts Group",
  "url": "https://cloudfrontsgroup.org",
- "description": "Central Texas Technology Access & Innovation Delivery Partnership — AI/ML research, community technology programs.",
+ "description": "Central Texas digital services — web design, logo design, marketing, and online business solutions.",
  "email": ["scottweeden@cloudfrontsgroup.org", "johnathanking@cloudfrontsgroup.org"],
  "telephone": "+1-254-317-6688",
  "areaServed": "Central Texas",
@@ -40,19 +40,41 @@
 
 <header>
  <div class="inner">
- <h1>&#9729; Cloud Fronts <span>Group</span></h1>
- <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
- <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode">&#9790;</button>
+ <h1><i data-lucide="cloud"></i> Cloud Fronts <span>Group</span></h1>
+ <button class="menu-toggle" aria-label="Toggle navigation menu"><i data-lucide="menu"></i></button>
+ <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><i data-lucide="moon"></i></button>
  <nav aria-label="Main navigation">
  <a href="index.html">Home</a>
- <a href="cloud-fronts-summary.html">About</a>
- <a href="services.html">Services</a>
- <a href="team.html">Team</a>
- <a href="research-grant.html">AAAI Research</a>
- <a href="foreclosures.html">Community Data</a>
- <a href="volunteer-corps.html">Volunteer</a>
- <a href="usda-farming.html">USDA Farming</a>
- <a href="links.html">Links</a>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">About Us ▼</a>
+ <div class="dropdown-content">
+ <a href="about-us.html">About Us</a>
+ <a href="testimonials.html">Testimonials</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Our Products ▼</a>
+ <div class="dropdown-content">
+ <a href="domain-names.html">Domain Names</a>
+ <a href="promotional-items.html">Promotional Items</a>
+ <a href="site-hosting.html">Site Hosting</a>
+ <a href="marketing.html">Marketing</a>
+ <a href="political-advertisements.html">Political Advertisements</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Our Services ▼</a>
+ <div class="dropdown-content">
+ <a href="logo-design.html">Logo Design</a>
+ <a href="web-design-hosting.html">Web Design &amp; Hosting</a>
+ <a href="design-print-agency.html">Design &amp; Print Agency</a>
+ <a href="pay-per-click-marketing.html">Pay Per Click Marketing</a>
+ <a href="social-media-marketing.html">Social Media Marketing</a>
+ <a href="document-management.html">Document Management</a>
+ <a href="online-publishing.html">Online Publishing</a>
+ </div>
+ </div>
+ <a href="contact.html" class="active" aria-current="page">Contact Us</a>
  </nav>
  </div>
 </header>
@@ -62,6 +84,17 @@
 <div class="container" id="main-content">
 
  <h2>Contact Us</h2>
+
+ <div id="thankyou" style="display:none;background:var(--color-surface);padding:2rem;border-radius:var(--radius);margin-bottom:2rem;text-align:center;border:2px solid var(--color-primary);">
+ <h3 style="margin-top:0;color:var(--color-primary);">Message Sent!</h3>
+ <p>Thank you for reaching out. We'll get back to you within 1 business day.</p>
+ </div>
+
+ <script>
+ if (window.location.search.includes('sent=1')) {
+ document.getElementById('thankyou').style.display = 'block';
+ }
+ </script>
 
  <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:1.5rem 0;">
  <div>
@@ -76,6 +109,8 @@
  <div>
  <h3>Send a Message</h3>
  <form action="https://formspree.io/f/mgoqjrdn" method="POST" style="display:flex;flex-direction:column;gap:.75rem;">
+ <input type="hidden" name="_subject" value="Cloud Fronts Group Contact Form">
+ <input type="hidden" name="_next" value="https://cloudfrontsgroup.org/contact.html?sent=1">
  <label for="name" style="font-weight:600;font-size:.9rem;">Name</label>
  <input type="text" id="name" name="name" required style="padding:.6rem;border:1px solid var(--color-border);border-radius:var(--radius);font-family:var(--font-main);font-size:.95rem;">
 
@@ -107,5 +142,11 @@
 </footer>
 
 <script src="site.js" defer></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+ lucide.createIcons();
+ });
+</script>
 </body>
 </html>

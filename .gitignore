@@ -7,6 +7,12 @@ cloudfrontsgroup.org/
 .env
 *.env
 
+# Image working directories
+images/split/
+images/split_v2/
+images/split_v3/
+Gemini_Generated_*.png
+
 # OS files
 *.tar.gz
 *.zip

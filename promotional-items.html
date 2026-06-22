@@ -6,20 +6,20 @@
 <meta name="theme-color" content="#003a70">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Cloud Fronts Group — Promotional Items | Central Texas Digital Services</title>
-<meta name="description" content="Custom branded promotional merchandise from Cloud Fronts Group. Pens, t-shirts, hats, mugs, stress balls, USB drives, tote bags, and more. Screen printing, embroidery, and bulk pricing for Central Texas businesses.">
+<meta name="description" content="Custom promotional products and branded merchandise for Central Texas businesses.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.min.css">
  <meta property="og:title" content="Cloud Fronts Group — Promotional Items | Central Texas Digital Services">
- <meta property="og:description" content="Custom branded promotional merchandise from Cloud Fronts Group. Pens, t-shirts, hats, mugs, stress balls, USB drives, tote bags, and more. Screen printing, embroidery, and bulk pricing for Central Texas businesses.">
+ <meta property="og:description" content="Custom promotional products and branded merchandise for Central Texas businesses.">
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://cloudfrontsgroup.org/promotional-items.html">
  <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
  <meta property="og:site_name" content="Cloud Fronts Group">
  <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cloud Fronts Group — Promotional Items | Central Texas Digital Services">
-<meta name="twitter:description" content="Custom branded promotional merchandise from Cloud Fronts Group. Pens, t-shirts, hats, mugs, stress balls, USB drives, tote bags, and more. Screen printing, embroidery, and bulk pricing for Central Texas businesses.">
+ <meta name="twitter:title" content="Cloud Fronts Group — Promotional Items | Central Texas Digital Services">
+ <meta name="twitter:description" content="Custom promotional products and branded merchandise for Central Texas businesses.">
  <link rel="canonical" href="https://cloudfrontsgroup.org/promotional-items.html">
  <script type="application/ld+json">
  {
@@ -34,8 +34,9 @@
  "foundingDate": "2026"
  }
  </script>
- 
+<link rel="alternate" type="application/rss+xml" title="Cloud Fronts Group Blog" href="https://cloudfrontsgroup.org/blog/feed.xml">
 </head>
+
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -94,7 +95,6 @@
  </div>
 </header>
 
-
 <div class="container" id="main-content">
 
  <h1>Custom Promotional Merchandise</h1>
@@ -106,7 +106,7 @@
  <p>We source high-quality products from trusted manufacturers and offer a wide range of customization options, including <strong>screen printing</strong>, <strong>embroidery</strong>, <strong>digital printing</strong>, and <strong>laser engraving</strong>. Whether you need 50 pens for a grand opening or 500 branded t-shirts for a community event, we've got you covered with competitive bulk pricing.</p>
  </div>
 
- <img src="images/mockup-apparel.png" alt="Branded promotional apparel and merchandise" style="width:100%;max-width:700px;border-radius:8px;margin:2rem auto;display:block;">
+ <img loading="lazy" src="images/mockup-apparel.webp" alt="Branded promotional apparel and merchandise" style="width:100%;max-width:700px;border-radius:8px;margin:2rem auto;display:block;">
 
  <h2>Popular Promotional Products</h2>
  <div class="card-grid">
@@ -177,11 +177,13 @@
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 <script src="site.js" defer></script>
-<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
- lucide.createIcons();
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
  });
 </script>
 </body>

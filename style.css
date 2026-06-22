@@ -427,7 +427,8 @@ header nav > a.active {
 }
 
 .dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
+.dropdown:focus-within .dropdown-content,
+.dropdown.is-open .dropdown-content {
   display: block;
 }
 
@@ -1273,7 +1274,8 @@ footer .inner-footer {
     display: none;
   }
   .dropdown:hover .dropdown-content,
-  .dropdown:focus-within .dropdown-content {
+  .dropdown:focus-within .dropdown-content,
+  .dropdown.is-open .dropdown-content {
     display: block;
   }
   .dropdown-content a {
@@ -1309,7 +1311,42 @@ footer .inner-footer {
 }
 
 /* --------------------------------------------------------------------------
-   25. PRINT
+   25. BACK-TO-TOP BUTTON
+   -------------------------------------------------------------------------- */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity var(--transition), transform var(--transition), background var(--transition);
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  pointer-events: none;
+}
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+#back-to-top:hover {
+  background: var(--color-accent-hover);
+}
+[data-theme="dark"] #back-to-top {
+  box-shadow: 0 2px 12px rgba(0,0,0,.4);
+}
+
+/* --------------------------------------------------------------------------
+   26. PRINT
    -------------------------------------------------------------------------- */
 @media print {
   header, footer, .btn, .menu-toggle, .theme-toggle,

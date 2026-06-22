@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#003a70">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>Cloud Fronts Group — Web Design &amp; Hosting | Central Texas Digital Services</title>
-<meta name="description" content="Custom website design, responsive development, WordPress, WooCommerce, Shopify, and managed hosting with daily backups, SSL, CDN, and 99.9% uptime. Cloud Fronts Group.">
+<title>Cloud Fronts Group — Web Design & Hosting | Central Texas Digital Services</title>
+<meta name="description" content="Professional web design and hosting services for Central Texas businesses.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  <meta property="og:title" content="Cloud Fronts Group — Web Design &amp; Hosting | Central Texas Digital Services">
-  <meta property="og:description" content="Custom website design, responsive development, WordPress, WooCommerce, Shopify, and managed hosting with daily backups, SSL, CDN, and 99.9% uptime.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cloudfrontsgroup.org/web-design-hosting.html">
-  <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
-  <meta property="og:site_name" content="Cloud Fronts Group">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cloud Fronts Group — Web Design &amp; Hosting | Central Texas Digital Services">
-  <meta name="twitter:description" content="Custom website design, responsive development, WordPress, WooCommerce, Shopify, and managed hosting with daily backups, SSL, CDN, and 99.9% uptime.">
-  <link rel="canonical" href="https://cloudfrontsgroup.org/web-design-hosting.html">
+<link rel="stylesheet" href="style.min.css">
+ <meta property="og:title" content="Cloud Fronts Group — Web Design & Hosting | Central Texas Digital Services">
+ <meta property="og:description" content="Professional web design and hosting services for Central Texas businesses.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://cloudfrontsgroup.org/web-design-hosting.html">
+ <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
+ <meta property="og:site_name" content="Cloud Fronts Group">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Cloud Fronts Group — Web Design & Hosting | Central Texas Digital Services">
+ <meta name="twitter:description" content="Professional web design and hosting services for Central Texas businesses.">
+ <link rel="canonical" href="https://cloudfrontsgroup.org/web-design-hosting.html">
  <script type="application/ld+json">
  {
  "@context": "https://schema.org",
@@ -34,8 +34,9 @@
  "foundingDate": "2026"
  }
  </script>
- 
+<link rel="alternate" type="application/rss+xml" title="Cloud Fronts Group Blog" href="https://cloudfrontsgroup.org/blog/feed.xml">
 </head>
+
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -94,10 +95,9 @@
  </div>
 </header>
 
-
 <div class="container" id="main-content">
 
- <img src="images/mockup-website.png" alt="Website design mockup" style="width:100%;max-width:700px;border-radius:8px;margin-bottom:2rem;display:block;">
+ <img loading="lazy" src="images/mockup-website.webp" alt="Website design mockup" style="width:100%;max-width:700px;border-radius:8px;margin-bottom:2rem;display:block;">
 
   <div style="padding: 0 2rem;">
     <h1>Web Design &amp; Hosting</h1>
@@ -106,7 +106,7 @@
     <p>Accessibility is not an afterthought. We design to WCAG 2.1 AA standards, ensuring your site is usable by people of all abilities. We test across browsers and devices, optimize Core Web Vitals, and set up analytics so you can track performance from day one. Launching with Cloud Fronts Group means you get a site that is built right from the ground up.</p>
     <p>We also offer managed hosting plans that take the technical burden off your shoulders. Every plan includes daily automated backups, free SSL certificates, a global CDN for fast delivery, malware scanning, and 99.9% uptime monitoring. We handle software updates, security patches, and performance tuning so you can focus on running your business. Hosting plans start at $19 per month and scale with your traffic.</p>
 
- <img src="images/service-web-design.png" alt="Web design service preview" style="width:100%;max-width:700px;border-radius:8px;margin:2rem auto;display:block;">
+ <img loading="lazy" src="images/service-web-design.webp" alt="Web design service preview" style="width:100%;max-width:700px;border-radius:8px;margin:2rem auto;display:block;">
 
   </div>
 </div><!-- end #main-content -->
@@ -146,11 +146,13 @@
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 <script src="site.js" defer></script>
-<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
- lucide.createIcons();
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
  });
 </script>
 </body>

@@ -10,7 +10,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.min.css">
+ <meta property="og:title" content="Page Not Found — Cloud Fronts Group">
+ <meta property="og:description" content="The page you were looking for could not be found.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://cloudfrontsgroup.org/404.html">
+ <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
+ <meta property="og:site_name" content="Cloud Fronts Group">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Page Not Found — Cloud Fronts Group">
+ <meta name="twitter:description" content="The page you were looking for could not be found.">
  <link rel="canonical" href="https://cloudfrontsgroup.org/404.html">
  <script type="application/ld+json">
  {
@@ -25,7 +34,9 @@
  "foundingDate": "2026"
  }
  </script>
+<link rel="alternate" type="application/rss+xml" title="Cloud Fronts Group Blog" href="https://cloudfrontsgroup.org/blog/feed.xml">
 </head>
+
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -84,10 +95,9 @@
  </div>
 </header>
 
-
 <div class="container" id="main-content" style="text-align:center;padding-top:4rem;padding-bottom:6rem;">
 
- <h2 style="border:none;font-size:3rem;margin-bottom:0.5rem;color:var(--cf-teal);">404</h2>
+ <h2 style="border:none;font-size:3rem;margin-bottom:0.5rem;color:var(--color-accent);">404</h2>
  <p style="font-size:1.3rem;color:var(--color-text-muted);margin-bottom:2rem;">The page you were looking for doesn't exist.</p>
  <a href="index.html" class="btn btn-teal" style="font-size:1rem;">&#8592; Back to Homepage</a>
 
@@ -118,11 +128,13 @@
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 <script src="site.js" defer></script>
-<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
- lucide.createIcons();
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
  });
 </script>
 </body>

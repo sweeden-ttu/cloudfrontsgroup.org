@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#003a70">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>Cloud Fronts Group — Growing Your Business Online</title>
+<meta name="description" content="Cloud Fronts Group helps Central Texas businesses grow with professional web design, logo design, marketing, and digital services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.min.css">
+ <meta property="og:title" content="Cloud Fronts Group — Growing Your Business Online">
+ <meta property="og:description" content="Cloud Fronts Group helps Central Texas businesses grow with professional web design, logo design, marketing, and digital services.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://cloudfrontsgroup.org/">
+ <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
+ <meta property="og:site_name" content="Cloud Fronts Group">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Cloud Fronts Group — Growing Your Business Online">
+ <meta name="twitter:description" content="Cloud Fronts Group helps Central Texas businesses grow with professional web design, logo design, marketing, and digital services.">
+ <link rel="canonical" href="https://cloudfrontsgroup.org/">
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "Cloud Fronts Group",
+ "url": "https://cloudfrontsgroup.org",
+ "description": "Central Texas digital services — web design, logo design, marketing, and online business solutions.",
+ "email": ["scottweeden@cloudfrontsgroup.org", "johnathanking@cloudfrontsgroup.org"],
+ "telephone": "+1-254-317-6688",
+ "areaServed": "Central Texas",
+ "foundingDate": "2026"
+ }
+ </script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+ <div class="inner">
+ <h1><i data-lucide="cloud"></i> Cloud Fronts <span>Group</span></h1>
+ <button class="menu-toggle" aria-label="Toggle navigation menu"><i data-lucide="menu"></i></button>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span></button>
+ <nav aria-label="Main navigation">
+ <a href="index.html" class="active" aria-current="page">Home</a>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">About Us ▼</a>
+ <div class="dropdown-content">
+ <a href="about-us.html">About Us</a>
+ <a href="testimonials.html">Testimonials</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Our Products ▼</a>
+ <div class="dropdown-content">
+ <a href="domain-names.html">Domain Names</a>
+ <a href="promotional-items.html">Promotional Items</a>
+ <a href="site-hosting.html">Site Hosting</a>
+ <a href="marketing.html">Marketing</a>
+ <a href="political-advertisements.html">Political Advertisements</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Our Services ▼</a>
+ <div class="dropdown-content">
+ <a href="logo-design.html">Logo Design</a>
+ <a href="web-design-hosting.html">Web Design &amp; Hosting</a>
+ <a href="design-print-agency.html">Design &amp; Print Agency</a>
+ <a href="pay-per-click-marketing.html">Pay Per Click Marketing</a>
+ <a href="social-media-marketing.html">Social Media Marketing</a>
+ <a href="document-management.html">Document Management</a>
+ <a href="online-publishing.html">Online Publishing</a>
+ </div>
+ </div>
+ <div class="dropdown">
+ <a href="#" class="dropbtn">Research &#9660;</a>
+ <div class="dropdown-content">
+ <a href="research-grant.html">Research Grants</a>
+ <a href="foreclosures.html">Community Data</a>
+ <a href="volunteer-corps.html">Volunteer</a>
+ <a href="usda-farming.html">USDA Farming</a>
+ <a href="rental-assistance.html">Rental Assistance</a>
+ <a href="case-studies.html">Case Studies</a>
+ <a href="blog/">Blog</a>
+ <a href="glossary.html">Glossary</a>
+ <a href="partnerships.html">Partnerships</a>
+ </div>
+ </div>
+ <a href="contact.html">Contact Us</a>
+ </nav>
+ </div>
+</header>
+
+<div class="hero-image" style="background-image:url('images/hero-banner.webp')">
+  <div class="hero-content">
+  <h2>Take Your Business<br>to the Next Level</h2>
+  <p class="hero-sub">We've been helping Central Texas businesses grow with professional web design, logo design, and marketing services — let us help you.</p>
+  <div class="hero-cta">
+  <a href="tel:+1-254-317-6688" class="btn btn-primary">Call Us Now</a>
+  <a href="contact.html" class="btn btn-gold">Email Us Now</a>
+  </div>
+  </div>
+</div>
+
+<div class="container" id="main-content">
+
+ <div class="section-heading">
+ <h2>Welcome to Cloud Fronts Group</h2>
+ <h3 style="font-size:1.3rem;margin-bottom:1rem;">Ready to Grow Your Business?</h3>
+ <p>At Cloud Fronts Group, we believe in going above and beyond to make our customers happy, and it starts with our "no long-term contracts" policy. We want customers to grow a long-term relationship with us because we are helping them grow their business — not because they are obligated in a contract.</p>
+ <p>We are motivated to work hard for our clients and produce results. We work with national &amp; local businesses, large and small, in all industries. We want to be your new marketing partner.</p>
+ </div>
+
+ <div class="stats-counter">
+ <div class="stat-counter-item">
+ <div class="stat-counter-num">50+</div>
+ <div class="stat-counter-label">Projects Completed</div>
+ </div>
+ <div class="stat-counter-item">
+ <div class="stat-counter-num">30+</div>
+ <div class="stat-counter-label">Satisfied Clients</div>
+ </div>
+ <div class="stat-counter-item">
+ <div class="stat-counter-num">20+</div>
+ <div class="stat-counter-label">Ongoing Projects</div>
+ </div>
+ <div class="stat-counter-item">
+ <div class="stat-counter-num">100%</div>
+ <div class="stat-counter-label">Satisfaction Guarantee</div>
+ </div>
+ </div>
+
+ <div class="service-grid">
+ <div class="service-card">
+ <span class="service-icon"><i data-lucide="globe"></i></span>
+ <h3>Domain Names</h3>
+ <p>It all starts with a strong domain name — something to not only build your new site on, but to brand and use as part of a strategic SEO plan.</p>
+ <a href="domain-names.html" class="btn btn-outline" style="margin-top:1rem;">Register Your Domain Now</a>
+ </div>
+ <div class="service-card">
+ <span class="service-icon"><i data-lucide="pen-tool"></i></span>
+ <h3>Logo / Brand Design</h3>
+ <p>Your logo is your brand's visual identity, and will likely be the only logo you use throughout the life of your business. We take our logo design very seriously to produce the perfect brand identity for your business.</p>
+ <a href="logo-design.html" class="btn btn-outline" style="margin-top:1rem;">Learn More</a>
+ </div>
+ <div class="service-card">
+ <span class="service-icon"><i data-lucide="monitor"></i></span>
+ <h3>Web Design &amp; Hosting</h3>
+ <p>Your website is an investment — not an expense. If your website is not bringing you a return and helping to grow your business, you're losing money — it's that simple. Let us help.</p>
+ <a href="web-design-hosting.html" class="btn btn-outline" style="margin-top:1rem;">Learn More</a>
+ </div>
+ <div class="service-card">
+ <span class="service-icon"><i data-lucide="share-2"></i></span>
+ <h3>Social Media Content Marketing</h3>
+ <p>Social Media is an important factor in marketing your business online, as well as being indexed higher in the search engines. Our team stays on top of the latest trends to ensure maximum exposure for your business.</p>
+ <a href="social-media-marketing.html" class="btn btn-outline" style="margin-top:1rem;">Learn More</a>
+ </div>
+ <div class="service-card">
+ <span class="service-icon"><i data-lucide="printer"></i></span>
+ <h3>Design &amp; Print</h3>
+ <p>Printed marketing materials are a necessity in today's competitive marketplace. It is vital that your marketing pieces not only look good but have a purpose. Let us help you — we print virtually everything.</p>
+ <a href="design-print-agency.html" class="btn btn-outline" style="margin-top:1rem;">Learn More</a>
+ </div>
+ <div class="service-card">
+ <span class="service-icon"><i data-lucide="trending-up"></i></span>
+ <h3>Meta &amp; Google Ads</h3>
+ <p>PPC Marketing is not only the fastest way to get your brand or products noticed, it's a great way to jump start your organic SEO strategy. Make sure customers find yours.</p>
+ <a href="pay-per-click-marketing.html" class="btn btn-outline" style="margin-top:1rem;">Learn More</a>
+ </div>
+ </div>
+
+  <div class="section-heading" style="margin-top:3rem;">
+  <h2>What Our Clients Say</h2>
+  </div>
+
+  <div class="testimonial-grid" style="margin-bottom:2rem;">
+
+  <div class="card testimonial-card" style="display:flex;gap:1.5rem;align-items:flex-start;">
+  <div>
+  <p class="testimonial-text">"Cloud Fronts Group redesigned our entire website and it completely transformed our online presence. Before, we were getting maybe one or two online inquiries a week. Now we're booking five to six new clients every week through the website alone."</p>
+  <div class="testimonial-author">
+  <strong>Maria Garcia</strong>
+  <span>Bella's Boutique, Killeen TX</span>
+  </div>
+  </div>
+  </div>
+
+  <div class="card testimonial-card" style="display:flex;gap:1.5rem;align-items:flex-start;">
+  <div>
+  <p class="testimonial-text">"As a plumbing company, we never really invested in digital marketing — we relied on word of mouth. Cloud Fronts Group convinced us to try a targeted Google Ads campaign and it was the best business decision we've made. Professional, transparent, and worth every penny."</p>
+  <div class="testimonial-author">
+  <strong>James Thompson</strong>
+  <span>Thompson Plumbing, Temple TX</span>
+  </div>
+  </div>
+  </div>
+
+  </div>
+
+  <div class="impact-section">
+ <h2>YOU</h2>
+ <p>are the reason we are here. We are customer driven and understand that if we do not perform for you, someone else will. We work hard every day to put your best foot forward in your online presence as well as printed and promotional pieces. Our job is to get you noticed and make sure you make a great impression that sets you apart from your competitors.</p>
+ </div>
+
+ <div class="cta-banner">
+ <h2>Get a Quote</h2>
+ <p>Ready to get started? Contact us today and let's discuss how we can help grow your business.</p>
+ <a href="contact.html" class="btn btn-gold">Contact Us</a>
+ </div>
+
+</div>
+
+<footer>
+ <div class="footer-social">
+ <a href="https://facebook.com/cloudfrontsgroup" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+ <span class="footer-sep">&middot;</span>
+ <a href="https://x.com/cloudfrontsgroup" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+ </div>
+ <div style="margin:.5rem 0.5rem;font-size:.82rem;">
+ <a href="services.html">Services</a> &middot;
+ <a href="research-grant.html">Research</a> &middot;
+ <a href="foreclosures.html">Community Data</a> &middot;
+ <a href="volunteer-corps.html">Volunteer</a> &middot;
+ <a href="usda-farming.html">USDA Farming</a> &middot;
+ <a href="links.html">Links</a> &middot;
+ <a href="blog/hud-nofo-timeline-2026.html">Blog</a> &middot;
+ <a href="privacy.html">Privacy</a> &middot;
+ <a href="glossary.html">Glossary</a> &middot;
+ <a href="search.html">Search</a> &middot;
+ <a href="case-studies.html">Case Studies</a> &middot;
+ <a href="partnerships.html">Partnerships</a> &middot;
+ <a href="rental-assistance.html">Rental Assistance</a>
+ </div>
+ <p style="margin:.75rem 0.5rem;font-size:.82rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
+ <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
+</footer>
+
+<script src="site.js" defer></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
+ });
+</script>
+</body>
+</html>

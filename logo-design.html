@@ -6,21 +6,21 @@
 <meta name="theme-color" content="#003a70">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Cloud Fronts Group — Logo Design | Central Texas Digital Services</title>
-<meta name="description" content="Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery. Wordmarks, lettermarks, pictorial, abstract, mascot, emblem, and combination marks. Brand style guides included.">
+<meta name="description" content="Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  <meta property="og:title" content="Cloud Fronts Group — Logo Design | Central Texas Digital Services">
-  <meta property="og:description" content="Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery. Wordmarks, lettermarks, pictorial, abstract, mascot, emblem, and combination marks. Brand style guides included.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cloudfrontsgroup.org/logo-design.html">
-  <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
-  <meta property="og:site_name" content="Cloud Fronts Group">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cloud Fronts Group — Logo Design | Central Texas Digital Services">
-  <meta name="twitter:description" content="Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery. Wordmarks, lettermarks, pictorial, abstract, mascot, emblem, and combination marks. Brand style guides included.">
-  <link rel="canonical" href="https://cloudfrontsgroup.org/logo-design.html">
+<link rel="stylesheet" href="style.min.css">
+ <meta property="og:title" content="Cloud Fronts Group — Logo Design | Central Texas Digital Services">
+ <meta property="og:description" content="Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://cloudfrontsgroup.org/logo-design.html">
+ <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
+ <meta property="og:site_name" content="Cloud Fronts Group">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Cloud Fronts Group — Logo Design | Central Texas Digital Services">
+ <meta name="twitter:description" content="Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery.">
+ <link rel="canonical" href="https://cloudfrontsgroup.org/logo-design.html">
  <script type="application/ld+json">
  {
  "@context": "https://schema.org",
@@ -34,8 +34,9 @@
  "foundingDate": "2026"
  }
  </script>
- 
+<link rel="alternate" type="application/rss+xml" title="Cloud Fronts Group Blog" href="https://cloudfrontsgroup.org/blog/feed.xml">
 </head>
+
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -94,10 +95,9 @@
  </div>
 </header>
 
-
 <div class="container" id="main-content">
 
- <img src="images/before-after-logo.png" alt="Logo redesign before and after comparison" style="width:100%;max-width:700px;border-radius:8px;margin-bottom:2rem;display:block;">
+ <img loading="lazy" src="images/before-after-logo.webp" alt="Logo redesign before and after comparison" style="width:100%;max-width:700px;border-radius:8px;margin-bottom:2rem;display:block;">
 
   <div style="padding: 0 2rem;">
     <h1>Logo Design</h1>
@@ -105,7 +105,7 @@
     <p>During discovery, we learn about your business, your target audience, your competitors, and your brand personality. We explore what makes you unique and identify visual directions that align with your goals. In concepting, our designers sketch multiple logo concepts across different style categories. We explore wordmarks that emphasize your name, lettermarks that use initials, pictorial marks that illustrate your offering, abstract marks that suggest your brand feeling, mascots that personify your business, emblems that convey tradition, and combination marks that pair a symbol with your name for maximum flexibility.</p>
     <p>Once we present concepts, you choose your favorites and we move into refinement. We iterate on color palettes, typography, spacing, and proportions until every detail feels right. We provide unlimited revisions because we will not stop until you are completely satisfied. The final delivery includes your logo in multiple formats — PNG, SVG, EPS, and PDF — for use across print, web, social media, and merchandise.</p>
 
- <img src="images/service-logo-design.png" alt="Logo design service preview" style="width:100%;max-width:700px;border-radius:8px;margin:2rem auto;display:block;">
+ <img loading="lazy" src="images/service-logo-design.webp" alt="Logo design service preview" style="width:100%;max-width:700px;border-radius:8px;margin:2rem auto;display:block;">
 
     <p>Every logo project also includes a comprehensive brand style guide. This document captures your color palette with hex, RGB, and CMYK values, specifies your primary and secondary typefaces, defines clear space and minimum size rules, and shows correct and incorrect logo usage. With a Cloud Fronts Group logo and style guide, you have everything you need to present a consistent, professional brand across every channel.</p>
   </div>
@@ -146,11 +146,13 @@
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 <script src="site.js" defer></script>
-<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
- lucide.createIcons();
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
  });
 </script>
 </body>

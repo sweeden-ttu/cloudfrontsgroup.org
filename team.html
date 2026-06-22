@@ -6,20 +6,20 @@
 <meta name="theme-color" content="#003a70">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>Team — Cloud Fronts Group</title>
-<meta name="description" content="Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, and research partners delivering technology access and innovation in Central Texas.">
+<meta name="description" content="Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, and research partners.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.min.css">
  <meta property="og:title" content="Team — Cloud Fronts Group">
- <meta property="og:description" content="Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, and research partners delivering technology access and innovation in Central Texas.">
+ <meta property="og:description" content="Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, and research partners.">
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://cloudfrontsgroup.org/team.html">
  <meta property="og:image" content="https://cloudfrontsgroup.org/favicon.svg">
  <meta property="og:site_name" content="Cloud Fronts Group">
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="Team — Cloud Fronts Group">
- <meta name="twitter:description" content="Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, and research partners delivering technology access and innovation in Central Texas.">
+ <meta name="twitter:description" content="Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, and research partners.">
  <link rel="canonical" href="https://cloudfrontsgroup.org/team.html">
  <script type="application/ld+json">
  {
@@ -34,7 +34,9 @@
  "foundingDate": "2026"
  }
  </script>
+<link rel="alternate" type="application/rss+xml" title="Cloud Fronts Group Blog" href="https://cloudfrontsgroup.org/blog/feed.xml">
 </head>
+
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -93,7 +95,6 @@
  </div>
 </header>
 
-
 <div class="container" id="main-content">
 
  <h2>Our Team</h2>
@@ -101,14 +102,14 @@
 
   <div class="card-grid">
   <div class="card card-team">
-  <img src="images/johnathan-king.png" alt="Scott Weeden" class="team-photo">
+  <img loading="lazy" src="images/scott-weeden.webp" alt="Scott Weeden" class="team-photo">
   <h3>Scott Weeden</h3>
   <p style="font-weight:600;color:var(--Federal-blue);">Co-Founder &amp; Technology Director</p>
   <p>Scott brings expertise in mathematical foundations for AI safety, software engineering, and community technology deployment. He co-authored the AAAI 2026 paper on bounded-agent Security Framework and leads Cloud Fronts Group's technology access initiatives.</p>
   <p style="font-size:.85rem;">Email: scottweeden@cloudfrontsgroup.org</p>
   </div>
   <div class="card card-team">
-  <img src="images/scott-weeden.png" alt="Johnathan King" class="team-photo">
+  <img loading="lazy" src="images/johnathan-king.webp" alt="Johnathan King" class="team-photo">
   <h3>Johnathan King</h3>
   <p style="font-weight:600;color:var(--Federal-blue);">Co-Founder &amp; Security Research Lead</p>
   <p>Johnathan specializes in red team security, adversarial testing, and community safety frameworks. He co-authored the AAAI 2026 paper and leads security research and Technology Access initiatives.</p>
@@ -154,11 +155,13 @@
  <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
 <script src="site.js" defer></script>
-<script src="https://unpkg.com/lucide@0.468.0"></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
 <script>
  document.addEventListener('DOMContentLoaded', () => {
- lucide.createIcons();
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
  });
 </script>
 </body>

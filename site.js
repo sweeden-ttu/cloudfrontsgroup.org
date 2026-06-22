@@ -33,6 +33,45 @@
     });
   }
 
+  // Dropdown keyboard accessibility
+  doc.querySelectorAll('.dropdown > .dropbtn').forEach(function(btn){
+    btn.setAttribute('role', 'button');
+    btn.setAttribute('aria-haspopup', 'true');
+    var dd = btn.parentElement;
+    var isOpen = false;
+    btn.setAttribute('aria-expanded', 'false');
+
+    function openDropdown() {
+      isOpen = true;
+      btn.setAttribute('aria-expanded', 'true');
+      dd.classList.add('is-open');
+    }
+    function closeDropdown() {
+      isOpen = false;
+      btn.setAttribute('aria-expanded', 'false');
+      dd.classList.remove('is-open');
+    }
+
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      if (isOpen) { closeDropdown(); } else { openDropdown(); }
+    });
+    btn.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        if (isOpen) { closeDropdown(); } else { openDropdown(); }
+      }
+      if (e.key === 'Escape' && isOpen) {
+        closeDropdown();
+        btn.focus();
+      }
+    });
+    // Close on click outside
+    doc.addEventListener('click', function(e){
+      if (isOpen && !dd.contains(e.target)) { closeDropdown(); }
+    });
+  });
+
   // Email obfuscation
   doc.querySelectorAll('.eml').forEach(function(e){
     var a = e.dataset.eml + '@' + e.dataset.dom;
@@ -46,6 +85,22 @@
   var printBtn = doc.getElementById('print-btn');
   if (printBtn) {
     printBtn.addEventListener('click', function(){ window.print(); });
+  }
+
+  // Back-to-top button
+  var backBtn = doc.getElementById('back-to-top');
+  if (backBtn) {
+    var scrollThreshold = 300;
+    doc.addEventListener('scroll', function(){
+      if (dd.scrollTop > scrollThreshold || doc.body.scrollTop > scrollThreshold) {
+        backBtn.classList.add('visible');
+      } else {
+        backBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+    backBtn.addEventListener('click', function(){
+      dd.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   }
 
   // Glossary tooltips

@@ -2,8 +2,8 @@
 
  <h2>Contact Us</h2>
 
- <div id="thankyou" style="display:none;background:var(--color-surface);padding:2rem;border-radius:var(--radius);margin-bottom:2rem;text-align:center;border:2px solid var(--color-primary);">
- <h3 style="margin-top:0;color:var(--color-primary);">Message Sent!</h3>
+ <div id="thankyou" class="thankyou-msg">
+ <h3>Message Sent!</h3>
  <p>Thank you for reaching out. We'll get back to you within 1 business day.</p>
  </div>
 
@@ -13,7 +13,7 @@
  }
  </script>
 
- <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:1.5rem 0;">
+ <div class="contact-grid">
  <div>
  <h3>Direct Contact</h3>
  <p><strong>Scott Weeden</strong><br>
@@ -25,24 +25,24 @@
 
  <div>
  <h3>Send a Message</h3>
- <form action="https://formspree.io/f/mgoqjrdn" method="POST" style="display:flex;flex-direction:column;gap:.75rem;">
+ <form action="https://formspree.io/f/mgoqjrdn" method="POST" class="contact-form">
  <input type="hidden" name="_subject" value="Cloud Fronts Group Contact Form">
  <input type="hidden" name="_next" value="https://cloudfrontsgroup.org/contact.html?sent=1">
- <label for="name" style="font-weight:600;font-size:.9rem;">Name</label>
- <input type="text" id="name" name="name" required style="padding:.6rem;border:1px solid var(--color-border);border-radius:var(--radius);font-family:var(--font-main);font-size:.95rem;">
+ <label for="name" class="form-label">Name</label>
+ <input type="text" id="name" name="name" required class="form-input">
 
- <label for="email" style="font-weight:600;font-size:.9rem;">Email</label>
- <input type="email" id="email" name="email" required style="padding:.6rem;border:1px solid var(--color-border);border-radius:var(--radius);font-family:var(--font-main);font-size:.95rem;">
+ <label for="email" class="form-label">Email</label>
+ <input type="email" id="email" name="email" required class="form-input">
 
- <label for="subject" style="font-weight:600;font-size:.9rem;">Subject</label>
- <input type="text" id="subject" name="subject" style="padding:.6rem;border:1px solid var(--color-border);border-radius:var(--radius);font-family:var(--font-main);font-size:.95rem;">
+ <label for="subject" class="form-label">Subject</label>
+ <input type="text" id="subject" name="subject" class="form-input">
 
- <label for="message" style="font-weight:600;font-size:.9rem;">Message</label>
- <textarea id="message" name="message" required rows="5" style="padding:.6rem;border:1px solid var(--color-border);border-radius:var(--radius);font-family:var(--font-main);font-size:.95rem;"></textarea>
+ <label for="message" class="form-label">Message</label>
+ <textarea id="message" name="message" required rows="5" class="form-input"></textarea>
 
  <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
  </form>
- <p style="font-size:.8rem;color:var(--color-text-muted);margin-top:.5rem;">This form uses Formspree. Your message will be forwarded to our team.</p>
+ <p class="contact-form-note">This form uses Formspree. Your message will be forwarded to our team.</p>
  </div>
  </div>
 

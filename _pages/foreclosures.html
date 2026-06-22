@@ -7,7 +7,7 @@
  <strong>Non-Federal reference.</strong> These addresses were parsed from Bell County weekly foreclosure-notice PDFs via OCR. Each row links to the exact PDF that contained that notice. Entity names (servicer, trustee) are extracted from the OCR text — verify on the official document before relying on any data. This is not legal advice.
  </div>
 
- <p style="margin-bottom:1.5rem;">
+ <p class="foreclosure-desc">
  Source: <a href="https://www.bellcountytx.com/county_government/county_clerk/foreclosures.php" target="_blank" rel="noreferrer noopener">Bell County Clerk — Foreclosure Notices</a>.
  Data regenerated with <code>python3 scripts/parse_foreclosure_entities.py && python3 scripts/build_foreclosures_page_v2.py</code>.
  </p>
@@ -16,7 +16,7 @@
 
  <div class="callout">
  <h3 style="margin-top:0;">Mortgage Servicers Detected (16)</h3>
- <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+ <p class="foreclosure-meta">
  These companies are listed as the mortgage servicer or debt collector in the foreclosure notices.
  </p>
  <div class="entity-tags">
@@ -41,7 +41,7 @@
 
  <div class="callout callout-ml">
  <h3 style="margin-top:0;">Substitute Trustees / Law Firms (15)</h3>
- <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+ <p class="foreclosure-meta">
  These law firms and trustee companies are appointed to conduct the foreclosure sales.
  </p>
  <div class="entity-tags">
@@ -65,7 +65,7 @@
 
  <div class="callout callout-teal">
  <h3 style="margin-top:0;">Noteholders / Mortgagees (6)</h3>
- <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+ <p class="foreclosure-meta">
  The current holder of the promissory note and deed of trust.
  </p>
  <div class="entity-tags">

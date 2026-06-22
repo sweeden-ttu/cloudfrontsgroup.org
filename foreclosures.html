@@ -104,7 +104,7 @@
  <strong>Non-Federal reference.</strong> These addresses were parsed from Bell County weekly foreclosure-notice PDFs via OCR. Each row links to the exact PDF that contained that notice. Entity names (servicer, trustee) are extracted from the OCR text — verify on the official document before relying on any data. This is not legal advice.
  </div>
 
- <p style="margin-bottom:1.5rem;">
+ <p class="foreclosure-desc">
  Source: <a href="https://www.bellcountytx.com/county_government/county_clerk/foreclosures.php" target="_blank" rel="noreferrer noopener">Bell County Clerk — Foreclosure Notices</a>.
  Data regenerated with <code>python3 scripts/parse_foreclosure_entities.py && python3 scripts/build_foreclosures_page_v2.py</code>.
  </p>
@@ -113,7 +113,7 @@
 
  <div class="callout">
  <h3 style="margin-top:0;">Mortgage Servicers Detected (16)</h3>
- <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+ <p class="foreclosure-meta">
  These companies are listed as the mortgage servicer or debt collector in the foreclosure notices.
  </p>
  <div class="entity-tags">
@@ -138,7 +138,7 @@
 
  <div class="callout callout-ml">
  <h3 style="margin-top:0;">Substitute Trustees / Law Firms (15)</h3>
- <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+ <p class="foreclosure-meta">
  These law firms and trustee companies are appointed to conduct the foreclosure sales.
  </p>
  <div class="entity-tags">
@@ -162,7 +162,7 @@
 
  <div class="callout callout-teal">
  <h3 style="margin-top:0;">Noteholders / Mortgagees (6)</h3>
- <p style="font-size:0.9rem;color:var(--color-text-muted);margin-bottom:0.75rem;">
+ <p class="foreclosure-meta">
  The current holder of the promissory note and deed of trust.
  </p>
  <div class="entity-tags">
@@ -275,7 +275,7 @@
  <span class="footer-sep">&middot;</span>
  <a href="https://x.com/cloudfrontsgroup" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
  </div>
- <div style="margin:.5rem 0.5rem;font-size:.82rem;">
+  <div class="footer-nav">
  <a href="services.html">Services</a> &middot;
  <a href="research-grant.html">Research</a> &middot;
  <a href="foreclosures.html">Community Data</a> &middot;
@@ -290,8 +290,8 @@
  <a href="partnerships.html">Partnerships</a> &middot;
  <a href="rental-assistance.html">Rental Assistance</a>
  </div>
- <p style="margin:.75rem 0.5rem;font-size:.82rem;">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
- <p style="font-size:.72rem;">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
+   <p class="footer-contact">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: 254-317-6688</p>
+  <p class="footer-copy">&copy; 2026 Cloud Fronts Group. All rights reserved.</p>
 </footer>
 
 <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>

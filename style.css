@@ -1346,7 +1346,97 @@ footer .inner-footer {
 }
 
 /* --------------------------------------------------------------------------
-   26. PRINT
+   26. UTILITY CLASSES (extracted from inline styles)
+   -------------------------------------------------------------------------- */
+
+/* Footer */
+.footer-nav { margin:.5rem .5rem; font-size:.82rem; }
+.footer-contact { margin:.75rem .5rem; font-size:.82rem; }
+.footer-copy { font-size:.72rem; }
+
+/* Newsletter */
+.newsletter-box { background:var(--color-surface); padding:2rem; border-radius:var(--radius); margin-bottom:2rem; text-align:center; }
+.newsletter-box h3 { margin-top:0; }
+.newsletter-form { display:flex; gap:.75rem; max-width:500px; margin:1rem auto; }
+.newsletter-form input[type=email] { flex:1; padding:.6rem; border:1px solid var(--color-border); border-radius:var(--radius); font-family:var(--font-main); font-size:.95rem; }
+.newsletter-form button { white-space:nowrap; }
+.newsletter-disclaimer { font-size:.8rem; color:var(--color-text-muted); }
+
+/* Image patterns */
+.img-service-bot { width:100%; max-width:700px; border-radius:8px; margin-bottom:2rem; display:block; }
+.img-service-center { width:100%; max-width:700px; border-radius:8px; margin:2rem auto; display:block; }
+.img-headshot-testimonial { width:100px; height:100px; border-radius:50%; object-fit:cover; flex-shrink:0; }
+.img-headshot-founder { width:180px; height:180px; object-fit:cover; border-radius:50%; margin-bottom:1rem; box-shadow:0 4px 16px hsla(220,30%,20%,0.2); border:3px solid var(--card-border); }
+
+/* Blog */
+.blog-meta { font-size:.82rem; color:var(--color-text-muted); margin-bottom:.5rem; }
+.blog-post-heading { margin-top:.5rem; }
+.blog-excerpt { font-size:.92rem; color:var(--color-text-muted); margin:0; }
+.blog-entry-title { margin:0 .5rem; }
+.blog-disclaimer { margin-top:2rem; font-size:.9rem; color:var(--color-text-muted); }
+.blog-description { font-size:.95rem; color:var(--color-text-muted); margin-bottom:2rem; }
+.blog-rss-link { margin-top:1.5rem; }
+
+/* Team & About */
+.team-role { font-weight:600; color:var(--Federal-blue); }
+.team-email { font-size:.85rem; }
+.callout-center { text-align:center; }
+.card-center { text-align:center; }
+.founder-name { margin:0; }
+.founder-title { color:var(--color-text-muted); font-size:.9rem; }
+.founder-bio { font-size:.9rem; }
+
+/* Case studies & badges */
+.result-box { background:var(--color-surface); padding:.75rem; border-radius:var(--radius); margin-top:.5rem; }
+.result-location { font-weight:600; color:var(--Federal-blue); font-size:.9rem; }
+.case-study + .case-study { margin-top:1.5rem; }
+.badge-mb { margin-bottom:.5rem; display:inline-block; }
+.badge-mb-sm { margin-bottom:.6rem; display:inline-block; }
+
+/* Foreclosures */
+.foreclosure-meta { font-size:.9rem; color:var(--color-text-muted); margin-bottom:.75rem; }
+.foreclosure-desc { margin-bottom:1.5rem; }
+
+/* Service / page sections */
+.service-content { padding:0 2rem; }
+.page-section { padding:4rem 2rem; min-height:50vh; }
+.btn-mt { margin-top:1rem; }
+.section-heading + .section-heading { margin-top:3rem; }
+.testimonial-grid { margin-bottom:2rem; }
+
+/* Testimonial cards */
+.testimonial-card { display:flex; gap:1.5rem; align-items:flex-start; }
+
+/* 404 page */
+.page-404-center { text-align:center; padding-top:4rem; padding-bottom:6rem; }
+.page-404-heading { border:none; font-size:3rem; margin-bottom:.5rem; color:var(--color-accent); }
+.page-404-text { font-size:1.3rem; color:var(--color-text-muted); margin-bottom:2rem; }
+
+/* Contact */
+.thankyou-msg { display:none; background:var(--color-surface); padding:2rem; border-radius:var(--radius); margin-bottom:2rem; text-align:center; border:2px solid var(--color-primary); }
+.thankyou-msg h3 { margin-top:0; color:var(--color-primary); }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin:1.5rem 0; }
+.contact-form { display:flex; flex-direction:column; gap:.75rem; }
+.form-label { font-weight:600; font-size:.9rem; }
+.form-input { padding:.6rem; border:1px solid var(--color-border); border-radius:var(--radius); font-family:var(--font-main); font-size:.95rem; }
+
+/* Search / Glossary */
+.search-description { font-size:.95rem; color:var(--color-text-muted); margin-bottom:1.5rem; }
+.search-input-wide { width:100%; padding:.8rem 1rem; border:2px solid var(--color-border); border-radius:var(--radius); font-family:var(--font-main); font-size:1.05rem; margin-bottom:.75rem; box-sizing:border-box; }
+.search-result-info { font-size:.9rem; color:var(--color-text-muted); margin-bottom:1.5rem; }
+.glossary-search { margin:1.5rem 0; max-width:500px; }
+.glossary-search input { width:100%; padding:.7rem 1rem; border:2px solid var(--color-surface); border-radius:var(--radius); font-size:1rem; }
+
+/* Misc */
+.hero-heading { font-size:1.3rem; margin-bottom:1rem; }
+.hero-bg { background-image:url('images/hero-banner.webp'); }
+.hero-gradient-usda { background:linear-gradient(135deg,#1b5e20 0%,#2e7d32 40%,#003a70 100%); }
+.callout-mt { margin-top:2rem; }
+.contact-form-note { font-size:.8rem; color:var(--color-text-muted); margin-top:.5rem; }
+.flex-testimonial { display:flex; gap:1.5rem; align-items:flex-start; }
+
+/* --------------------------------------------------------------------------
+   27. PRINT
    -------------------------------------------------------------------------- */
 @media print {
   header, footer, .btn, .menu-toggle, .theme-toggle,

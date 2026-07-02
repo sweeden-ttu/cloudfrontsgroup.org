@@ -17,6 +17,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARTIALS = os.path.join(ROOT, '_partials')
 PAGES = os.path.join(ROOT, '_pages')
 
+# ══════════════════════════════════════════════════════════════════════════════
+# NOTE for maintainers / AI agents:
+# This site is designed for clients to update via plain-English AI prompts.
+# Any feature that requires a backend API key, database, or analytics provider
+# (e.g. visitor counters, live chat, forms with external submission) must NOT
+# be added without explicit approval. These features break when the site is
+# regenerated and cannot be explained or maintained through simple AI prompts.
+# ══════════════════════════════════════════════════════════════════════════════
+
 # ─── Page metadata ───────────────────────────────────────────
 
 PAGE_META = {

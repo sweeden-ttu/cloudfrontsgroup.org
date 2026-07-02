@@ -1380,7 +1380,7 @@ footer .inner-footer {
 .team-role { font-weight:600; color:var(--Federal-blue); }
 .team-email { font-size:.85rem; }
 .callout-center { text-align:center; }
-.card-center { text-align:center; }
+.card-center { text-align:center; display:flex; flex-direction:column; align-items:center; }
 .founder-name { margin:0; }
 .founder-title { color:var(--color-text-muted); font-size:.9rem; }
 .founder-bio { font-size:.9rem; }

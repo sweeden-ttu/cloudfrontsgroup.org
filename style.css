@@ -1365,7 +1365,6 @@ footer .inner-footer {
 /* Image patterns */
 .img-service-bot { width:100%; max-width:700px; border-radius:8px; margin-bottom:2rem; display:block; }
 .img-service-center { width:100%; max-width:700px; border-radius:8px; margin:2rem auto; display:block; }
-.img-headshot-testimonial { width:100px; height:100px; border-radius:50%; object-fit:cover; flex-shrink:0; }
 .img-headshot-founder { width:180px; height:180px; object-fit:cover; border-radius:50%; margin-bottom:1rem; box-shadow:0 4px 16px hsla(220,30%,20%,0.2); border:3px solid var(--card-border); }
 
 /* Blog */
@@ -1402,11 +1401,6 @@ footer .inner-footer {
 .page-section { padding:4rem 2rem; min-height:50vh; }
 .btn-mt { margin-top:1rem; }
 .section-heading + .section-heading { margin-top:3rem; }
-.testimonial-grid { margin-bottom:2rem; }
-
-/* Testimonial cards */
-.testimonial-card { display:flex; gap:1.5rem; align-items:flex-start; }
-
 /* 404 page */
 .page-404-center { text-align:center; padding-top:4rem; padding-bottom:6rem; }
 .page-404-heading { border:none; font-size:3rem; margin-bottom:.5rem; color:var(--color-accent); }
@@ -1433,8 +1427,6 @@ footer .inner-footer {
 .hero-gradient-usda { background:linear-gradient(135deg,#1b5e20 0%,#2e7d32 40%,#003a70 100%); }
 .callout-mt { margin-top:2rem; }
 .contact-form-note { font-size:.8rem; color:var(--color-text-muted); margin-top:.5rem; }
-.flex-testimonial { display:flex; gap:1.5rem; align-items:flex-start; }
-
 /* --------------------------------------------------------------------------
    27. OTHER INTEREST SIDEBAR + VISITOR COUNTER
    -------------------------------------------------------------------------- */

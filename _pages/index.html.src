@@ -48,9 +48,8 @@
  <div class="dropdown">
  <a href="#" class="dropbtn">About Us ▼</a>
  <div class="dropdown-content">
- <a href="about-us.html">About Us</a>
- <a href="testimonials.html">Testimonials</a>
- </div>
+  <a href="about-us.html">About Us</a>
+  </div>
  </div>
  <div class="dropdown">
  <a href="#" class="dropbtn">Our Products ▼</a>
@@ -170,34 +169,6 @@
  <a href="pay-per-click-marketing.html" class="btn btn-outline" style="margin-top:1rem;">Learn More</a>
  </div>
  </div>
-
-  <div class="section-heading" style="margin-top:3rem;">
-  <h2>What Our Clients Say</h2>
-  </div>
-
-  <div class="testimonial-grid" style="margin-bottom:2rem;">
-
-  <div class="card testimonial-card" style="display:flex;gap:1.5rem;align-items:flex-start;">
-  <div>
-  <p class="testimonial-text">"Cloud Fronts Group redesigned our entire website and it completely transformed our online presence. Before, we were getting maybe one or two online inquiries a week. Now we're booking five to six new clients every week through the website alone."</p>
-  <div class="testimonial-author">
-  <strong>Maria Garcia</strong>
-  <span>Bella's Boutique, Killeen TX</span>
-  </div>
-  </div>
-  </div>
-
-  <div class="card testimonial-card" style="display:flex;gap:1.5rem;align-items:flex-start;">
-  <div>
-  <p class="testimonial-text">"As a plumbing company, we never really invested in digital marketing — we relied on word of mouth. Cloud Fronts Group convinced us to try a targeted Google Ads campaign and it was the best business decision we've made. Professional, transparent, and worth every penny."</p>
-  <div class="testimonial-author">
-  <strong>James Thompson</strong>
-  <span>Thompson Plumbing, Temple TX</span>
-  </div>
-  </div>
-  </div>
-
-  </div>
 
   <div class="impact-section">
  <h2>YOU</h2>

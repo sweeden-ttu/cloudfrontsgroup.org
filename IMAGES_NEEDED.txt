@@ -1,0 +1,123 @@
+IMAGE SPECIFICATIONS FOR CLOUD FRONTS GROUP WEBSITE
+====================================================
+
+All images to: scott.weeden@gmail.com
+
+---------------------------------------------------
+HEADSHOTS (placeholders currently in use)
+---------------------------------------------------
+
+| Person | Page(s) | Size | Notes |
+|--------|---------|------|-------|
+| Scott Weeden | about-us.html, team.html | 180x180px circle crop | Professional headshot |
+| Johnathan King | about-us.html, team.html | 180x180px circle crop | Professional headshot |
+
+| Team photo (optional) | contact.html | 700x400px | Office/team working together |
+
+---------------------------------------------------
+SERVICE PAGE IMAGES (needed -- 12 total)
+---------------------------------------------------
+
+All images: 700x400px, WebP format, landscape orientation.
+Color palette: dark navy (#003a70) backgrounds, gold (#d4a017) accents,
+teal/cyan highlights -- match the dark glassmorphism design.
+
+--- 1 IMAGE PER PAGE (openers, placed at top of content) ---
+
+1. domain-names.html -- "Domain Registration Concept"
+   Visual: Earth globe viewed from above with magnifying glass hovering
+   over a bright spot. Floating domain tags (.com, .org, .net, .io, .co)
+   orbit the globe with soft trailing glows. Fiber-optic arcs between
+   them. Small "Available!" badge near the focused spot.
+
+2. site-hosting.html -- "Cloud Hosting Infrastructure"
+   Visual: Isometric illustration. Top: translucent cloud silhouette
+   containing a glowing server rack with green activity lights. Blue and
+   gold data streams flow down to a laptop, tablet, and phone (all
+   showing a website loading). Shield + checkmark icon. "99.9% Uptime"
+   badge. Circular monitoring radiation pattern.
+
+3. marketing.html -- "Marketing Strategy Desk"
+   Visual: Top-down flat-lay on dark wood desk. Open leather notebook
+   with hand-drawn charts (upward line graph, sales funnel), customer
+   persona sketch. Tablet with real-time analytics. Gold/blue/teal
+   markers. Coffee mug with CF logo. Sticky notes: "Audience,"
+   "Positioning," "ROI." Glowing lightbulb above.
+
+4. political-advertisements.html -- "Campaign Advertising Mockup"
+   Visual: Campaign desk arrangement. Large yard sign with candidate
+   name + "VICTORY 2026" slogan (white on navy, gold star). Tilted
+   smartphone with social campaign ad + "VOTE" CTA. Tri-fold mail piece
+   partially open. Tablet with media placement calendar. Subtle American
+   flag bunting in corner. Non-partisan, professional.
+
+--- 2 IMAGES PER PAGE (opener + mid-content) ---
+
+5. social-media-marketing.html -- "Social Media Dashboard" (opener)
+   Visual: Split screen. Left: content calendar grid with post
+   thumbnails, smartphone showing Instagram feed with branded lifestyle
+   photos. Right: analytics dashboard with engagement charts, follower
+   growth line graph trending up, sentiment emoji icons. Central
+   "share/connect" icon with radial lines.
+
+6. social-media-marketing.html -- "Content Calendar & Strategy" (mid)
+   Visual: Overhead desk layout. Printed monthly content calendar with
+   color-coded sticky notes (gold=launches, blue=engagement,
+   green=spotlights). Phone showing post preview with notifications.
+   Stylus, ring light, branded content swipe file. Soft window lighting
+   from left.
+
+7. pay-per-click-marketing.html -- "PPC Ads Dashboard" (opener)
+   Visual: Search results page with gold-highlighted PPC ad at top
+   (headline, sitelinks, CTA button). Floating translucent metrics:
+   CPC, impressions, quality score (9/10), conversion rate badge.
+   Corner graph showing ROAS trending up over 30 days. Small gold coins
+   with up-arrows.
+
+8. pay-per-click-marketing.html -- "Retargeting & Conversion" (mid)
+   Visual: Funnel left-to-right. User visits site (laptop) -> leaves ->
+   dotted-loop "Retargeting Ad" (phone showing follow-up ad) -> returns
+   and converts (cart + checkmark). Below: horizontal bar graph before
+   vs after retargeting (small bar vs tall bar with % increase). Timer
+   icons: "within 24h."
+
+9. document-management.html -- "Document Workflow" (opener)
+   Visual: Left-to-right transformation. Left: filing cabinet + paper
+   pile + clock icon (time wasted). Center: scanner with blue digital
+   arrow through it. Right: digital folder interface (Contracts,
+   Invoices, HR), search bar finding a file, security shield + lock.
+   Speedometer: "before" slow -> "after" fast.
+
+10. document-management.html -- "Cloud Storage & Access" (mid)
+    Visual: Central cloud icon with secure glowing lines to laptop
+    (remote worker), tablet (field), phone (on-the-go). File icons (PDF,
+    DOC, spreadsheet) inside cloud. Role-based access panel with user
+    profiles + permission badges (Admin, Editor, Viewer). "Encrypted"
+    green badge. Vault door icon in corner.
+
+11. online-publishing.html -- "eBook & Publishing Formats" (opener)
+    Visual: Mid-air composition. Center: 3D eBook mockup with geometric
+    navy/gold cover. Orbiting: open magazine with pull quotes and
+    full-bleed photos, tablet with interactive digital edition, stylus
+    pen. Digital particles between formats suggesting cross-platform
+    flow.
+
+12. online-publishing.html -- "Content Repurposing" (mid)
+    Visual: Hub-and-spoke diagram. Center: glowing "Core Content" icon
+    (document with star). Spokes to: blog post -> social cards
+    (Instagram, X, LinkedIn); video -> transcript + podcast; webinar ->
+    PDF guide; research data -> infographic + slide deck. Recycling
+    arrow around whole diagram. Calendar in corner showing consistent
+    cadence.
+
+---------------------------------------------------
+TOTAL SUMMARY
+---------------------------------------------------
+
+6 headshots needed (replace AI placeholders)
+12 service images needed (8 openers + 4 mid-content)
+1 optional team photo for contact page
+
+All service images: 700x400px WebP, landscape, dark navy/gold/teal palette.
+Circle headshots: provide at 180x180px minimum (about-us/team) or
+

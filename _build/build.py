@@ -34,12 +34,6 @@ PAGE_META = {
         "section": "",
         "active": "about-us",
     },
-    "testimonials": {
-        "title": "Cloud Fronts Group — Testimonials | Central Texas Digital Services",
-        "description": "Hear from Central Texas businesses about their experience working with Cloud Fronts Group.",
-        "section": "",
-        "active": "about-us",
-    },
     "contact": {
         "title": "Cloud Fronts Group — Contact Us | Central Texas Digital Services",
         "description": "Contact Cloud Fronts Group for web design, logo design, domain registration, hosting, marketing, printing, and digital services in Central Texas.",

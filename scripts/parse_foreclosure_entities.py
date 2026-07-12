@@ -2,7 +2,7 @@
 """
 Parse Bell County OCR text files to extract foreclosure entities:
 - Mortgage Servicer
-- Substitute Trustee (law firm / trustee company)
+- Substitute Trustee
 - Noteholder / Mortgagee
 - Original Trustee
 """
@@ -42,7 +42,7 @@ SERVICER_PATTERNS = [
     r"FIRST\s+UNITED\s+BANK\s+AND\s+TRUST",
 ]
 
-# Known substitute trustee law firms / trustee companies
+# Known substitute trustee entities
 TRUSTEE_PATTERNS = [
     r"BARRETT\s+DAFFIN\s+FRAPPIER\s+TURNER\s*&\s*ENGEL\s*,?\s*LLP",
     r"DE\s+CUBAS\s*&\s*LEWIS\s*,?\s*P\.?\s*C\.",
@@ -164,7 +164,7 @@ def extract_entities(text: str) -> dict:
             if val not in entities["servicers"]:
                 entities["servicers"].append(val)
 
-    # Extract substitute trustees (law firms)
+    # Extract substitute trustees
     for pat in TRUSTEE_PATTERNS:
         for m in re.finditer(pat, text, re.IGNORECASE):
             val = m.group(0).strip()
@@ -253,7 +253,7 @@ def main() -> int:
     for s in sorted(all_servicers):
         print(f"  - {s}")
 
-    print(f"\n=== Unique Substitute Trustees / Law Firms ({len(all_trustees)}) ===")
+    print(f"\n=== Unique Substitute Trustees ({len(all_trustees)}) ===")
     for t in sorted(all_trustees):
         print(f"  - {t}")
 

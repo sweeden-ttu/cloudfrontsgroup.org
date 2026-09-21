@@ -1424,6 +1424,7 @@ footer .inner-footer {
 /* Misc */
 .hero-heading { font-size:1.3rem; margin-bottom:1rem; }
 .hero-bg { background-image:url('images/hero-banner.webp'); }
+.cloud-hero-bg { background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue-vivid) 100%); }
 .hero-gradient-usda { background:linear-gradient(135deg,#1b5e20 0%,#2e7d32 40%,#003a70 100%); }
 .callout-mt { margin-top:2rem; }
 .contact-form-note { font-size:.8rem; color:var(--color-text-muted); margin-top:.5rem; }

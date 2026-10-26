@@ -21,3 +21,8 @@ Gemini_Generated_*.png
 Thumbs.db
 *.log
 backup-*
+.aider*
+.opencode/
+imagespecs/Copilot_*
+snapshots/
+*.bak*

@@ -16,11 +16,9 @@ baseurl: ""
 lang: en
 
 # Contact and structured-data values used by _includes/head.html and footer.html
-phone: 254-317-6688
+phone: 254-317-6688        # main business line (Johnathan King); per-person numbers in _data/people.yml
 phone_tel: "+1-254-317-6688"
-emails:
-  - scottweeden@cloudfrontsgroup.org
-  - johnathanking@cloudfrontsgroup.org
+# Email addresses are intentionally not listed here or in structured data; see _data/people.yml (encoded).
 area_served: Central Texas
 founding_date: "2026"
 schema_default: "Central Texas digital services and community research — web design, logo design, marketing, AI/ML research, and community technology programs."

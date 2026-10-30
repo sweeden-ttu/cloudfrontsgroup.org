@@ -10,7 +10,11 @@
   <a href="{{ rp }}{{ link.href }}">{{ link.label }}</a>{% unless forloop.last %} &middot;{% endunless %}
 {%- endfor %}
   </div>
-   <p class="footer-contact">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: {{ site.phone }}</p>
+   <p class="footer-contact">
+{%- for entry in site.data.people %}{%- assign person = entry[1] %}
+   <span class="footer-person">{{ person.name }}: <button type="button" class="eml-btn eml-btn-inline" data-u="{{ person.email_user_enc }}" data-d="{{ person.email_domain_enc }}" aria-label="Show email address for {{ person.name }}">Email</button> &middot; <a href="tel:{{ person.tel }}">{{ person.phone }}</a></span>
+{%- endfor %}
+   </p>
   <p class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
 </footer>
 

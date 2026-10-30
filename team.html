@@ -14,14 +14,14 @@ description: Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, 
   <h3>Scott Weeden</h3>
   <p class="team-role">Co-Founder &amp; Technology Director</p>
   <p>Scott brings expertise in mathematical foundations for AI safety, software engineering, and community technology deployment. He co-authored the AAAI 2026 paper on bounded-agent Security Framework and leads Cloud Fronts Group's technology access initiatives.</p>
-  <p class="team-email">Email: scottweeden@cloudfrontsgroup.org</p>
+  {% include person-contact.html person=site.data.people.scott %}
   </div>
   <div class="card card-team">
   <img loading="lazy" src="images/johnathan-king.webp" alt="Johnathan King" class="team-photo">
   <h3>Johnathan King</h3>
   <p class="team-role">Co-Founder &amp; Security Research Lead</p>
   <p>Johnathan specializes in red team security, adversarial testing, and community safety frameworks. He co-authored the AAAI 2026 paper and leads security research and Technology Access initiatives.</p>
-  <p class="team-email">Email: johnathanking@cloudfrontsgroup.org</p>
+  {% include person-contact.html person=site.data.people.johnathan %}
   </div>
   <div class="card card-team">
   <h3>Dr. Akbar Namin</h3>
@@ -33,7 +33,11 @@ description: Meet the Cloud Fronts Group team — Scott Weeden, Johnathan King, 
   </div>
 
  <div class="callout callout-center">
- <p>Contact our team: Scott Weeden - scottweeden@cloudfrontsgroup.org &middot; Johnathan King - johnathanking@cloudfrontsgroup.org &middot; Phone: 254-317-6688</p>
+ <p>Contact our team directly:</p>
+ <p><strong>Scott Weeden</strong></p>
+ {% include person-contact.html person=site.data.people.scott %}
+ <p><strong>Johnathan King</strong></p>
+ {% include person-contact.html person=site.data.people.johnathan %}
  </div>
 
 </div>

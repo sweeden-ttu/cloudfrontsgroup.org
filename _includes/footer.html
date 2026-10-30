@@ -1,8 +1,9 @@
 <footer>
  <div class="footer-social">
- <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
- <span class="footer-sep">&middot;</span>
- <a href="{{ site.social.x }}" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+{%- for s in site.social_links %}
+ <a href="{{ s.url }}" target="_blank" rel="noopener" aria-label="{{ s.label }}">{{ s.label }}</a>{% unless forloop.last %}
+ <span class="footer-sep">&middot;</span>{% endunless %}
+{%- endfor %}
  </div>
    <div class="footer-nav">
 {%- for link in site.data.footer_nav %}

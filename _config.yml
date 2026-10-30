@@ -28,10 +28,24 @@ schema_default: "Central Texas digital services and community research — web d
 # Default Open Graph image for pages without their own (posts use `image`).
 og_default: images/og-default.png
 
+# Booking link shown in the "Let's talk" box at the bottom of service pages.
+booking_url: "https://calendar.proton.me/bookings#H0-SpVvE2PNxQgj5w6NX6-rbcMe2chmKpnbWFCkI_0Y="
+
+# Social profiles. `icon` is a Lucide icon name (https://lucide.dev/icons).
+social_links:
+  - label: Facebook
+    url: https://www.facebook.com/CloudFronts
+    icon: facebook
+  - label: Instagram
+    url: https://www.instagram.com/websharps
+    icon: instagram
+  - label: GitHub
+    url: https://github.com/cloud-fronts-group
+    icon: github
+
 social:
-  facebook: https://facebook.com/cloudfrontsgroup
-  x: https://x.com/cloudfrontsgroup
-  x_handle: "@cloudfrontsgroup"
+  facebook: https://www.facebook.com/CloudFronts
+  x_handle: "@cloudfrontsgroup"   # used only for the twitter:site meta tag
 
 # Brand tokens, mirrored from style.css :root so templates and docs agree.
 # Change colors in style.css first; this block is the reference copy.

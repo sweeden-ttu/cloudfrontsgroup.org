@@ -1355,12 +1355,6 @@ footer .inner-footer {
 .footer-copy { font-size:.72rem; }
 
 /* Newsletter */
-.newsletter-box { background:var(--color-surface); padding:2rem; border-radius:var(--radius); margin-bottom:2rem; text-align:center; }
-.newsletter-box h3 { margin-top:0; }
-.newsletter-form { display:flex; gap:.75rem; max-width:500px; margin:1rem auto; }
-.newsletter-form input[type=email] { flex:1; padding:.6rem; border:1px solid var(--color-border); border-radius:var(--radius); font-family:var(--font-main); font-size:.95rem; }
-.newsletter-form button { white-space:nowrap; }
-.newsletter-disclaimer { font-size:.8rem; color:var(--color-text-muted); }
 
 /* Image patterns */
 .img-service-bot { width:100%; max-width:700px; border-radius:8px; margin-bottom:2rem; display:block; }
@@ -1544,3 +1538,16 @@ header h1 .brand-mark { height: 1em; width: auto; vertical-align: -0.12em; margi
 .post-title { border-bottom: 0; padding-bottom: 0; }
 .post-title::after { display: none; }
 .post-cta .hero-cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 1.25rem; }
+
+/* ── Connect box (booking + social), replaces the newsletter form ──────────── */
+.connect-box { background: var(--color-surface); border: 1px solid var(--color-border-soft); padding: 2.25rem 2rem; border-radius: var(--radius); margin-bottom: 2rem; text-align: center; }
+.connect-box h3 { margin-top: 0; font-family: var(--font-head); }
+.connect-box > p { max-width: 54ch; margin: 0 auto 1.25rem; color: var(--color-text-muted); }
+.connect-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin-bottom: 1.25rem; }
+.connect-actions .btn { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; }
+.connect-actions .btn svg { width: 1.1em; height: 1.1em; }
+.social-links { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; padding: 0; margin: 0; }
+.social-links a { display: inline-flex; align-items: center; gap: .45rem; min-height: 44px; padding: .4rem 1rem; border-radius: 999px; border: 1px solid var(--color-border); color: var(--color-text); text-decoration: none; font-weight: 600; font-size: .95rem; transition: background var(--transition), border-color var(--transition); }
+.social-links a:hover, .social-links a:focus-visible { border-color: var(--brand-blue); background: var(--brand-teal); color: var(--brand-navy); }
+.social-links svg { width: 1.15em; height: 1.15em; }
+[data-theme="dark"] .social-links a:hover { background: rgba(255,255,255,.1); color: var(--color-text); }

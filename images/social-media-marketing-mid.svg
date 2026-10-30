@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+  <title id="t">Desk set up for planning and photographing social media content</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+
+  <!-- desk mat -->
+  <rect x="190" y="130" width="1050" height="550" rx="44" fill="#CCEADD" opacity="0.6"/>
+
+  <!-- ring light lying at the left edge, stand folded under -->
+  <path d="M268 420 V560" stroke="#0B1528" stroke-width="14" stroke-linecap="round"/>
+  <path d="M200 580 Q268 540 336 580" fill="none" stroke="#0B1528" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="280" cy="312" r="118" fill="#0B1528" opacity="0.08"/>
+  <circle cx="268" cy="300" r="118" fill="#FFFFFF" stroke="#0B1528" stroke-width="8"/>
+  <circle cx="268" cy="300" r="74" fill="#FFF0C7" stroke="#0B1528" stroke-width="7"/>
+
+  <!-- phone on a small tripod, seen from above -->
+  <g fill="none" stroke="#0B1528" stroke-width="10" stroke-linecap="round">
+    <path d="M600 300 L600 465"/><path d="M600 300 L457 218"/><path d="M600 300 L743 217"/>
+  </g>
+  <circle cx="600" cy="465" r="11" fill="#0B1528"/><circle cx="457" cy="218" r="11" fill="#0B1528"/><circle cx="743" cy="217" r="11" fill="#0B1528"/>
+  <rect x="556" y="208" width="112" height="212" rx="20" fill="#0B1528" opacity="0.08"/>
+  <rect x="544" y="194" width="112" height="212" rx="20" fill="#FFFFFF" stroke="#0B1528" stroke-width="8"/>
+  <rect x="556" y="210" width="88" height="180" rx="12" fill="#DEF2E8"/>
+  <rect x="576" y="252" width="48" height="64" rx="10" fill="#2463EB"/>
+  <circle cx="600" cy="366" r="12" fill="#FFFFFF" stroke="#0B1528" stroke-width="5"/>
+
+  <!-- printed calendar with color-coded dots -->
+  <rect x="834" y="186" width="360" height="290" rx="12" fill="#0B1528" opacity="0.08"/>
+  <rect x="822" y="174" width="360" height="290" rx="12" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <rect x="822" y="174" width="360" height="56" rx="12" fill="#0B1528"/>
+  <rect x="822" y="212" width="360" height="18" fill="#0B1528"/>
+  <rect x="846" y="196" width="110" height="12" rx="6" fill="#FCF8F3" opacity="0.7"/>
+  <rect x="850" y="240" width="300" height="10" rx="5" fill="#B8C0CC"/>
+  <rect x="850" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="898" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="946" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="994" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1042" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1090" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1138" y="260" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="850" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="898" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="946" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="994" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1042" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1090" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1138" y="308" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="850" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="898" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="946" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="994" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1042" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1090" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1138" y="356" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="850" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="898" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="946" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="994" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1042" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1090" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/><rect x="1138" y="404" width="40" height="38" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="3"/>
+  <circle cx="918" cy="279" r="11" fill="#CCEADD" stroke="#0B1528" stroke-width="4"/><circle cx="1062" cy="279" r="11" fill="#FFF0C7" stroke="#0B1528" stroke-width="4"/><circle cx="966" cy="327" r="11" fill="#FFE0C2" stroke="#0B1528" stroke-width="4"/><circle cx="1110" cy="327" r="11" fill="#DEF2E8" stroke="#0B1528" stroke-width="4"/><circle cx="870" cy="375" r="11" fill="#FFF0C7" stroke="#0B1528" stroke-width="4"/><circle cx="1014" cy="375" r="11" fill="#CCEADD" stroke="#0B1528" stroke-width="4"/><circle cx="1158" cy="375" r="11" fill="#FFE0C2" stroke="#0B1528" stroke-width="4"/><circle cx="918" cy="423" r="11" fill="#DEF2E8" stroke="#0B1528" stroke-width="4"/><circle cx="1062" cy="423" r="11" fill="#CCEADD" stroke="#0B1528" stroke-width="4"/>
+
+  <!-- stylus -->
+  <g transform="translate(740 590) rotate(-18)">
+    <rect x="-110" y="-2" width="236" height="18" rx="9" fill="#0B1528" opacity="0.08"/>
+    <rect x="-120" y="-10" width="236" height="18" rx="9" fill="#0B1528"/>
+    <path d="M-120 -1 L-144 -1" stroke="#B8C0CC" stroke-width="10" stroke-linecap="round"/>
+    <rect x="70" y="-10" width="46" height="18" rx="9" fill="#B8C0CC"/>
+  </g>
+
+  <!-- fanned stack of product photos -->
+  <g transform="translate(420 560) rotate(-16)">
+    <rect x="-70" y="-50" width="160" height="124" rx="8" fill="#0B1528" opacity="0.08"/>
+    <rect x="-80" y="-62" width="160" height="124" rx="8" fill="#FFFFFF" stroke="#0B1528" stroke-width="6"/>
+    <circle cx="0" cy="0" r="30" fill="#FFE0C2"/>
+  </g>
+  <g transform="translate(470 560) rotate(-4)">
+    <rect x="-70" y="-50" width="160" height="124" rx="8" fill="#0B1528" opacity="0.08"/>
+    <rect x="-80" y="-62" width="160" height="124" rx="8" fill="#FFFFFF" stroke="#0B1528" stroke-width="6"/>
+    <rect x="-30" y="-34" width="60" height="68" rx="10" fill="#FFF0C7"/>
+  </g>
+  <g transform="translate(520 560) rotate(10)">
+    <rect x="-70" y="-50" width="160" height="124" rx="8" fill="#0B1528" opacity="0.08"/>
+    <rect x="-80" y="-62" width="160" height="124" rx="8" fill="#FFFFFF" stroke="#0B1528" stroke-width="6"/>
+    <path d="M-34 32 L0 -32 L34 32 Z" fill="#DEF2E8" stroke="#0B1528" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+</svg>

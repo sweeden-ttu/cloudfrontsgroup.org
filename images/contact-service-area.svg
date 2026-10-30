@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+  <title id="t">Illustrated map of Central Texas with a location pin</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <path id="map" d="M300 410 C300 320 400 250 540 245 C640 240 720 275 830 255 C960 232 1095 300 1105 405 C1112 505 1030 585 915 605 C800 625 700 648 600 640 C470 630 395 600 350 555 C305 515 296 465 300 410 Z"/>
+    <path id="cl" d="M27.6 0 A40 40 0 0 1 47.7 -75.9 A60 60 0 0 1 163.5 -71.4 A38 38 0 0 1 187 0 Z"/>
+    <g id="oak" stroke="#0B1528" stroke-width="5" stroke-linecap="round">
+      <path d="M0 -6 V16" fill="none"/>
+      <circle cx="-19" cy="-17" r="17" fill="#CCEADD"/>
+      <circle cx="19" cy="-17" r="17" fill="#CCEADD"/>
+      <circle cx="0" cy="-31" r="19" fill="#CCEADD"/>
+    </g>
+  </defs>
+  <!-- ground -->
+  <ellipse cx="700" cy="688" rx="430" ry="30" fill="#CCEADD" opacity="0.6"/>
+  <!-- map body -->
+  <use href="#map" transform="translate(12 14)" fill="#0B1528" opacity="0.08"/>
+  <use href="#map" fill="#FCF8F3" stroke="#0B1528" stroke-width="8" stroke-linejoin="round"/>
+  <!-- limestone hill country, west -->
+  <path d="M335 440 C350 385 430 365 500 395 C560 420 540 500 470 512 C400 522 322 495 335 440 Z" fill="#FFF0C7"/>
+  <path d="M520 300 C560 280 610 290 620 320 C628 350 580 372 545 360 C512 348 500 316 520 300 Z" fill="#FFF0C7"/>
+  <!-- rivers -->
+  <g fill="none" stroke="#CCEADD" stroke-width="12" stroke-linecap="round">
+    <path d="M430 285 C500 335 560 330 610 400 C660 470 740 500 800 550 C840 585 900 598 960 618"/>
+    <path d="M770 258 C780 320 850 350 880 420 C910 490 985 520 1045 565"/>
+  </g>
+  <!-- roads -->
+  <g fill="none" stroke="#B8C0CC" stroke-width="6" stroke-linecap="round" stroke-dasharray="20 16">
+    <path d="M318 480 C450 470 560 532 720 534 C860 536 980 462 1090 442"/>
+    <path d="M585 255 C600 350 650 430 700 494"/>
+    <path d="M708 536 C690 580 712 612 690 642"/>
+  </g>
+  <!-- live oaks -->
+  <use href="#oak" transform="translate(420 578)"/>
+  <use href="#oak" transform="translate(1000 345)"/>
+  <use href="#oak" transform="translate(540 604)"/>
+  <use href="#oak" transform="translate(665 328)"/>
+  <!-- town cluster -->
+  <g fill="#FFFFFF" stroke="#0B1528" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M540 496 H905" fill="none"/>
+    <!-- water tower -->
+    <circle cx="565" cy="420" r="18"/>
+    <path d="M555 436 L547 494 M575 436 L583 494 M551 466 H579" fill="none"/>
+    <rect x="594" y="446" width="44" height="50" rx="4"/>
+    <path d="M648 496 V458 L670 438 L692 458 V496 Z"/>
+    <rect x="800" y="426" width="36" height="70" rx="4"/>
+    <rect x="846" y="458" width="48" height="38" rx="4"/>
+  </g>
+  <!-- the pin: single blue accent -->
+  <ellipse cx="745" cy="500" rx="28" ry="8" fill="#0B1528" opacity="0.08"/>
+  <g transform="translate(745 496) scale(1.25)">
+    <path d="M0 0 C-10 -22 -38 -42 -38 -70 A38 38 0 1 1 38 -70 C38 -42 10 -22 0 0 Z" fill="#2463EB"/>
+    <circle cx="0" cy="-70" r="15" fill="#FFFFFF"/>
+  </g>
+  <!-- cloud with flat horizon base drifting above -->
+  <g transform="translate(905 196)">
+    <use href="#cl" transform="translate(10 12)" fill="#0B1528" opacity="0.08"/>
+    <use href="#cl" fill="#FFFFFF" stroke="#0B1528" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M187 0 H255" stroke="#0B1528" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "cloudfronts-site-agents",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Custom agents for maintaining cloudfrontsgroup.org: Jekyll modularization, page conversion, site review, UI/UX layout judging, content editing, design critique, and social distribution, plus the site's Jekyll conventions as a skill.",
   "author": {
     "name": "Cloud Fronts Group",
@@ -10,5 +10,12 @@
   "homepage": "https://github.com/sweeden-ttu/cloudfrontsgroup.org/tree/master/.github/plugins/cloudfronts-site-agents",
   "repository": "https://github.com/sweeden-ttu/cloudfrontsgroup.org",
   "license": "MIT",
-  "keywords": ["jekyll", "static-site", "github-pages", "ux-review", "code-review", "custom-agents"]
+  "keywords": [
+    "jekyll",
+    "static-site",
+    "github-pages",
+    "ux-review",
+    "code-review",
+    "custom-agents"
+  ]
 }

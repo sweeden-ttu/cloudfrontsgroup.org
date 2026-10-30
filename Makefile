@@ -25,8 +25,15 @@ PLUGIN_ID          := $(PLUGIN_NAME)@$(MARKETPLACE_NAME)
 PLUGIN_DIR         := $(PLUGIN_MARKETPLACE)/plugins/$(PLUGIN_NAME)
 PLUGIN_SCOPE       := project
 
+# Agent Plugins 1.0 package (VS Code / Copilot CLI / Copilot app)
+PACKAGE_DIR        := .github/plugins/cloudfronts-site-agents
+INSTALLER          := $(PYTHON) agent-plugins/install_locations.py
+COPILOT_MKT        := $(HOME)/.copilot/local-marketplaces/cloudfronts-local
+
 .PHONY: help install build serve stop clean rebuild assemble snapshot parity check \
-        plugin plugin-build plugin-validate plugin-install plugin-uninstall plugin-reinstall plugin-list
+        plugin plugin-build plugin-validate plugin-install plugin-uninstall plugin-reinstall plugin-list \
+        install-agents uninstall-agents agents-status claude-install claude-uninstall \
+        vscode-install vscode-uninstall copilot-install copilot-uninstall
 
 ##@ Help
 help: ## Show this help
@@ -42,7 +49,7 @@ install: ## bundle install — Jekyll and dependencies from the Gemfile
 build: ## bundle exec jekyll build — one-shot build into _site/
 	$(JEKYLL) build --trace
 
-serve: ## bundle exec jekyll serve --livereload at http://$(HOST):$(PORT)
+serve: ## bundle exec jekyll serve --livereload at http://127.0.0.1:4000
 	$(JEKYLL) serve --livereload --incremental --trace --host $(HOST) --port $(PORT)
 
 stop: ## Kill whatever is listening on the serve and livereload ports
@@ -70,7 +77,7 @@ check: assemble parity ## assemble pages, build, and run the parity check
 ##@ Agent plugin (cloudfronts-site-agents)
 plugin: plugin-build plugin-validate ## Regenerate and validate the plugin
 
-plugin-build: ## Regenerate agents/ and skills/ from .github/agents/*.agent.md
+plugin-build: ## Regenerate agents/ and skills/ from $(PACKAGE_DIR)/com.github.copilot/agents/*.agent.md
 	$(PYTHON) agent-plugins/build_plugin.py
 
 plugin-validate: ## claude plugin validate on the marketplace and the plugin
@@ -80,15 +87,7 @@ plugin-validate: ## claude plugin validate on the marketplace and the plugin
 plugin-install: plugin ## Register the local marketplace and install at project scope
 	-claude plugin marketplace add $(PLUGIN_MARKETPLACE) --scope $(PLUGIN_SCOPE)
 	claude plugin install $(PLUGIN_ID) --scope $(PLUGIN_SCOPE)
-	@$(PYTHON) - <<-'PY'
-		# Keep the marketplace path repo-relative so .claude/settings.json works in any clone.
-		import json, pathlib
-		p = pathlib.Path('.claude/settings.json'); s = json.loads(p.read_text())
-		m = s.get('extraKnownMarketplaces', {}).get('$(MARKETPLACE_NAME)', {}).get('source', {})
-		if m.get('source') == 'directory' and m.get('path') != '$(PLUGIN_MARKETPLACE)':
-		    m['path'] = '$(PLUGIN_MARKETPLACE)'; p.write_text(json.dumps(s, indent=2) + '\n')
-		    print('normalized marketplace path to $(PLUGIN_MARKETPLACE)')
-	PY
+	@$(INSTALLER) normalize-claude
 
 plugin-uninstall: ## Uninstall the plugin and remove the marketplace from project scope
 	-claude plugin uninstall $(PLUGIN_ID) --scope $(PLUGIN_SCOPE)
@@ -99,3 +98,39 @@ plugin-reinstall: plugin-uninstall plugin-install ## Uninstall then install (pic
 plugin-list: ## Show the installed plugin and its components
 	claude plugin list | grep -A4 '$(PLUGIN_NAME)' || true
 	claude plugin details $(PLUGIN_NAME)
+
+##@ Install agents into every project location
+install-agents: plugin claude-install vscode-install ## Build the Claude plugin, install it (project scope), and install the VS Code package into .github/agents, .github/skills and .vscode
+	@echo
+	@$(MAKE) --no-print-directory agents-status
+
+uninstall-agents: vscode-uninstall claude-uninstall ## Remove everything install-agents created in this project
+
+agents-status: ## Show where the agents are installed
+	@$(INSTALLER) status
+	@claude plugin list 2>/dev/null | grep -A4 '$(PLUGIN_NAME)' || echo "claude plugin: not installed"
+
+claude-install: plugin-install ## Alias: install the Claude Code plugin at project scope (.claude/settings.json)
+
+claude-uninstall: plugin-uninstall ## Alias: uninstall the Claude Code plugin from project scope
+
+vscode-install: ## Copy package agents/skills into .github/agents and .github/skills; register $(PACKAGE_DIR) in .vscode/settings.json chat.pluginLocations
+	@$(INSTALLER) install
+
+vscode-uninstall: ## Remove the generated .github/agents and .github/skills copies and the .vscode registration
+	@$(INSTALLER) uninstall
+
+copilot-install: ## GitHub Copilot CLI: install the package via a local wrapper marketplace (CLI installs are user-level; see package README)
+	@command -v copilot >/dev/null || { echo "copilot CLI not found; skipping"; exit 0; }
+	mkdir -p "$(COPILOT_MKT)/plugins"
+	ln -sfn "$(CURDIR)/$(PACKAGE_DIR)" "$(COPILOT_MKT)/plugins/$(PLUGIN_NAME)"
+	printf '%s\n' '{' '  "name": "cloudfronts-local",' '  "owner": { "name": "Cloud Fronts Group" },' '  "plugins": [' \
+	  '    { "name": "$(PLUGIN_NAME)", "source": "./plugins/$(PLUGIN_NAME)", "version": "0.1.0" }' '  ]' '}' > "$(COPILOT_MKT)/marketplace.json"
+	-copilot plugin marketplace add "$(COPILOT_MKT)"
+	copilot plugin install $(PLUGIN_NAME)@cloudfronts-local || copilot plugin update $(PLUGIN_NAME)
+	copilot plugin list | grep -i '$(PLUGIN_NAME)' || true
+
+copilot-uninstall: ## GitHub Copilot CLI: remove the plugin and the local wrapper marketplace
+	-copilot plugin uninstall $(PLUGIN_NAME)
+	-copilot plugin marketplace remove cloudfronts-local
+	rm -rf "$(COPILOT_MKT)"

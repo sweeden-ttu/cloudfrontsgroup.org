@@ -1,0 +1,44 @@
+# Main navigation, rendered by _includes/header.html.
+# Top-level entries with `key` get class="active" when page.active matches.
+# Labels are emitted raw, so keep HTML entities (&amp;) as written.
+- label: Home
+  href: index.html
+  key: home
+- label: Blog
+  href: blog.html
+  key: blog
+- label: About Us
+  items:
+    - label: About Us
+      href: about-us.html
+- label: Our Products
+  items:
+    - label: Domain Names
+      href: domain-names.html
+    - label: Promotional Items
+      href: promotional-items.html
+    - label: Site Hosting
+      href: site-hosting.html
+    - label: Marketing
+      href: marketing.html
+    - label: Political Advertisements
+      href: political-advertisements.html
+- label: Our Services
+  items:
+    - label: Logo Design
+      href: logo-design.html
+    - label: "Web Design &amp; Hosting"
+      href: web-design-hosting.html
+    - label: "Design &amp; Print Agency"
+      href: design-print-agency.html
+    - label: Pay Per Click Marketing
+      href: pay-per-click-marketing.html
+    - label: Social Media Marketing
+      href: social-media-marketing.html
+    - label: Document Management
+      href: document-management.html
+    - label: Online Publishing
+      href: online-publishing.html
+- label: Contact Us
+  href: contact.html
+  key: contact

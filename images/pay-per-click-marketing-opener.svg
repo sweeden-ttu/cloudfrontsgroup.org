@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+<title id="t">Search results page with a highlighted ad card being clicked</title>
+<rect width="100%" height="100%" fill="#FCF8F3"/>
+<ellipse cx="700" cy="690" rx="540" ry="30" fill="#DEF2E8" opacity="0.6"/>
+<g stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<!-- browser window -->
+<rect x="232" y="142" width="660" height="530" rx="24" fill="#0B1528" opacity="0.08" stroke="none"/>
+<rect x="220" y="130" width="660" height="530" rx="24" fill="#FFFFFF" stroke-width="8"/>
+<line x1="220" y1="206" x2="880" y2="206" stroke-width="6"/>
+<circle cx="262" cy="168" r="9" fill="#FFE0C2" stroke-width="5"/>
+<circle cx="298" cy="168" r="9" fill="#FFF0C7" stroke-width="5"/>
+<circle cx="334" cy="168" r="9" fill="#CCEADD" stroke-width="5"/>
+<rect x="376" y="152" width="470" height="32" rx="16" fill="#DEF2E8" stroke-width="5"/>
+<!-- highlighted ad card -->
+<rect x="262" y="238" width="576" height="150" rx="16" fill="#FFF0C7" stroke-width="6"/>
+<rect x="288" y="264" width="98" height="98" rx="14" fill="#FFE0C2" stroke-width="6"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="414" y="272" width="300" height="14" rx="7"/>
+<rect x="414" y="304" width="360" height="12" rx="6"/>
+<rect x="414" y="332" width="240" height="12" rx="6"/>
+</g>
+<!-- plain result rows -->
+<g stroke-width="5">
+<circle cx="292" cy="446" r="14" fill="#CCEADD"/>
+<circle cx="292" cy="526" r="14" fill="#DEF2E8"/>
+<circle cx="292" cy="606" r="14" fill="#FFE0C2"/>
+</g>
+<g fill="#B8C0CC" stroke="none">
+<rect x="330" y="430" width="280" height="14" rx="7"/>
+<rect x="330" y="456" width="440" height="10" rx="5"/>
+<rect x="330" y="510" width="240" height="14" rx="7"/>
+<rect x="330" y="536" width="400" height="10" rx="5"/>
+<rect x="330" y="590" width="300" height="14" rx="7"/>
+<rect x="330" y="616" width="460" height="10" rx="5"/>
+</g>
+<!-- click marks -->
+<g stroke-width="6" fill="none">
+<path d="M722 330 L708 316"/>
+<path d="M738 322 L738 304"/>
+<path d="M714 346 L696 346"/>
+</g>
+<!-- cursor: the single blue accent -->
+<g transform="translate(738 346) scale(3)">
+<path d="M0 0 L0 24 L6.5 18.5 L11 28 L15.5 26 L11 16.5 L19 16.5 Z" fill="#2463EB" stroke-width="2.2"/>
+</g>
+<!-- coin with upward arrow -->
+<circle cx="1084" cy="282" r="96" fill="#0B1528" opacity="0.08" stroke="none"/>
+<circle cx="1072" cy="270" r="96" fill="#FFF0C7" stroke-width="8"/>
+<circle cx="1072" cy="270" r="70" fill="none" stroke-width="6"/>
+<path d="M1072 316 V236 M1042 264 L1072 234 L1102 264" fill="none" stroke-width="10"/>
+<!-- rising bar chart -->
+<g fill="#0B1528" opacity="0.08" stroke="none">
+<path d="M990 664 V590 a10 10 0 0 1 10 -10 h34 a10 10 0 0 1 10 10 V664 Z"/>
+<path d="M1060 664 V530 a10 10 0 0 1 10 -10 h34 a10 10 0 0 1 10 10 V664 Z"/>
+<path d="M1130 664 V458 a10 10 0 0 1 10 -10 h34 a10 10 0 0 1 10 10 V664 Z"/>
+</g>
+<g stroke-width="6">
+<path d="M978 652 V578 a10 10 0 0 1 10 -10 h34 a10 10 0 0 1 10 10 V652 Z" fill="#CCEADD"/>
+<path d="M1048 652 V518 a10 10 0 0 1 10 -10 h34 a10 10 0 0 1 10 10 V652 Z" fill="#DEF2E8"/>
+<path d="M1118 652 V446 a10 10 0 0 1 10 -10 h34 a10 10 0 0 1 10 10 V652 Z" fill="#FFE0C2"/>
+</g>
+<path d="M958 652 H1196" stroke-width="8" fill="none"/>
+</g>
+</svg>

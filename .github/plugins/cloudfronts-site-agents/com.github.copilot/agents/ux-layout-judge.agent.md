@@ -21,7 +21,7 @@ research/community work. Read `.github/instructions/jekyll-site.instructions.md`
 recommendations fit the repo's constraints (static only, no backend, no analytics SDKs).
 
 ## How to evaluate
-1. Read `style.css`, `site.js`, the layout/includes (or `_partials/` if not yet migrated),
+1. Read `style.css`, `site.js`, the layouts and includes,
    and the page(s) in scope. Note breakpoints, type scale, spacing system, color tokens,
    dark-mode handling, and component inventory.
 2. If a server is not running, start it with the `jekyll: serve` task, then open

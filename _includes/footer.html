@@ -1,0 +1,26 @@
+<footer>
+ <div class="footer-social">
+ <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+ <span class="footer-sep">&middot;</span>
+ <a href="{{ site.social.x }}" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+ </div>
+   <div class="footer-nav">
+{%- for link in site.data.footer_nav %}
+  <a href="{{ rp }}{{ link.href }}">{{ link.label }}</a>{% unless forloop.last %} &middot;{% endunless %}
+{%- endfor %}
+  </div>
+   <p class="footer-contact">Scott Weeden: <a href="#" class="eml" data-eml="scottweeden" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Johnathan King: <a href="#" class="eml" data-eml="johnathanking" data-dom="cloudfrontsgroup.org">click to reveal</a> &middot; Phone: {{ site.phone }}</p>
+  <p class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+<script src="{{ rp }}site.js" defer></script>
+<script src="https://unpkg.com/lucide@0.468.0" crossorigin="anonymous" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu"></script>
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+ lucide.createIcons({ attrs: { "aria-hidden": "true" } });
+ });
+</script>
+</body>
+</html>

@@ -5,6 +5,7 @@ Install (or remove) the site agents into every project-level location the editor
   python3 agent-plugins/install_locations.py install
   python3 agent-plugins/install_locations.py uninstall
   python3 agent-plugins/install_locations.py status
+  python3 agent-plugins/install_locations.py normalize-claude   # make .claude/settings.json path relative
 
 What "install" does, all inside this repository:
   .github/agents/<name>.agent.md     copies of the Agent Plugins package agents (native VS Code /
@@ -32,6 +33,9 @@ PKG_SKILLS = PACKAGE / 'skills'
 WS_AGENTS = ROOT / '.github' / 'agents'
 WS_SKILLS = ROOT / '.github' / 'skills'
 VSCODE_SETTINGS = ROOT / '.vscode' / 'settings.json'
+CLAUDE_SETTINGS = ROOT / '.claude' / 'settings.json'
+CLAUDE_MARKETPLACE = 'cloudfronts-agents'
+CLAUDE_MARKETPLACE_PATH = './agent-plugins'
 MANIFEST = '.generated'
 
 
@@ -137,6 +141,21 @@ def uninstall():
         _vscode_set_plugin_location(False)
 
 
+def normalize_claude():
+    """Keep the Claude marketplace path repo-relative so .claude/settings.json works in any clone."""
+    if not CLAUDE_SETTINGS.exists():
+        print('  .claude/settings.json: not present (run `claude plugin install --scope project` first)')
+        return
+    data = json.loads(CLAUDE_SETTINGS.read_text())
+    src = data.get('extraKnownMarketplaces', {}).get(CLAUDE_MARKETPLACE, {}).get('source', {})
+    if src.get('source') == 'directory' and src.get('path') != CLAUDE_MARKETPLACE_PATH:
+        src['path'] = CLAUDE_MARKETPLACE_PATH
+        CLAUDE_SETTINGS.write_text(json.dumps(data, indent=2) + '\n')
+        print(f'  .claude/settings.json: marketplace path normalized to {CLAUDE_MARKETPLACE_PATH}')
+    else:
+        print('  .claude/settings.json: marketplace path already relative')
+
+
 def status():
     for label, d in (('agents', WS_AGENTS), ('skills', WS_SKILLS)):
         m = d / MANIFEST
@@ -150,4 +169,4 @@ def status():
 
 if __name__ == '__main__':
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'install'
-    {'install': install, 'uninstall': uninstall, 'status': status}[cmd]()
+    {'install': install, 'uninstall': uninstall, 'status': status, 'normalize-claude': normalize_claude}[cmd]()

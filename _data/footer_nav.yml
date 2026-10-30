@@ -1,0 +1,15 @@
+# Footer quick links, rendered by _includes/footer.html in this order.
+- label: About
+  href: about-us.html
+- label: Blog
+  href: blog.html
+- label: Domains
+  href: domain-names.html
+- label: Web Design
+  href: web-design-hosting.html
+- label: Logo Design
+  href: logo-design.html
+- label: Marketing
+  href: marketing.html
+- label: Contact
+  href: contact.html

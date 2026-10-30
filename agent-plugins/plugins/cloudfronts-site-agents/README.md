@@ -38,3 +38,16 @@ claude plugin validate ./agent-plugins
 The generator maps VS Code tool names to Claude tool names and turns handoffs into a
 "Suggested next steps" section. Bump `version` in `.claude-plugin/plugin.json` so installed
 copies pick up the change on `claude plugin update`.
+
+## Makefile shortcuts
+
+From the repository root:
+
+```
+make install-agents    # regenerate + validate this plugin, install it at project scope, and install the
+                       # VS Code package into .github/agents, .github/skills and .vscode/settings.json
+make plugin            # regenerate + validate only
+make agents-status     # show where everything is installed
+make uninstall-agents  # remove all of the above from this project
+make copilot-install   # GitHub Copilot CLI (user-level; the CLI has no project scope)
+```

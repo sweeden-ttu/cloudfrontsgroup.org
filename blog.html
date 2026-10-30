@@ -1,0 +1,37 @@
+---
+layout: default
+title: "Blog — Cloud Fronts Group"
+description: "News, research notes, and practical guides from Cloud Fronts Group — web design, marketing, HUD data analytics, and community technology in Central Texas."
+active: blog
+feed_link: true
+---
+<div class="container" id="main-content">
+
+ <div class="section-heading">
+ <h2>Blog</h2>
+ <h3 class="hero-heading">Notes from Cloud Fronts Group</h3>
+ <p>Short, practical posts on growing a Central Texas business online, plus updates from our research and community technology work. Every post is written to be shared: pick one up and post it to Facebook, X, or LinkedIn with the buttons at the bottom of the article.</p>
+ <p><a href="feed.xml" class="btn btn-outline">Subscribe via RSS</a></p>
+ </div>
+
+{%- if site.posts.size == 0 %}
+ <p class="post-empty">No posts yet. Check back soon.</p>
+{%- endif %}
+
+ <div class="post-list">
+{%- for post in site.posts %}
+ <article class="post-card">
+{%- if post.image %}
+  <a class="post-card-media" href="{{ post.url | remove_first: '/' }}" tabindex="-1" aria-hidden="true"><img src="{{ post.image }}" alt="" loading="lazy" width="1200" height="630"></a>
+{%- endif %}
+  <div class="post-card-body">
+   <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time>{% if post.tags.size > 0 %} &middot; {% for tag in post.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}{% endif %}</p>
+   <h3 class="post-card-title"><a href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h3>
+   <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+   <a href="{{ post.url | remove_first: '/' }}" class="btn btn-outline btn-mt">Read more</a>
+  </div>
+ </article>
+{%- endfor %}
+ </div>
+
+</div>

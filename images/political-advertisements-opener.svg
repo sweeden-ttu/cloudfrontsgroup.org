@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+  <title id="t">Yard sign, mailer, phone ad and calendar arranged on a table</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <g id="day"><rect x="0" y="0" width="22" height="16" rx="5" fill="#B8C0CC"/></g>
+  </defs>
+
+  <!-- table -->
+  <rect x="180" y="612" width="1040" height="76" rx="38" fill="#CCEADD" opacity="0.6"/>
+  <path d="M200 616 H1200" stroke="#0B1528" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- wall calendar, upper right -->
+  <rect x="1012" y="162" width="230" height="260" rx="16" fill="#0B1528" opacity="0.08"/>
+  <rect x="1000" y="150" width="230" height="260" rx="16" fill="#FFFFFF" stroke="#0B1528" stroke-width="8"/>
+  <path d="M1000 212 H1230" stroke="#0B1528" stroke-width="7"/>
+  <rect x="1000" y="150" width="230" height="62" rx="16" fill="#0B1528"/>
+  <rect x="1000" y="196" width="230" height="16" fill="#0B1528"/>
+  <g fill="#FCF8F3"><circle cx="1050" cy="150" r="9"/><circle cx="1180" cy="150" r="9"/></g>
+  <path d="M1050 128 V150 M1180 128 V150" stroke="#0B1528" stroke-width="7" stroke-linecap="round"/>
+  <g>
+    <use href="#day" x="1024" y="232"/><use href="#day" x="1064" y="232"/><use href="#day" x="1104" y="232"/><use href="#day" x="1144" y="232"/><use href="#day" x="1184" y="232"/>
+    <use href="#day" x="1024" y="268"/><use href="#day" x="1064" y="268"/><use href="#day" x="1104" y="268"/><use href="#day" x="1144" y="268"/><use href="#day" x="1184" y="268"/>
+    <use href="#day" x="1024" y="304"/><use href="#day" x="1064" y="304"/><use href="#day" x="1104" y="304"/><use href="#day" x="1144" y="304"/><use href="#day" x="1184" y="304"/>
+    <use href="#day" x="1024" y="340"/><use href="#day" x="1064" y="340"/><use href="#day" x="1104" y="340"/><use href="#day" x="1144" y="340"/><use href="#day" x="1184" y="340"/>
+    <use href="#day" x="1024" y="376"/><use href="#day" x="1064" y="376"/><use href="#day" x="1104" y="376"/>
+  </g>
+  <g fill="none" stroke="#0B1528" stroke-width="5">
+    <ellipse cx="1115" cy="276" rx="20" ry="17" transform="rotate(-8 1115 276)"/>
+    <ellipse cx="1195" cy="312" rx="20" ry="17" transform="rotate(6 1195 312)"/>
+    <ellipse cx="1075" cy="384" rx="20" ry="17" transform="rotate(-5 1075 384)"/>
+  </g>
+
+  <!-- yard sign: wire stakes, then the panel (the one blue accent) -->
+  <g fill="none" stroke="#0B1528" stroke-width="8" stroke-linecap="round">
+    <path d="M300 450 V612 M520 450 V612"/>
+    <path d="M300 548 H520"/>
+  </g>
+  <rect x="232" y="242" width="380" height="230" rx="18" fill="#0B1528" opacity="0.08"/>
+  <rect x="220" y="230" width="380" height="230" rx="18" fill="#2463EB" stroke="#0B1528" stroke-width="8"/>
+  <rect x="250" y="312" width="320" height="66" rx="12" fill="#FCF8F3"/>
+  <path d="M0.0 -30.0 L7.3 -10.1 L28.5 -9.3 L11.9 3.9 L17.6 24.3 L0.0 12.5 L-17.6 24.3 L-11.9 3.9 L-28.5 -9.3 L-7.3 -10.1 Z" fill="#FFE0C2" stroke="#0B1528" stroke-width="5" stroke-linejoin="round" transform="translate(300 345)"/>
+  <rect x="350" y="404" width="200" height="14" rx="7" fill="#FCF8F3" opacity="0.8"/>
+
+  <!-- tri-fold mailer standing half open -->
+  <path d="M662 612 V340 L752 312 V622 Z M862 312 L942 342 V612 L862 622 Z" fill="#0B1528" opacity="0.08"/>
+  <path d="M650 600 V330 L740 300 V610 Z" fill="#DEF2E8" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M850 300 L930 330 V600 L850 610 Z" fill="#DEF2E8" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M668 402 L722 384 V440 L668 458 Z" fill="#FFF0C7" stroke="#0B1528" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M668 480 L722 462 M668 504 L710 490" stroke="#B8C0CC" stroke-width="9" stroke-linecap="round"/>
+  <rect x="740" y="300" width="110" height="310" fill="#FFFFFF" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="758" y="322" width="74" height="70" rx="8" fill="#FFE0C2"/>
+  <rect x="758" y="408" width="74" height="12" rx="6" fill="#B8C0CC"/>
+  <rect x="758" y="432" width="56" height="12" rx="6" fill="#B8C0CC"/>
+  <rect x="758" y="456" width="66" height="12" rx="6" fill="#B8C0CC"/>
+  <rect x="758" y="520" width="74" height="60" rx="8" fill="#CCEADD"/>
+  <path d="M866 384 L916 403 V458 L866 439 Z" fill="#CCEADD" stroke="#0B1528" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M866 480 L916 499 M866 504 L902 518" stroke="#B8C0CC" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- phone with a simple ad layout -->
+  <rect x="972" y="442" width="90" height="180" rx="18" fill="#0B1528" opacity="0.08"/>
+  <rect x="960" y="430" width="90" height="182" rx="18" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <rect x="972" y="452" width="66" height="14" rx="6" fill="#0B1528"/>
+  <rect x="972" y="474" width="66" height="54" rx="6" fill="#FFF0C7"/>
+  <rect x="972" y="538" width="66" height="10" rx="5" fill="#B8C0CC"/>
+  <rect x="972" y="556" width="46" height="10" rx="5" fill="#B8C0CC"/>
+  <rect x="978" y="578" width="54" height="18" rx="9" fill="#0B1528"/>
+</svg>

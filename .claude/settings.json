@@ -1,4 +1,7 @@
 {
+  "enabledPlugins": {
+    "cloudfronts-site-agents@cloudfronts-agents": true
+  },
   "extraKnownMarketplaces": {
     "cloudfronts-agents": {
       "source": {
@@ -6,8 +9,5 @@
         "path": "./agent-plugins"
       }
     }
-  },
-  "enabledPlugins": {
-    "cloudfronts-site-agents@cloudfronts-agents": true
   }
 }

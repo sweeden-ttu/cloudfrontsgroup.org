@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="t">
+  <title id="t">Notebook with a cloud sketch on a desk</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <path id="cl" d="M27.6 0 A40 40 0 0 1 47.7 -75.9 A60 60 0 0 1 163.5 -71.4 A38 38 0 0 1 187 0 Z"/>
+    <rect id="pg" width="200" height="300" rx="10"/>
+    <rect id="ring" width="26" height="10" rx="5" fill="#0B1528"/>
+  </defs>
+  <!-- window light across the desk -->
+  <g fill="#FFF0C7" opacity="0.45">
+    <path d="M230 63 H330 L270 567 H170 Z"/>
+    <path d="M400 63 H500 L440 567 H340 Z"/>
+  </g>
+  <!-- desk mat -->
+  <rect x="610" y="112" width="456" height="440" rx="26" fill="#DEF2E8" opacity="0.6"/>
+  <!-- open notebook -->
+  <g transform="translate(830 345) rotate(-4)">
+    <g fill="#0B1528" opacity="0.08" transform="translate(10 12)">
+      <use href="#pg" x="-200" y="-150"/><use href="#pg" x="0" y="-150"/>
+    </g>
+    <g fill="#FFFFFF" stroke="#0B1528" stroke-width="6" stroke-linejoin="round">
+      <use href="#pg" x="-200" y="-150"/><use href="#pg" x="0" y="-150"/>
+    </g>
+    <!-- spiral rings -->
+    <g>
+      <use href="#ring" x="-13" y="-128"/><use href="#ring" x="-13" y="-86"/><use href="#ring" x="-13" y="-44"/>
+      <use href="#ring" x="-13" y="-2"/><use href="#ring" x="-13" y="40"/><use href="#ring" x="-13" y="82"/><use href="#ring" x="-13" y="124"/>
+    </g>
+    <!-- handwriting rows on the left page -->
+    <g fill="#B8C0CC">
+      <rect x="-176" y="-116" width="140" height="12" rx="6"/>
+      <rect x="-176" y="-86" width="118" height="12" rx="6"/>
+      <rect x="-176" y="-56" width="150" height="12" rx="6"/>
+      <rect x="-176" y="-26" width="100" height="12" rx="6"/>
+      <rect x="-176" y="4" width="134" height="12" rx="6"/>
+      <rect x="-176" y="34" width="86" height="12" rx="6"/>
+      <rect x="-176" y="64" width="124" height="12" rx="6"/>
+      <rect x="32" y="66" width="120" height="12" rx="6"/>
+      <rect x="32" y="94" width="78" height="12" rx="6"/>
+    </g>
+    <!-- cloud sketch with flat horizon base on the right page -->
+    <g transform="translate(22 22)" fill="none" stroke="#0B1528" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <use href="#cl" transform="scale(0.72)" stroke-width="9.7"/>
+      <path d="M135 0 H160"/>
+    </g>
+  </g>
+  <!-- mug, from above, resting on the page corner -->
+  <ellipse cx="1008" cy="194" rx="50" ry="48" fill="#0B1528" opacity="0.08"/>
+  <circle cx="1046" cy="176" r="18" fill="none" stroke="#0B1528" stroke-width="8"/>
+  <circle cx="998" cy="184" r="46" fill="#FFFFFF" stroke="#0B1528" stroke-width="6"/>
+  <circle cx="998" cy="184" r="32" fill="#FFE0C2" stroke="#0B1528" stroke-width="4"/>
+  <!-- pen: the single blue accent -->
+  <g transform="translate(975 462) rotate(-34)">
+    <rect x="-130" y="2" width="240" height="16" rx="8" fill="#0B1528" opacity="0.08"/>
+    <path d="M-130 -5 L-150 0 L-130 5 Z" fill="#0B1528"/>
+    <rect x="-130" y="-8" width="240" height="16" rx="8" fill="#2463EB"/>
+    <rect x="70" y="-8" width="40" height="16" rx="8" fill="#0B1528"/>
+  </g>
+</svg>

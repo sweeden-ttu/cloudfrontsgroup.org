@@ -4,7 +4,9 @@
 
   // Agent plugins (see .github/plugins/cloudfronts-site-agents/README.md)
   "chat.plugins.enabled": true,
-
+  "chat.pluginLocations": {
+    "/Users/sweeden/Documents/cloudfrontsgroup.org/.github/plugins/cloudfronts-site-agents": true
+  },
   "files.exclude": {
     "_site": true,
     ".jekyll-cache": true,

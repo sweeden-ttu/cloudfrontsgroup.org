@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+<title id="t">Logo design process from sketches to the finished mark on a card and cup</title>
+<rect width="100%" height="100%" fill="#FCF8F3"/>
+<defs>
+<path id="cl" d="M14 44 H50 A8 8 0 0 0 52 28.3 A11 11 0 0 0 31 22 A9 9 0 0 0 14 30.5 A6.8 6.8 0 0 0 14 44 Z"/>
+<g id="mono"><use href="#cl" fill="#0B1528"/><path d="M14 44 H60" stroke="#0B1528" stroke-width="3" stroke-linecap="round" fill="none"/></g>
+<g id="color"><use href="#cl" fill="#0B1528"/><path d="M8 44 L30 30 L30 44 Z" fill="#2463EB"/><path d="M14 44 H60" stroke="#0B1528" stroke-width="3" stroke-linecap="round" fill="none"/></g>
+<rect id="tb" width="100" height="80" rx="6" fill="none" stroke="#B8C0CC" stroke-width="2"/>
+<rect id="an" x="-1.6" y="-1.6" width="3.2" height="3.2" fill="#FFFFFF" stroke="#0B1528" stroke-width="0.8"/>
+</defs>
+<!-- desk mat -->
+<rect x="230" y="150" width="940" height="492" rx="36" fill="#CCEADD" opacity="0.6"/>
+<!-- 1. thumbnail sketches -->
+<g transform="translate(180 190) rotate(-5)">
+<rect x="10" y="12" width="250" height="310" rx="8" fill="#0B1528" opacity="0.08"/>
+<rect width="250" height="310" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="2"/>
+<use href="#tb" x="22" y="22"/><use href="#tb" x="128" y="22"/><use href="#tb" x="22" y="115"/><use href="#tb" x="128" y="115"/><use href="#tb" x="22" y="208"/><use href="#tb" x="128" y="208"/>
+<g fill="none" stroke="#0B1528" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(38 36) scale(1.1)"><path d="M8 44 H60 M14 44 A10 10 0 0 1 24 28 A14 14 0 0 1 48 24 A10 10 0 0 1 56 44"/></g>
+<g transform="translate(144 36) scale(1.1)"><path d="M8 44 H60 M12 44 C10 30 22 24 30 30 C34 16 54 18 54 32 C62 34 62 44 56 44"/></g>
+<g transform="translate(38 129) scale(1.1)"><path d="M8 44 H60 M20 44 A18 18 0 0 1 56 44 M6 44 L24 34"/><path d="M4 8 L64 58" opacity="0.5"/></g>
+<g transform="translate(144 129) scale(1.1)"><path d="M10 44 H60 M16 44 C12 28 30 22 34 30 C40 16 58 22 56 44 M10 44 L30 32 L30 44"/></g>
+<g transform="translate(38 222) scale(1.1)"><path d="M8 44 H60 M14 42 C14 26 30 20 36 28 C48 18 60 30 56 42 M30 42 V34"/></g>
+<g transform="translate(144 222) scale(1.1)"><path d="M8 44 H60 M18 44 Q18 26 34 26 Q50 26 50 44 M50 44 L60 36"/></g>
+<ellipse cx="178" cy="155" rx="60" ry="48" stroke-width="3" opacity="0.8"/>
+</g>
+</g>
+<!-- 2. refined pencil drawing with construction circles -->
+<g transform="translate(450 170) rotate(3)">
+<rect x="10" y="12" width="280" height="330" rx="8" fill="#0B1528" opacity="0.08"/>
+<rect width="280" height="330" rx="8" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="2"/>
+<g transform="translate(30 90) scale(3.4)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<g stroke="#B8C0CC" stroke-width="0.6"><circle cx="50.5" cy="36.2" r="8"/><circle cx="41.5" cy="26" r="11"/><circle cx="22.5" cy="26.3" r="9.5"/><circle cx="14" cy="37.3" r="6.8"/><path d="M0 44 H66 M31 10 V58 M8 44 L30 30 L30 44"/></g>
+<use href="#cl" stroke="#0B1528" stroke-width="1.3"/>
+<path d="M8 44 L30 30 L30 44 M14 44 H60" stroke="#0B1528" stroke-width="1.3"/>
+</g>
+<g fill="#B8C0CC"><rect x="30" y="280" width="90" height="8" rx="4"/><rect x="130" y="280" width="60" height="8" rx="4"/></g>
+</g>
+<!-- pencil -->
+<g transform="translate(536 482) rotate(-32)">
+<rect x="8" y="10" width="230" height="24" rx="4" fill="#0B1528" opacity="0.08"/>
+<rect x="-2" y="-12" width="22" height="24" rx="6" fill="#FFE0C2" stroke="#0B1528" stroke-width="4"/>
+<rect x="18" y="-12" width="180" height="24" fill="#FFF0C7" stroke="#0B1528" stroke-width="4"/>
+<path d="M198 -12 L232 0 L198 12 Z" fill="#FFE0C2" stroke="#0B1528" stroke-width="4" stroke-linejoin="round"/>
+<path d="M222 -3.5 L232 0 L222 3.5 Z" fill="#0B1528"/>
+</g>
+<!-- 3. tablet with vector outline -->
+<g transform="translate(750 210)">
+<rect x="12" y="14" width="330" height="250" rx="24" fill="#0B1528" opacity="0.08"/>
+<rect width="330" height="250" rx="24" fill="#0B1528"/>
+<rect x="16" y="16" width="298" height="218" rx="12" fill="#FFFFFF"/>
+<g fill="#B8C0CC"><circle cx="40" cy="38" r="6"/><circle cx="60" cy="38" r="6"/><circle cx="80" cy="38" r="6"/><rect x="214" y="33" width="80" height="10" rx="5"/></g>
+<path d="M16 58 H314" stroke="#B8C0CC" stroke-width="2"/>
+<g transform="translate(62 72) scale(3.2)" fill="none" stroke="#0B1528" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<use href="#cl"/>
+<path d="M8 44 L30 30 L30 44 M14 44 H60"/>
+<use href="#an" x="14" y="44"/><use href="#an" x="50" y="44"/><use href="#an" x="52" y="28.3"/><use href="#an" x="31" y="22"/><use href="#an" x="14" y="30.5"/><use href="#an" x="60" y="44"/><use href="#an" x="8" y="44"/><use href="#an" x="30" y="30"/>
+</g>
+</g>
+<!-- stylus -->
+<g transform="translate(790 492) rotate(-4)">
+<rect x="0" y="-7" width="210" height="14" rx="7" fill="#0B1528"/>
+<path d="M210 -7 L232 0 L210 7 Z" fill="#B8C0CC"/>
+</g>
+<!-- 4. business card with the finished mark -->
+<g transform="translate(1000 222) rotate(-6)">
+<rect x="10" y="12" width="220" height="130" rx="10" fill="#0B1528" opacity="0.08"/>
+<rect width="220" height="130" rx="10" fill="#FFFFFF" stroke="#B8C0CC" stroke-width="2"/>
+<use href="#color" transform="translate(16 30) scale(1.25)"/>
+<g fill="#B8C0CC"><rect x="118" y="52" width="76" height="10" rx="5"/><rect x="118" y="70" width="56" height="10" rx="5"/><rect x="118" y="88" width="66" height="10" rx="5"/></g>
+</g>
+<!-- coffee cup with mono mark on sleeve -->
+<g transform="translate(1066 392)">
+<path d="M10 52 L24 242 Q24 256 38 256 H122 Q136 256 136 242 L150 52 Z" fill="#0B1528" opacity="0.08"/>
+<path d="M0 40 L14 230 Q14 244 28 244 H112 Q126 244 126 230 L140 40 Z" fill="#FFFFFF" stroke="#0B1528" stroke-width="6" stroke-linejoin="round"/>
+<rect x="-10" y="14" width="160" height="30" rx="10" fill="#0B1528"/>
+<rect x="22" y="0" width="96" height="18" rx="8" fill="#0B1528"/>
+<path d="M6 110 L14 192 H126 L134 110 Z" fill="#FFE0C2" stroke="#0B1528" stroke-width="5" stroke-linejoin="round"/>
+<use href="#mono" transform="translate(38 118)"/>
+</g>
+</svg>

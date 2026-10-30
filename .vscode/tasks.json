@@ -111,11 +111,11 @@
       "problemMatcher": []
     },
     {
-      "label": "site: assemble pages (python)",
-      "detail": "python3 _build/build.py — regenerate root HTML from _pages/ + _partials/ (the site's own templating step; run before jekyll build if you edited _pages or _partials)",
+      "label": "site: minify css",
+      "detail": "python3 scripts/minify_css.py — regenerate style.min.css after editing style.css",
       "type": "shell",
       "command": "python3",
-      "args": ["_build/build.py"],
+      "args": ["scripts/minify_css.py"],
       "problemMatcher": []
     },
     {

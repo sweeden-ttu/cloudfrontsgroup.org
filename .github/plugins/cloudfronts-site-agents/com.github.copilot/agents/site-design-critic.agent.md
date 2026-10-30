@@ -7,7 +7,7 @@ agents: ['UX Layout Judge', 'Jekyll Site Reviewer']
 handoffs:
   - label: Implement the redesign
     agent: agent
-    prompt: Implement the "Ship this" changes from the design critique above exactly as specified. Edit _pages/ fragments and style.css, run python3 _build/build.py, regenerate style.min.css the way the repo already does, and keep the rules in .github/instructions/jekyll-site.instructions.md.
+    prompt: Implement the "Ship this" changes from the design critique above exactly as specified. Edit the page files, layouts/includes and style.css, then run python3 scripts/minify_css.py, and keep the rules in .github/instructions/jekyll-site.instructions.md.
     send: false
   - label: Score it
     agent: UX Layout Judge
@@ -42,8 +42,7 @@ Design for that moment, not for a design award.
 1. **Look at the real thing.** If a server is not running, start the `jekyll: serve` task
    or `bundle exec jekyll serve` (prefix `export PATH="$HOME/.rbenv/shims:$PATH"`). Open
    http://127.0.0.1:4000/<page> at 375px, 768px and 1280px. Screenshot if you can. If you
-   cannot render, say so and reason from `style.css`, `site.js` and the fragment in
-   `_pages/`. Note the design tokens actually in use: color variables (theme `#003a70`),
+   cannot render, say so and reason from `style.css`, `site.js`, the layouts/includes and the page file. Note the design tokens actually in use: color variables (theme `#003a70`),
    type scale, spacing rhythm, radii, shadows, breakpoints, dark-mode rules.
 2. **Walk the page top to bottom as the visitor.** For each region (header/nav, hero,
    section headings, cards, stats, sidebar, CTA band, footer) answer: what is it asking me
@@ -51,7 +50,7 @@ Design for that moment, not for a design award.
    it, does it survive a narrow screen and large text.
 3. **Name the problem precisely.** "The hero `h2` and the section `h2` are the same size
    and weight so the page has no top" beats "hierarchy could be better". Reference the
-   selector and the line in `style.css` or the element in `_pages/<name>.html`.
+   selector and the line in `style.css` or the element in the page file or include.
 4. **Judge against principles, not taste:** one primary action per screen; consistent
    spacing scale; line length 45-75ch; contrast 4.5:1 for text and 3:1 for UI; tap
    targets 44px; headings in order; the same component looks the same everywhere;
@@ -70,9 +69,8 @@ Design for that moment, not for a design award.
 4. **Next** (up to 5) and **Someday** (short).
 5. **Owner decisions**: anything needing photos, copy, offers or a brand call. Never
    invent testimonials, logos, statistics, awards or client names.
-6. If asked to implement: make the edits in `_pages/` and `style.css`, run
-   `python3 _build/build.py`, regenerate `style.min.css` the way git history shows (or
-   state that it is stale), rebuild Jekyll, re-check at all three widths, and list files
+6. If asked to implement: make the edits in the page files, includes and `style.css`, run
+   `python3 scripts/minify_css.py`, rebuild Jekyll, re-check at all three widths, and list files
    changed. Keep one `class` attribute per element and `alt` on every image.
 
 ## Never

@@ -1,0 +1,26 @@
+<body{% if page.section and page.section != '' %} data-section="{{ page.section }}"{% endif %}>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+ <div class="inner">
+ <h1><svg class="brand-mark" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><path d="M14 44 H50 A8 8 0 0 0 52 28.3 A11 11 0 0 0 31 22 A9 9 0 0 0 14 30.5 A6.8 6.8 0 0 0 14 44 Z" fill="currentColor"/><path d="M8 44 L30 30 L30 44 Z" fill="var(--brand-blue)"/><path d="M14 44 H60" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/></svg> Cloud Fronts <span>Group</span></h1>
+ <button class="menu-toggle" aria-label="Toggle navigation menu"><i data-lucide="menu"></i></button>
+ <button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span></button>
+ <nav aria-label="Main navigation">
+{%- for item in site.data.nav %}
+{%- if item.items %}
+ <div class="dropdown">
+ <a href="#" class="dropbtn">{{ item.label }} ▼</a>
+ <div class="dropdown-content">
+{%- for sub in item.items %}
+ <a href="{{ rp }}{{ sub.href }}">{{ sub.label }}</a>
+{%- endfor %}
+ </div>
+ </div>
+{%- else %}
+ <a href="{{ rp }}{{ item.href }}"{% if item.key and page.active == item.key %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a>
+{%- endif %}
+{%- endfor %}
+ </nav>
+ </div>
+</header>

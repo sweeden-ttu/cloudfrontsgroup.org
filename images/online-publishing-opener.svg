@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+<title id="t">Book, magazine, tablet and phone showing published content formats</title>
+<rect width="100%" height="100%" fill="#FCF8F3"/>
+<ellipse cx="720" cy="646" rx="540" ry="30" fill="#DEF2E8" opacity="0.6"/>
+<g stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<!-- hardcover book -->
+<rect x="266" y="216" width="220" height="320" rx="12" fill="#0B1528" opacity="0.08" stroke="none"/>
+<rect x="254" y="204" width="220" height="320" rx="10" fill="#FFFFFF" stroke-width="6"/>
+<rect x="240" y="190" width="220" height="320" rx="12" fill="#0B1528" stroke-width="8"/>
+<circle cx="350" cy="320" r="54" fill="#FFE0C2" stroke="none"/>
+<rect x="290" y="404" width="120" height="16" rx="8" fill="#FFE0C2" stroke="none"/>
+<rect x="290" y="436" width="80" height="16" rx="8" fill="#FFE0C2" stroke="none"/>
+<!-- blue bookmark ribbon: the single blue accent -->
+<path d="M424 190 V276 L408 258 L392 276 V190 Z" fill="#2463EB" stroke="none"/>
+<!-- tablet showing a document -->
+<rect x="612" y="152" width="240" height="330" rx="22" fill="#0B1528" opacity="0.08" stroke="none"/>
+<rect x="600" y="140" width="240" height="330" rx="22" fill="#FFFFFF" stroke-width="8"/>
+<circle cx="720" cy="162" r="5" fill="#0B1528" stroke="none"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="632" y="198" width="120" height="14" rx="7"/>
+<rect x="632" y="234" width="176" height="10" rx="5"/>
+<rect x="632" y="256" width="176" height="10" rx="5"/>
+<rect x="632" y="278" width="150" height="10" rx="5"/>
+<rect x="632" y="300" width="176" height="10" rx="5"/>
+<rect x="632" y="322" width="130" height="10" rx="5"/>
+</g>
+<rect x="632" y="356" width="176" height="80" rx="10" fill="#FFF0C7" stroke-width="5"/>
+<!-- open magazine spread -->
+<g transform="rotate(-4 910 495)">
+<rect x="752" y="392" width="340" height="230" rx="8" fill="#0B1528" opacity="0.08" stroke="none"/>
+<rect x="740" y="380" width="170" height="230" rx="8" fill="#FFFFFF" stroke-width="6"/>
+<rect x="910" y="380" width="170" height="230" rx="8" fill="#FFFFFF" stroke-width="6"/>
+<line x1="910" y1="380" x2="910" y2="610" stroke-width="6"/>
+<rect x="766" y="406" width="118" height="90" rx="10" fill="#CCEADD" stroke-width="5"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="766" y="514" width="118" height="10" rx="5"/>
+<rect x="766" y="534" width="98" height="10" rx="5"/>
+<rect x="766" y="554" width="118" height="10" rx="5"/>
+<rect x="766" y="574" width="76" height="10" rx="5"/>
+<rect x="936" y="410" width="118" height="12" rx="6"/>
+<rect x="936" y="434" width="104" height="10" rx="5"/>
+<rect x="936" y="454" width="118" height="10" rx="5"/>
+</g>
+<rect x="936" y="482" width="118" height="104" rx="10" fill="#FFE0C2" stroke-width="5"/>
+</g>
+<!-- phone with a newsletter card -->
+<rect x="1132" y="262" width="116" height="236" rx="22" fill="#0B1528" opacity="0.08" stroke="none"/>
+<rect x="1120" y="250" width="116" height="236" rx="22" fill="#FFFFFF" stroke-width="8"/>
+<rect x="1136" y="288" width="84" height="124" rx="10" fill="#FFF0C7" stroke-width="5"/>
+<rect x="1146" y="298" width="64" height="42" rx="6" fill="#FFE0C2" stroke-width="4"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="1146" y="352" width="64" height="8" rx="4"/>
+<rect x="1146" y="368" width="48" height="8" rx="4"/>
+<rect x="1146" y="428" width="64" height="8" rx="4"/>
+<rect x="1146" y="446" width="52" height="8" rx="4"/>
+</g>
+<rect x="1146" y="388" width="40" height="12" rx="6" fill="#0B1528" stroke="none"/>
+</g>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+<title id="t">One document in the center connected to six content formats</title>
+<defs>
+<rect id="cardsh" x="-75" y="-50" width="170" height="120" rx="16" fill="#0B1528" opacity="0.08"/>
+<rect id="card" x="-85" y="-60" width="170" height="120" rx="16" stroke="#0B1528" stroke-width="6"/>
+</defs>
+<rect width="100%" height="100%" fill="#FCF8F3"/>
+<ellipse cx="700" cy="400" rx="230" ry="180" fill="#DEF2E8" opacity="0.6"/>
+<!-- spokes: the single blue accent -->
+<g stroke="#2463EB" stroke-width="8" stroke-linecap="round" fill="none">
+<path d="M700 400 L1130 400 M700 400 L915 190 M700 400 L485 190 M700 400 L270 400 M700 400 L485 610 M700 400 L915 610"/>
+</g>
+<g stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<!-- central document -->
+<path d="M632 312 a14 14 0 0 1 14 -14 H732 L792 358 V500 a14 14 0 0 1 -14 14 H646 a14 14 0 0 1 -14 -14 Z" fill="#0B1528" opacity="0.08" stroke="none"/>
+<path d="M620 300 a14 14 0 0 1 14 -14 H720 L780 346 V488 a14 14 0 0 1 -14 14 H634 a14 14 0 0 1 -14 -14 Z" fill="#FFFFFF" stroke-width="8"/>
+<path d="M720 286 V346 H780 Z" fill="#FFF0C7" stroke-width="7"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="648" y="376" width="104" height="12" rx="6"/>
+<rect x="648" y="404" width="84" height="12" rx="6"/>
+<rect x="648" y="432" width="104" height="12" rx="6"/>
+<rect x="648" y="460" width="64" height="12" rx="6"/>
+</g>
+<!-- left: blog page -->
+<g transform="translate(270 400)">
+<use href="#cardsh"/><use href="#card" fill="#CCEADD"/>
+<rect x="-55" y="-40" width="110" height="36" rx="6" fill="#FFFFFF" stroke-width="4"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="-55" y="8" width="110" height="9" rx="4"/>
+<rect x="-55" y="26" width="80" height="9" rx="4"/>
+</g>
+</g>
+<!-- top left: social post -->
+<g transform="translate(485 190)">
+<use href="#cardsh"/><use href="#card" fill="#FFE0C2"/>
+<circle cx="-40" cy="-32" r="12" fill="#0B1528" stroke="none"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="-20" y="-38" width="60" height="8" rx="4"/>
+<rect x="-20" y="-24" width="40" height="8" rx="4"/>
+</g>
+<rect x="-55" y="-8" width="110" height="38" rx="6" fill="#FFFFFF" stroke-width="4"/>
+<path d="M40 44 C32 36 24 44 32 50 L40 57 L48 50 C56 44 48 36 40 44 Z" fill="#0B1528" stroke="none"/>
+</g>
+<!-- top right: video -->
+<g transform="translate(915 190)">
+<use href="#cardsh"/><use href="#card" fill="#DEF2E8"/>
+<rect x="-55" y="-40" width="110" height="80" rx="8" fill="#FFFFFF" stroke-width="4"/>
+<path d="M-12 -20 L18 0 L-12 20 Z" fill="#0B1528" stroke-width="5"/>
+</g>
+<!-- right: microphone -->
+<g transform="translate(1130 400)">
+<use href="#cardsh"/><use href="#card" fill="#FFF0C7"/>
+<rect x="-18" y="-46" width="36" height="62" rx="18" fill="#0B1528" stroke="none"/>
+<path d="M-32 -8 A32 32 0 0 0 32 -8 M0 24 V40 M-18 40 H18" fill="none" stroke-width="6"/>
+</g>
+<!-- bottom right: envelope -->
+<g transform="translate(915 610)">
+<use href="#cardsh"/><use href="#card" fill="#FFE0C2"/>
+<rect x="-55" y="-36" width="110" height="72" rx="8" fill="#FFFFFF" stroke-width="5"/>
+<path d="M-55 -30 L0 8 L55 -30" fill="none" stroke-width="5"/>
+</g>
+<!-- bottom left: slide -->
+<g transform="translate(485 610)">
+<use href="#cardsh"/><use href="#card" fill="#DEF2E8"/>
+<rect x="-55" y="-42" width="110" height="74" rx="6" fill="#FFFFFF" stroke-width="4"/>
+<g fill="#0B1528" stroke="none">
+<rect x="-32" y="8" width="14" height="16" rx="3"/>
+<rect x="-7" y="-8" width="14" height="32" rx="3"/>
+<rect x="18" y="-24" width="14" height="48" rx="3"/>
+</g>
+<path d="M0 32 V46 M-16 46 H16" fill="none" stroke-width="5"/>
+</g>
+</g>
+</svg>

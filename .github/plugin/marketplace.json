@@ -5,15 +5,20 @@
   },
   "metadata": {
     "description": "Agent plugins published from the cloudfrontsgroup.org repository.",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "cloudfronts-site-agents",
       "source": "./.github/plugins/cloudfronts-site-agents",
       "description": "Custom agents and a Jekyll conventions skill for maintaining cloudfrontsgroup.org.",
-      "version": "0.1.0",
-      "keywords": ["jekyll", "static-site", "ux-review", "code-review"]
+      "version": "0.2.0",
+      "keywords": [
+        "jekyll",
+        "static-site",
+        "ux-review",
+        "code-review"
+      ]
     }
   ]
 }

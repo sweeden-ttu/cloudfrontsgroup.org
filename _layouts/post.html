@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{%- assign rp = page.root_prefix | default: '' -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign minutes = words | divided_by: 200 | at_least: 1 -%}
+<div class="container post-container" id="main-content">
+ <article class="post">
+  <header class="post-header">
+   <p class="post-kicker"><a href="{{ rp }}blog.html">Blog</a>{% if page.tags.size > 0 %} &middot; {% for tag in page.tags %}<span class="post-tag">{{ tag }}</span>{% endfor %}{% endif %}</p>
+   <h2 class="post-title">{{ page.title }}</h2>
+   <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time> &middot; {{ page.author }} &middot; {{ minutes }} min read</p>
+  </header>
+{%- if page.image %}
+  <figure class="post-hero">
+   <img src="{{ rp }}{{ page.image }}" alt="{{ page.image_alt | default: page.title }}" width="1200" height="630">
+{%- if page.image_caption %}
+   <figcaption>{{ page.image_caption }}</figcaption>
+{%- endif %}
+  </figure>
+{%- endif %}
+  <div class="post-body">
+{{ content }}
+  </div>
+  {% include share.html %}
+  <footer class="post-footer">
+{%- if page.previous or page.next %}
+   <nav class="post-nav" aria-label="More posts">
+{%- if page.previous %}
+    <a class="post-nav-prev" href="{{ rp }}{{ page.previous.url | remove_first: '/' }}"><span>Older</span>{{ page.previous.title }}</a>
+{%- endif %}
+{%- if page.next %}
+    <a class="post-nav-next" href="{{ rp }}{{ page.next.url | remove_first: '/' }}"><span>Newer</span>{{ page.next.title }}</a>
+{%- endif %}
+   </nav>
+{%- endif %}
+  </footer>
+ </article>
+
+ <aside class="post-cta">
+  <h3>Ready to grow your business?</h3>
+  <p>Web design, logo design, marketing, and digital services for Central Texas, with no long-term contracts.</p>
+  <div class="hero-cta">
+   <a href="tel:{{ site.phone_tel }}" class="btn btn-primary">Call Us Now</a>
+   <a href="{{ rp }}contact.html" class="btn btn-gold">Email Us Now</a>
+  </div>
+ </aside>
+</div>

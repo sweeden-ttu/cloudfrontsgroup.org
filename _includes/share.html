@@ -1,0 +1,27 @@
+{%- comment -%}
+Static share links for a post. No third-party scripts, no tracking.
+Uses page.social_text (if set) as the pre-written post text for X / email.
+{%- endcomment -%}
+{%- assign share_url = page.url | absolute_url -%}
+{%- assign share_text = page.social_text | default: page.title -%}
+{%- assign via = site.social.x_handle | remove: '@' -%}
+<div class="share" aria-label="Share this post">
+ <span class="share-label">Share this post</span>
+ <a class="share-btn" href="https://twitter.com/intent/tweet?text={{ share_text | url_encode }}&amp;url={{ share_url | url_encode }}{% if via != '' %}&amp;via={{ via }}{% endif %}" target="_blank" rel="noopener">X</a>
+ <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u={{ share_url | url_encode }}" target="_blank" rel="noopener">Facebook</a>
+ <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener">LinkedIn</a>
+ <a class="share-btn" href="mailto:?subject={{ page.title | url_encode }}&amp;body={{ share_text | url_encode }}%20{{ share_url | url_encode }}">Email</a>
+ <button type="button" class="share-btn share-copy" data-url="{{ share_url }}">Copy link</button>
+</div>
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+ var btn = document.querySelector('.share-copy');
+ if (!btn || !navigator.clipboard) { return; }
+ btn.addEventListener('click', function () {
+ navigator.clipboard.writeText(btn.getAttribute('data-url')).then(function () {
+ var label = btn.textContent; btn.textContent = 'Copied'; btn.classList.add('is-copied');
+ setTimeout(function () { btn.textContent = label; btn.classList.remove('is-copied'); }, 1600);
+ });
+ });
+ });
+</script>

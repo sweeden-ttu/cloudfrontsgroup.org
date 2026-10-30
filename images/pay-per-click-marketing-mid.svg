@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+<title id="t">Four-step journey showing a visitor leaving and returning after a reminder ad</title>
+<defs>
+<g id="fig" stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="0" cy="-170" r="28" fill="#0B1528" stroke="none"/>
+<path d="M-14 -34 V-4 M14 -34 V-4" stroke-width="10" fill="none"/>
+<rect x="-32" y="-134" width="64" height="104" rx="30" stroke-width="6"/>
+</g>
+<g id="figw" stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="0" cy="-170" r="28" fill="#0B1528" stroke="none"/>
+<path d="M-10 -34 L-30 -4 M10 -34 L32 -4" stroke-width="10" fill="none"/>
+<rect x="-32" y="-134" width="64" height="104" rx="30" stroke-width="6"/>
+</g>
+<g id="lap" stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="140" height="14" rx="7" fill="#0B1528" stroke="none"/>
+<path d="M20 14 V80 M120 14 V80" stroke-width="8" fill="none"/>
+<rect x="22" y="-88" width="112" height="80" rx="10" fill="#FFFFFF" stroke-width="7"/>
+<rect x="10" y="-12" width="132" height="12" rx="6" fill="#0B1528" stroke="none"/>
+</g>
+</defs>
+<rect width="100%" height="100%" fill="#FCF8F3"/>
+<g transform="translate(0 -30)">
+<!-- pads -->
+<ellipse cx="270" cy="606" rx="120" ry="22" fill="#CCEADD" opacity="0.6"/>
+<ellipse cx="560" cy="606" rx="120" ry="22" fill="#DEF2E8" opacity="0.6"/>
+<ellipse cx="850" cy="606" rx="120" ry="22" fill="#FFF0C7" opacity="0.6"/>
+<ellipse cx="1120" cy="606" rx="120" ry="22" fill="#FFE0C2" opacity="0.6"/>
+<!-- dotted brand-blue path: the single blue accent -->
+<path d="M310 400 C340 300 380 240 430 240 C490 240 560 350 605 350 C650 350 690 240 730 240 C780 240 840 320 880 320 C930 320 970 220 1010 220 C1060 220 1100 318 1140 318" fill="none" stroke="#2463EB" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 24"/>
+<g stroke="#0B1528" stroke-linecap="round" stroke-linejoin="round">
+<!-- 1: person at a laptop -->
+<use href="#fig" x="200" y="600" fill="#CCEADD"/>
+<use href="#lap" x="240" y="520"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="276" y="450" width="80" height="8" rx="4"/>
+<rect x="276" y="468" width="56" height="8" rx="4"/>
+<rect x="276" y="486" width="68" height="8" rx="4"/>
+</g>
+<!-- 2: walking away toward a doorway -->
+<path d="M560 600 V425 A45 45 0 0 1 650 425 V600 Z" fill="#FFE0C2" stroke-width="6"/>
+<circle cx="634" cy="520" r="6" fill="#0B1528" stroke="none"/>
+<use href="#figw" x="500" y="600" fill="#DEF2E8"/>
+<path d="M428 450 H456 M418 480 H452 M428 510 H456" stroke-width="6" fill="none"/>
+<!-- 3: phone with a reminder ad card -->
+<rect x="800" y="370" width="120" height="240" rx="22" fill="#0B1528" opacity="0.08" stroke="none"/>
+<rect x="790" y="360" width="120" height="240" rx="22" fill="#FFFFFF" stroke-width="8"/>
+<rect x="806" y="400" width="88" height="110" rx="12" fill="#FFF0C7" stroke-width="5"/>
+<rect x="818" y="412" width="64" height="44" rx="8" fill="#FFE0C2" stroke-width="4"/>
+<g fill="#B8C0CC" stroke="none">
+<rect x="818" y="468" width="64" height="8" rx="4"/>
+<rect x="818" y="486" width="44" height="8" rx="4"/>
+<rect x="818" y="530" width="64" height="8" rx="4"/>
+<rect x="818" y="548" width="52" height="8" rx="4"/>
+</g>
+<circle cx="906" cy="364" r="14" fill="#FFE0C2" stroke-width="5"/>
+<path d="M926 329 A40 40 0 0 1 941 384 M940 305 A68 68 0 0 1 965 398" stroke-width="6" fill="none"/>
+<!-- 4: returning with a cart and a check -->
+<use href="#fig" x="1025" y="600" fill="#FFE0C2"/>
+<use href="#lap" x="1065" y="520"/>
+<path d="M1100 452 H1110 L1120 488 H1162 L1170 462 H1116" stroke-width="5" fill="none"/>
+<circle cx="1126" cy="500" r="4" fill="#0B1528" stroke="none"/>
+<circle cx="1156" cy="500" r="4" fill="#0B1528" stroke="none"/>
+<circle cx="1146" cy="364" r="32" fill="#0B1528" opacity="0.08" stroke="none"/>
+<circle cx="1140" cy="358" r="32" fill="#CCEADD" stroke-width="6"/>
+<path d="M1124 360 L1136 372 L1158 346" stroke-width="7" fill="none"/>
+</g>
+</g>
+</svg>

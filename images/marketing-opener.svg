@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+  <title id="t">Overhead view of a marketing planning desk with charts and notes</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <g id="note">
+      <rect x="10" y="12" width="120" height="120" rx="8" fill="#0B1528" opacity="0.08"/>
+      <rect x="0" y="0" width="120" height="120" rx="8" stroke="#0B1528" stroke-width="6"/>
+    </g>
+    <!-- bluebonnet spike: ovals along the top of a stem -->
+    <g id="bb" fill="#2463EB">
+      <ellipse cx="0" cy="0" rx="7" ry="11"/>
+      <ellipse cx="-10" cy="20" rx="7" ry="11"/>
+      <ellipse cx="10" cy="24" rx="7" ry="11"/>
+      <ellipse cx="-9" cy="44" rx="7" ry="11"/>
+      <ellipse cx="9" cy="48" rx="7" ry="11"/>
+    </g>
+  </defs>
+
+  <!-- desk mat -->
+  <rect x="190" y="130" width="1050" height="550" rx="44" fill="#DEF2E8" opacity="0.6"/>
+
+  <!-- coffee mug, overhead -->
+  <circle cx="282" cy="214" r="54" fill="#0B1528" opacity="0.08"/>
+  <path d="M318 174 C372 170 372 236 318 232" fill="none" stroke="#0B1528" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="270" cy="202" r="54" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <circle cx="270" cy="202" r="38" fill="#0B1528"/>
+  <circle cx="256" cy="190" r="9" fill="#FCF8F3" opacity="0.6"/>
+
+  <!-- pencil, lying beside the notebook -->
+  <g transform="translate(272 480) rotate(80)">
+    <rect x="-130" y="-10" width="236" height="22" rx="4" fill="#FFF0C7" stroke="#0B1528" stroke-width="6"/>
+    <path d="M106 -11 L146 0 L106 11 Z" fill="#FFE0C2" stroke="#0B1528" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M136 -3 L146 0 L136 3 Z" fill="#0B1528"/>
+    <rect x="-156" y="-11" width="30" height="22" rx="6" fill="#FFE0C2" stroke="#0B1528" stroke-width="6"/>
+  </g>
+
+  <!-- open notebook -->
+  <g transform="rotate(-2 570 415)">
+    <rect x="344" y="236" width="476" height="386" rx="16" fill="#0B1528" opacity="0.08"/>
+    <rect x="332" y="222" width="476" height="386" rx="16" fill="#0B1528"/>
+    <rect x="346" y="236" width="218" height="358" rx="8" fill="#FFFFFF"/>
+    <rect x="576" y="236" width="218" height="358" rx="8" fill="#FFFFFF"/>
+    <g fill="#FFFFFF" stroke="#0B1528" stroke-width="4">
+      <circle cx="570" cy="270" r="9"/><circle cx="570" cy="320" r="9"/><circle cx="570" cy="370" r="9"/>
+      <circle cx="570" cy="420" r="9"/><circle cx="570" cy="470" r="9"/><circle cx="570" cy="520" r="9"/><circle cx="570" cy="570" r="9"/>
+    </g>
+    <!-- left page: rising line chart -->
+    <path d="M386 556 L410 520 L446 484 L478 500 L514 424 L544 336 V556 Z" fill="#FFE0C2"/>
+    <path d="M386 300 V556 H546" fill="none" stroke="#0B1528" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M410 520 L446 484 L478 500 L514 424 L544 336" fill="none" stroke="#0B1528" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#FFFFFF" stroke="#0B1528" stroke-width="6">
+      <circle cx="410" cy="520" r="8"/><circle cx="446" cy="484" r="8"/><circle cx="478" cy="500" r="8"/><circle cx="514" cy="424" r="8"/><circle cx="544" cy="336" r="8"/>
+    </g>
+    <rect x="386" y="262" width="110" height="12" rx="6" fill="#B8C0CC"/>
+    <!-- right page: funnel sketch -->
+    <path d="M604 292 H768 L740 346 H632 Z" fill="#FFF0C7" stroke="#0B1528" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M632 358 H740 L716 412 H656 Z" fill="#FFE0C2" stroke="#0B1528" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M656 424 H716 L700 478 H672 Z" fill="#CCEADD" stroke="#0B1528" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="604" y="512" width="160" height="12" rx="6" fill="#B8C0CC"/>
+    <rect x="604" y="536" width="120" height="12" rx="6" fill="#B8C0CC"/>
+    <rect x="604" y="560" width="140" height="12" rx="6" fill="#B8C0CC"/>
+  </g>
+
+  <!-- tablet with bar chart -->
+  <g transform="rotate(3 1005 300)">
+    <rect x="872" y="202" width="290" height="220" rx="22" fill="#0B1528" opacity="0.08"/>
+    <rect x="860" y="190" width="290" height="220" rx="22" fill="#FFFFFF" stroke="#0B1528" stroke-width="8"/>
+    <rect x="882" y="212" width="246" height="176" rx="10" fill="#FCF8F3"/>
+    <g stroke="#0B1528" stroke-width="5">
+      <rect x="900" y="312" width="34" height="58" rx="6" fill="#CCEADD"/>
+      <rect x="948" y="282" width="34" height="88" rx="6" fill="#FFF0C7"/>
+      <rect x="996" y="300" width="34" height="70" rx="6" fill="#FFE0C2"/>
+      <rect x="1044" y="256" width="34" height="114" rx="6" fill="#CCEADD"/>
+      <rect x="1092" y="236" width="34" height="134" rx="6" fill="#FFF0C7"/>
+    </g>
+    <path d="M896 372 H1130" stroke="#0B1528" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- three blank sticky notes -->
+  <use href="#note" fill="#FFF0C7" transform="translate(846 470) rotate(-5)"/>
+  <use href="#note" fill="#FFE0C2" transform="translate(958 500) rotate(6)"/>
+  <use href="#note" fill="#CCEADD" transform="translate(1062 462) rotate(-3)"/>
+
+  <!-- jar with bluebonnets, seen from above with the sprig leaning out -->
+  <circle cx="1192" cy="622" r="48" fill="#0B1528" opacity="0.08"/>
+  <g fill="none" stroke="#0B1528" stroke-width="6" stroke-linecap="round">
+    <path d="M1180 610 Q1176 540 1168 480"/>
+    <path d="M1180 610 Q1200 550 1212 504"/>
+    <path d="M1180 610 Q1215 580 1240 548"/>
+  </g>
+  <use href="#bb" transform="translate(1168 428)"/>
+  <use href="#bb" transform="translate(1212 456)"/>
+  <use href="#bb" transform="translate(1242 506) scale(0.85)"/>
+  <circle cx="1180" cy="610" r="48" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <circle cx="1180" cy="610" r="32" fill="#DEF2E8"/>
+</svg>

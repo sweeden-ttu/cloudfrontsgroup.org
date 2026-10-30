@@ -1,0 +1,10 @@
+{%- comment -%}
+Site shell. Every page and post renders through this layout.
+`rp` is the relative prefix back to the site root ('' for root pages,
+'../' for posts under /blog/), set via front-matter defaults in _config.yml.
+{%- endcomment -%}
+{%- assign rp = page.root_prefix | default: '' -%}
+{% include head.html %}
+{% include header.html %}
+{{ content }}
+{% include footer.html %}

@@ -1,25 +1,104 @@
-# Jekyll config for LOCAL preview only.
-# Production is served by GitHub Pages as raw static files (.nojekyll),
-# so nothing here affects the live site.
+# Jekyll configuration for cloudfrontsgroup.org
+#
+# Production: GitHub Pages builds this repository with Jekyll (github-pages gem,
+# Jekyll 3.10). Keep templates to features that exist in both Jekyll 3.10 and
+# the Jekyll 4.4 used for local preview, and only use the plugins listed under
+# `plugins:` (all are on the GitHub Pages allowlist).
+#
+# Local preview: `bundle exec jekyll serve --livereload` or the VS Code task.
 
+# ── Site identity ─────────────────────────────────────────────────────────────
 title: Cloud Fronts Group
+tagline: Growing Your Business Online
+description: Cloud Fronts Group helps Central Texas businesses grow with professional web design, logo design, marketing, and digital services.
 url: "https://cloudfrontsgroup.org"
 baseurl: ""
+lang: en
 
-# Pages at the repo root have no front matter, so Jekyll copies them
-# through untouched as static files.
+# Contact and structured-data values used by _includes/head.html and footer.html
+phone: 254-317-6688
+phone_tel: "+1-254-317-6688"
+emails:
+  - scottweeden@cloudfrontsgroup.org
+  - johnathanking@cloudfrontsgroup.org
+area_served: Central Texas
+founding_date: "2026"
+schema_default: "Central Texas digital services and community research — web design, logo design, marketing, AI/ML research, and community technology programs."
+
+# Default Open Graph image for pages without their own (posts use `image`).
+og_default: images/og-default.png
+
+social:
+  facebook: https://facebook.com/cloudfrontsgroup
+  x: https://x.com/cloudfrontsgroup
+  x_handle: "@cloudfrontsgroup"
+
+# Brand tokens, mirrored from style.css :root so templates and docs agree.
+# Change colors in style.css first; this block is the reference copy.
+brand:
+  theme_color: "#003a70"
+  navy: "#0b1528"
+  blue: "#2463eb"
+  background: "#fcf8f3"
+  surface: "#ffffff"
+  cyan: "#cceadd"
+  teal: "#def2e8"
+  gold: "#fff0c7"
+  amber: "#ffe0c2"
+  font_heading: "Outfit"
+  font_body: "Open Sans"
+  radius: 16px
+  mark: images/logo/cloud-fronts-mark.svg          # primary mark; header uses an inline copy
+  mark_reversed: images/logo/cloud-fronts-mark-reversed.svg
+  avatar: images/logo/cloud-fronts-avatar.png       # 1024x1024 social avatar
+  lockup: images/logo/cloud-fronts-lockup.svg
+
+# The old build emitted two Firebase SDK <script> tags that nothing used
+# (left over from the removed visitor counter). Flip to true only to restore them.
+legacy_firebase_scripts: false
+
+# ── Content ───────────────────────────────────────────────────────────────────
 markdown: kramdown
-permalink: pretty
+kramdown:
+  input: GFM
+  hard_wrap: false
+excerpt_separator: "<!--more-->"
+timezone: America/Chicago
 
-# Keep the local build output out of the way of the source tree.
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+  posts_limit: 20
+  excerpt_only: false
+
+defaults:
+  # Root pages: thin HTML files with front matter, rendered through default.html
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  # Blog posts live in _posts/ and publish under /blog/<slug>.html
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      root_prefix: "../"
+      active: blog
+      author: Cloud Fronts Group
+      permalink: /blog/:title.html
+
+# ── Build ─────────────────────────────────────────────────────────────────────
 destination: _site
 
-# Source-only tooling that must not be copied into _site.
 exclude:
   - Gemfile
-  - Makefile
-  - _baseline/
   - Gemfile.lock
+  - Makefile
   - README.md
   - IMAGES_NEEDED.txt
   - deploy.sh
@@ -27,6 +106,7 @@ exclude:
   - imagespecs/
   - scripts/
   - agent-plugins/
+  - docs/
   - images/split/
   - images/split_v2/
   - images/split_v3/
@@ -34,19 +114,17 @@ exclude:
   - vendor/
   - .vscode/
   - .github/
-  - docs/
+  - .claude/
   - .opencode/
   - .Jules/
+  - .anchor/
   - .aider*
+  - "*.pdf"
   - "*.tar.gz"
   - "*.zip"
   - "backup-*"
 
-# Files Jekyll would normally skip (dotfiles) that the site needs.
-include:
-  - .nojekyll
-
-# Dev server
+# Dev server (ignored by GitHub Pages)
 host: 127.0.0.1
 port: 4000
 livereload: true

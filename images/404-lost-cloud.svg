@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t">
+  <title id="t">A lost little cloud beside an empty signpost</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <path id="st" d="M600 700 V612"/>
+    <path id="rd" d="M600 612 C590 560 520 530 470 490 C430 455 400 420 388 402 M600 612 C610 560 680 530 730 490 C770 455 800 420 812 402"/>
+    <path id="cl" d="M27.6 0 A40 40 0 0 1 47.7 -75.9 A60 60 0 0 1 163.5 -71.4 A38 38 0 0 1 187 0 Z"/>
+    <g id="oak" stroke="#0B1528" stroke-width="5" stroke-linecap="round">
+      <path d="M0 -6 V16" fill="none"/>
+      <circle cx="-19" cy="-17" r="17" fill="#CCEADD"/>
+      <circle cx="19" cy="-17" r="17" fill="#CCEADD"/>
+      <circle cx="0" cy="-31" r="19" fill="#CCEADD"/>
+    </g>
+    <g id="bb">
+      <path d="M0 0 V-62" stroke="#0B1528" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <g fill="#2463EB">
+        <ellipse cx="-7" cy="-56" rx="7" ry="9"/><ellipse cx="7" cy="-64" rx="7" ry="9"/>
+        <ellipse cx="-7" cy="-74" rx="7" ry="9"/><ellipse cx="7" cy="-82" rx="7" ry="9"/>
+        <ellipse cx="-6" cy="-92" rx="6" ry="8"/>
+      </g>
+      <ellipse cx="4" cy="-104" rx="6" ry="7" fill="#FFFFFF" stroke="#0B1528" stroke-width="3"/>
+    </g>
+  </defs>
+  <!-- ground slab -->
+  <rect x="120" y="440" width="960" height="260" rx="90" fill="#CCEADD" opacity="0.6"/>
+  <!-- forked country road -->
+  <g fill="none" stroke-linejoin="round">
+    <use href="#st" stroke="#0B1528" stroke-width="66"/>
+    <use href="#rd" stroke="#0B1528" stroke-width="66" stroke-linecap="round"/>
+    <use href="#st" stroke="#FFF0C7" stroke-width="54"/>
+    <use href="#rd" stroke="#FFF0C7" stroke-width="54" stroke-linecap="round"/>
+    <g stroke="#B8C0CC" stroke-width="4" stroke-linecap="round" stroke-dasharray="14 12">
+      <use href="#st"/><use href="#rd"/>
+    </g>
+  </g>
+  <!-- limestone hills the roads disappear behind -->
+  <path d="M215 440 C250 360 330 336 400 352 C460 366 500 400 522 440 Z" fill="#FFF0C7"/>
+  <path d="M678 440 C700 400 740 366 800 352 C870 336 950 360 985 440 Z" fill="#FFF0C7"/>
+  <use href="#oak" transform="translate(296 368) scale(0.8)"/>
+  <use href="#oak" transform="translate(906 372) scale(0.7)"/>
+  <!-- signpost at the fork -->
+  <ellipse cx="614" cy="536" rx="30" ry="7" fill="#0B1528" opacity="0.08"/>
+  <g stroke="#0B1528" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M600 534 V300" stroke-width="12"/>
+    <circle cx="600" cy="294" r="9" fill="#0B1528"/>
+    <path d="M608 318 H710 L734 340 L710 362 H608 Z" fill="#FFFFFF"/>
+    <path d="M592 386 H488 L464 408 L488 430 H592 Z" fill="#FFFFFF"/>
+  </g>
+  <!-- the little cloud, sitting on the ground -->
+  <ellipse cx="402" cy="670" rx="104" ry="10" fill="#0B1528" opacity="0.08"/>
+  <g transform="translate(290 664) rotate(-5 110 0)">
+    <use href="#cl" transform="translate(8 10)" fill="#0B1528" opacity="0.08"/>
+    <use href="#cl" fill="#FFFFFF" stroke="#0B1528" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+  <!-- bluebonnets at the roadside: the single blue accent -->
+  <g transform="translate(740 672)">
+    <use href="#bb" transform="translate(-24 0) scale(0.85)"/>
+    <use href="#bb" transform="translate(8 0)"/>
+    <use href="#bb" transform="translate(40 4) scale(0.75)"/>
+  </g>
+</svg>

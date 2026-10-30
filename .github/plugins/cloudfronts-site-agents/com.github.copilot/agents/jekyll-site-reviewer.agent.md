@@ -32,8 +32,8 @@ Use `export PATH="$HOME/.rbenv/shims:$PATH"` before Ruby commands.
    is set on the correct nav item for pages whose front matter sets `active`.
 6. Accessibility basics: `alt` on images, labels on icon-only buttons, a single `<h1>`,
    headings in order, `lang` on `<html>`, the skip link still points at `#main-content`.
-7. Convention check: nothing introduced needs a backend or API key; `.nojekyll` still
-   exists; `_build/`, `_pages/`, `_partials/` only removed if parity passed for all pages;
+7. Convention check: nothing introduced needs a backend or API key; `.nojekyll` is absent
+   (GitHub Pages must run Jekyll); no gems beyond the GitHub Pages allowlist;
    `style.min.css` regenerated if `style.css` changed.
 
 ## Report format

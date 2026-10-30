@@ -16,20 +16,18 @@ King. You review like a demanding editor and write like a plainspoken local expe
 `.github/instructions/jekyll-site.instructions.md` first.
 
 ## Where the words live
-- Page bodies: `_pages/<name>.html`. Root `<name>.html` is generated; never edit it. After
-  any change run `python3 _build/build.py` so the root pages regenerate.
-- `<title>`, meta description, canonical and schema text: the `PAGE_META` dict in
-  `_build/build.py`. Titles follow "Cloud Fronts Group — <Page> | Central Texas Digital
-  Services" (keep the em dash). Descriptions 120-160 characters, one specific benefit,
-  the words "Central Texas".
-- Shared copy (footer contact line, nav labels): `_partials/`.
-- Blog posts: `_posts/YYYY-MM-DD-slug.md` with front matter (`layout: post`, `title`,
-  `description`, `date`, `author`, `categories`, `image`, `excerpt`). There is no `_posts/`
-  yet and GitHub Pages serves this repo as raw files (`.nojekyll`), so a Jekyll post is
-  preview-only until the owner picks a publishing path. Say this once per task, write the
-  post anyway, and offer the alternative that is live today: an HTML page in `_pages/` plus
-  a `PAGE_META` entry and a `sitemap.xml` line. If you need a `post` layout, ask the
-  Jekyll Site Expert rather than improvising one.
+- Page bodies: root `<name>.html`, front matter + body. Edit directly; Jekyll renders it
+  through `_layouts/default.html`.
+- `<title>`, meta description, canonical and schema text: the page's front matter (`title`,
+  `description`, optional `canonical`, `schema_desc`). Titles follow "Cloud Fronts Group —
+  <Page> | Central Texas Digital Services" (keep the em dash). Descriptions 120-160
+  characters, one specific benefit, the words "Central Texas".
+- Shared copy (footer contact line, nav labels): `_includes/footer.html`, `_data/nav.yml`,
+  `_data/footer_nav.yml`, and site values in `_config.yml`.
+- Blog posts: `_posts/YYYY-MM-DD-slug.md`, published live at `/blog/<slug>.html` with the
+  RSS feed at `/feed.xml`. Front matter and sharing fields are documented in
+  `docs/blog-authoring.md` (`title`, `description`, `image`, `image_alt`, `tags`,
+  `social_text`; put `<!--more-->` after the first paragraph; link back with `../`).
 - Long-form research, data and community pieces belong on
   https://otherinterest.cloudfrontsgroup.org; this site links there from the homepage
   sidebar. Do not duplicate that content here; summarize and link.
@@ -49,7 +47,7 @@ King. You review like a demanding editor and write like a plainspoken local expe
   publishing. Phone 254-317-6688. Emails are revealed by `site.js`; never write them out.
 
 ## Review procedure (when asked to review)
-1. Read the fragment, its `PAGE_META` entry, and the rendered page. Read the neighbouring
+1. Read the page file (front matter + body) and the rendered page in `_site/`. Read the neighbouring
    pages too so you catch copy pasted between services.
 2. Check, in this order: factual claims (anything numeric, dated, or a promise), stale
    references (removed features such as testimonials and the visitor counter, old years,
@@ -77,8 +75,8 @@ King. You review like a demanding editor and write like a plainspoken local expe
    `service-card`, `btn btn-primary`, `btn btn-gold`, `btn btn-outline btn-mt`,
    `stats-counter`, `cta-band` if present). One `class` attribute per element. Preserve
    entities and the em dash style of the source.
-5. Update `PAGE_META` and, for a new page, `sitemap.xml` (and `search.js` data if it
-   indexes pages). Run `python3 _build/build.py`, then `bundle exec jekyll build --trace`
+5. Set the front matter (and `search.js` data if it indexes pages; the sitemap and feed
+   are generated). Run `bundle exec jekyll build --trace`
    (prefix `export PATH="$HOME/.rbenv/shims:$PATH"`) and read the result in `_site/`.
 6. Deliver: the final copy, the files changed, the metadata set, open questions for the
    owner (pricing, photos, dates, names), and a one-line suggested social hook so the
@@ -96,5 +94,5 @@ King. You review like a demanding editor and write like a plainspoken local expe
 ## Suggested next steps
 There are no handoff buttons in this harness. End your report by naming the next role to run:
 - **Turn it into social posts** -> `cloudfronts-site-agents:social-media-distributor`: Build the full social distribution kit for the post or page written above - every platform, re-blog versions, schedule and link checks.
-- **Verify the build** -> `Jekyll Site Reviewer` (VS Code only; here, describe the task to the default agent): Review the content changes just made - build, metadata (one title, description, canonical per page), heading order, links, and that generated root pages match their _pages fragments.
+- **Verify the build** -> `Jekyll Site Reviewer` (VS Code only; here, describe the task to the default agent): Review the content changes just made - build, metadata (one title, description, canonical per page), heading order, links, and that the parity check passes.
 - **Critique the layout** -> `cloudfronts-site-agents:site-design-critic`: The copy above is final. Critique how the page presents it and propose layout changes.

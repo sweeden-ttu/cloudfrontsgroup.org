@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+<title id="t">A cluttered logo on the left redesigned into a simple geometric mark on the right</title>
+<rect width="100%" height="100%" fill="#FCF8F3"/>
+<defs>
+<circle id="sc" r="26" fill="#B8C0CC"/>
+<ellipse id="lf" rx="9" ry="21" fill="#0B1528" opacity="0.5"/>
+<path id="st" d="M0 -13 L3.8 -4.2 L13 -4 L6 1.8 L8 11 L0 5.6 L-8 11 L-6 1.8 L-13 -4 L-3.8 -4.2 Z" fill="#0B1528" opacity="0.55"/>
+<ellipse id="gr" rx="12" ry="27" fill="#0B1528"/>
+</defs>
+<!-- grounds -->
+<ellipse cx="420" cy="652" rx="250" ry="32" fill="#CCEADD" opacity="0.6"/>
+<ellipse cx="980" cy="652" rx="250" ry="32" fill="#DEF2E8" opacity="0.6"/>
+<!-- divider -->
+<path d="M700 170 V630" stroke="#0B1528" stroke-width="4" stroke-linecap="round" opacity="0.2"/>
+<!-- BEFORE: overworked badge -->
+<g transform="translate(420 400)">
+<circle cx="12" cy="14" r="206" fill="#0B1528" opacity="0.08"/>
+<use href="#sc" x="196" y="0"/><use href="#sc" x="181" y="75"/><use href="#sc" x="139" y="139"/><use href="#sc" x="75" y="181"/>
+<use href="#sc" x="0" y="196"/><use href="#sc" x="-75" y="181"/><use href="#sc" x="-139" y="139"/><use href="#sc" x="-181" y="75"/>
+<use href="#sc" x="-196" y="0"/><use href="#sc" x="-181" y="-75"/><use href="#sc" x="-139" y="-139"/><use href="#sc" x="-75" y="-181"/>
+<use href="#sc" x="0" y="-196"/><use href="#sc" x="75" y="-181"/><use href="#sc" x="139" y="-139"/><use href="#sc" x="181" y="-75"/>
+<circle r="196" fill="#B8C0CC"/>
+<circle r="184" fill="#0B1528" opacity="0.55"/>
+<circle r="168" fill="#FFE0C2"/>
+<circle r="160" fill="none" stroke="#0B1528" stroke-width="4" stroke-dasharray="6 10" opacity="0.6"/>
+<circle r="148" fill="#FFF0C7"/>
+<circle r="140" fill="none" stroke="#0B1528" stroke-width="3" opacity="0.5"/>
+<!-- dots in the ring -->
+<g fill="#0B1528" opacity="0.5">
+<circle cx="0" cy="-176" r="5"/><circle cx="88" cy="-152" r="5"/><circle cx="152" cy="-88" r="5"/><circle cx="176" cy="0" r="5"/>
+<circle cx="152" cy="88" r="5"/><circle cx="-88" cy="-152" r="5"/><circle cx="-152" cy="-88" r="5"/><circle cx="-176" cy="0" r="5"/><circle cx="-152" cy="88" r="5"/>
+</g>
+<!-- sun behind -->
+<g transform="translate(0 -28)" stroke="#0B1528" stroke-width="4" stroke-linecap="round" opacity="0.6">
+<circle r="30" fill="#FFE0C2"/>
+<path d="M0 -44 V-60 M31 -31 L42 -42 M44 0 H60 M31 31 L42 42 M0 44 V60 M-31 31 L-42 42 M-44 0 H-60 M-31 -31 L-42 -42" fill="none"/>
+</g>
+<!-- laurel -->
+<g>
+<use href="#lf" transform="rotate(-100) translate(0 -118) rotate(-35)"/><use href="#lf" transform="rotate(-120) translate(0 -118) rotate(-35)"/>
+<use href="#lf" transform="rotate(-140) translate(0 -118) rotate(-35)"/><use href="#lf" transform="rotate(-160) translate(0 -118) rotate(-35)"/>
+<use href="#lf" transform="rotate(100) translate(0 -118) rotate(35)"/><use href="#lf" transform="rotate(120) translate(0 -118) rotate(35)"/>
+<use href="#lf" transform="rotate(140) translate(0 -118) rotate(35)"/><use href="#lf" transform="rotate(160) translate(0 -118) rotate(35)"/>
+</g>
+<!-- wheat sprigs -->
+<g fill="none" stroke="#0B1528" stroke-width="4" stroke-linecap="round" opacity="0.6">
+<path d="M-70 80 C-110 40 -120 -20 -96 -70"/>
+<path d="M70 80 C110 40 120 -20 96 -70"/>
+<path d="M-96 -70 L-112 -84 M-96 -70 L-78 -82 M-104 -48 L-120 -60 M-104 -48 L-86 -60 M-108 -24 L-124 -34 M-108 -24 L-90 -36"/>
+<path d="M96 -70 L112 -84 M96 -70 L78 -82 M104 -48 L120 -60 M104 -48 L86 -60 M108 -24 L124 -34 M108 -24 L90 -36"/>
+</g>
+<!-- crossed rolling pin and whisk -->
+<g transform="rotate(45)">
+<rect x="-104" y="-14" width="208" height="28" rx="14" fill="#FFE0C2" stroke="#0B1528" stroke-width="4"/>
+<rect x="-146" y="-8" width="44" height="16" rx="8" fill="#0B1528" opacity="0.7"/>
+<rect x="102" y="-8" width="44" height="16" rx="8" fill="#0B1528" opacity="0.7"/>
+</g>
+<g transform="rotate(-45)" stroke="#0B1528" stroke-width="4" opacity="0.75">
+<rect x="-9" y="24" width="18" height="110" rx="9" fill="#0B1528" stroke="none"/>
+<ellipse cx="0" cy="-42" rx="34" ry="66" fill="none"/>
+<ellipse cx="0" cy="-42" rx="16" ry="66" fill="none"/>
+</g>
+<!-- crown -->
+<path d="M-48 -92 L-54 -140 L-28 -112 L0 -152 L28 -112 L54 -140 L48 -92 Z" fill="#FFF0C7" stroke="#0B1528" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+<g fill="#0B1528" opacity="0.6"><circle cx="-54" cy="-142" r="5"/><circle cx="0" cy="-154" r="5"/><circle cx="54" cy="-142" r="5"/></g>
+<!-- stars -->
+<use href="#st" x="-80" y="-66"/><use href="#st" x="80" y="-66"/><use href="#st" x="-118" y="40"/><use href="#st" x="118" y="40"/><use href="#st" x="0" y="-196"/>
+<!-- main ribbon -->
+<path d="M-122 44 L-164 44 L-150 64 L-164 84 L-122 84 Z" fill="#0B1528" opacity="0.5"/>
+<path d="M122 44 L164 44 L150 64 L164 84 L122 84 Z" fill="#0B1528" opacity="0.5"/>
+<rect x="-128" y="40" width="256" height="48" rx="6" fill="#0B1528" opacity="0.78"/>
+<g fill="#B8C0CC"><rect x="-96" y="59" width="56" height="10" rx="5"/><rect x="-30" y="59" width="70" height="10" rx="5"/><rect x="50" y="59" width="46" height="10" rx="5"/></g>
+<!-- lower ribbon -->
+<rect x="-92" y="102" width="184" height="30" rx="4" fill="#FFE0C2" stroke="#0B1528" stroke-width="3"/>
+<g fill="#B8C0CC"><rect x="-70" y="112" width="60" height="10" rx="5"/><rect x="2" y="112" width="66" height="10" rx="5"/></g>
+</g>
+<!-- AFTER: wheat and sun -->
+<g transform="translate(980 400)">
+<circle cx="10" cy="-24" r="158" fill="#0B1528" opacity="0.08"/>
+<circle cy="-36" r="158" fill="#FFF0C7"/>
+<path d="M-150 148 H150" stroke="#0B1528" stroke-width="10" stroke-linecap="round"/>
+<path d="M0 148 V-150" stroke="#0B1528" stroke-width="10" stroke-linecap="round"/>
+<path d="M0 118 C-46 102 -74 66 -74 22 C-36 42 -10 76 0 118 Z" fill="#0B1528"/>
+<use href="#gr" transform="translate(0 -176)"/>
+<use href="#gr" transform="translate(-19 -140) rotate(-34)"/><use href="#gr" transform="translate(19 -140) rotate(34)"/>
+<use href="#gr" transform="translate(-19 -102) rotate(-34)"/><use href="#gr" transform="translate(19 -102) rotate(34)"/>
+<use href="#gr" transform="translate(-19 -64) rotate(-34)"/><use href="#gr" transform="translate(19 -64) rotate(34)"/>
+<use href="#gr" transform="translate(-19 -26) rotate(-34)"/><use href="#gr" transform="translate(19 -26) rotate(34)"/>
+<use href="#gr" transform="translate(-19 12) rotate(-34)"/><use href="#gr" transform="translate(19 12) rotate(34)"/>
+</g>
+<!-- arrow (the single blue accent) -->
+<circle cx="700" cy="400" r="56" fill="#FCF8F3"/>
+<path d="M664 400 H736 M712 376 L736 400 L712 424" stroke="#2463EB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

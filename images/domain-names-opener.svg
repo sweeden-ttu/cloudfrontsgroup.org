@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+  <title id="t">Storefront with blank address tags floating above it, one being picked</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <g id="tag">
+      <rect x="-60" y="-35" width="120" height="70" rx="16" stroke="#0B1528" stroke-width="7"/>
+      <circle cx="-34" cy="0" r="8" fill="#FCF8F3" stroke="#0B1528" stroke-width="6"/>
+    </g>
+    <g id="win">
+      <rect x="0" y="0" width="90" height="90" rx="10" fill="#DEF2E8" stroke="#0B1528" stroke-width="7"/>
+      <path d="M45 0 V90 M0 45 H90" stroke="#0B1528" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- limestone horizon and ground -->
+  <ellipse cx="740" cy="648" rx="540" ry="66" fill="#FFF0C7"/>
+  <rect x="160" y="650" width="1080" height="56" rx="28" fill="#CCEADD" opacity="0.6"/>
+
+  <!-- live oak, right -->
+  <g>
+    <rect x="1132" y="540" width="22" height="130" rx="10" fill="#0B1528"/>
+    <g fill="#CCEADD" stroke="#0B1528" stroke-width="7">
+      <circle cx="1092" cy="548" r="50"/>
+      <circle cx="1194" cy="546" r="50"/>
+      <circle cx="1143" cy="455" r="46"/>
+      <circle cx="1143" cy="508" r="68"/>
+    </g>
+  </g>
+
+  <!-- storefront shadow -->
+  <path d="M630 670 V394 a26 26 0 0 1 26-26 H1024 a26 26 0 0 1 26 26 V670 Z" fill="#0B1528" opacity="0.08"/>
+  <!-- storefront body -->
+  <path d="M620 662 V384 a26 26 0 0 1 26-26 H1014 a26 26 0 0 1 26 26 V662 Z" fill="#FFFFFF" stroke="#0B1528" stroke-width="8" stroke-linejoin="round"/>
+  <!-- parapet -->
+  <rect x="598" y="330" width="464" height="42" rx="14" fill="#0B1528"/>
+
+  <!-- hanging blank sign -->
+  <path d="M790 372 V402 M910 372 V402" stroke="#0B1528" stroke-width="6" stroke-linecap="round"/>
+  <rect x="760" y="400" width="180" height="58" rx="12" fill="#FFF0C7" stroke="#0B1528" stroke-width="7"/>
+
+  <!-- awning: scallops -->
+  <path d="M636 476 H1024 V500 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 a24 20 0 0 1 -48 0 Z" fill="#FFE0C2" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- door and windows -->
+  <use href="#win" x="650" y="536"/>
+  <use href="#win" x="920" y="536"/>
+  <path d="M780 662 V550 a50 50 0 0 1 100 0 V662 Z" fill="#DEF2E8" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="860" cy="600" r="6" fill="#0B1528"/>
+  <!-- step -->
+  <rect x="764" y="658" width="132" height="14" rx="7" fill="#0B1528"/>
+
+  <!-- strings from roof to tags -->
+  <g fill="none" stroke="#0B1528" stroke-width="6" stroke-linecap="round">
+    <path d="M760 340 Q 735 260 690 186"/>
+    <path d="M880 340 Q 876 230 860 156"/>
+    <path d="M1000 340 Q 1012 300 1010 236"/>
+  </g>
+  <!-- the picked tag's string: the one blue accent -->
+  <path d="M660 340 Q 640 290 548 208" fill="none" stroke="#2463EB" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- tag shadows -->
+  <g fill="#0B1528" opacity="0.08">
+    <rect x="490" y="149" width="120" height="70" rx="16" transform="rotate(-8 550 184)"/>
+    <rect x="640" y="127" width="120" height="70" rx="16" transform="rotate(5 700 162)"/>
+    <rect x="810" y="97" width="120" height="70" rx="16" transform="rotate(-5 870 132)"/>
+    <rect x="960" y="177" width="120" height="70" rx="16" transform="rotate(8 1020 212)"/>
+  </g>
+  <!-- tags: peach (picked), mint, butter, teal -->
+  <use href="#tag" fill="#FFE0C2" transform="translate(540 174) rotate(-8)"/>
+  <use href="#tag" fill="#CCEADD" transform="translate(690 152) rotate(5)"/>
+  <use href="#tag" fill="#FFF0C7" transform="translate(860 122) rotate(-5)"/>
+  <use href="#tag" fill="#DEF2E8" transform="translate(1010 202) rotate(8)"/>
+
+</svg>

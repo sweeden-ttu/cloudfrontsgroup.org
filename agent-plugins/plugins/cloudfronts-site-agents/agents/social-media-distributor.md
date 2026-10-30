@@ -18,7 +18,7 @@ but label those "if/when the account exists". Brand facts: no long-term contract
 local and hands-on, phone 254-317-6688, owners Scott Weeden and Johnathan King.
 
 ## Procedure
-1. **Ingest the source.** Read the post (`_posts/*.md`, `_pages/*.html`, a root page, or
+1. **Ingest the source.** Read the post (`_posts/*.md`, a root page, or
    fetch the URL). Extract: headline, the single most surprising or useful claim, 3-5
    supporting points, any numbers or dates (quote them exactly, never round or embellish),
    the author, the canonical URL, and the images referenced (prefer files under `images/`;
@@ -27,7 +27,7 @@ local and hands-on, phone 254-317-6688, owners Scott Weeden and Johnathan King.
    `_site/` output): `og:title`, `og:description`, `og:image` (must be a raster image at
    least 1200x630; this site's build currently sets it to `favicon.svg`, which social
    crawlers ignore - always report this), `og:url`, `twitter:card`. List what is missing
-   under "Source issues" and recommend `images/hero-og.png` or a post-specific image.
+   under "Source issues" and recommend `images/blog-default.png` or a post-specific image.
 3. **Find the angle.** Before writing, decide the hook type for this piece: a number, a
    myth busted, a local specific, a how-to promise, a question the reader already has, or a
    behind-the-scenes. Write 5 candidate hooks, pick the best per platform, keep the rest in
@@ -67,7 +67,7 @@ local and hands-on, phone 254-317-6688, owners Scott Weeden and Johnathan King.
    this order: Source, Source issues, Angle & alternate hooks, Facebook, X, LinkedIn,
    Instagram, Threads, TikTok/Reels, Google Business Profile, Re-blog versions, Links,
    Images & alt text, Schedule, Approval checklist. Underscore directories are ignored by
-   Jekyll and by `_build/build.py`, so the kit never ships to the live site. Create
+   Jekyll, so the kit never ships to the live site. Create
    `_social/README.md` the first time explaining that.
 
 ## Voice and rules

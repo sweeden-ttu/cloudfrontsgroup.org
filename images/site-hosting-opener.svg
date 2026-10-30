@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" role="img" aria-labelledby="t">
+  <title id="t">Servers on a cloud connected to a laptop, tablet and phone</title>
+  <rect width="100%" height="100%" fill="#FCF8F3"/>
+  <defs>
+    <!-- one server block with a slim isometric side face -->
+    <g id="blk">
+      <path d="M280 0 L310 -20 V50 L280 70 Z" fill="#DEF2E8" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="0" y="0" width="280" height="70" rx="12" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+      <circle cx="36" cy="35" r="10" fill="#0B1528"/>
+      <rect x="70" y="24" width="120" height="10" rx="5" fill="#B8C0CC"/>
+      <rect x="70" y="42" width="80" height="10" rx="5" fill="#B8C0CC"/>
+      <rect x="214" y="18" width="44" height="34" rx="8" fill="#FFE0C2" stroke="#0B1528" stroke-width="5"/>
+    </g>
+    <!-- the same simple page layout, 100 x 70 -->
+    <g id="page">
+      <rect x="0" y="0" width="100" height="12" rx="4" fill="#0B1528"/>
+      <rect x="0" y="18" width="100" height="24" rx="4" fill="#FFE0C2"/>
+      <rect x="0" y="48" width="30" height="22" rx="4" fill="#CCEADD"/>
+      <rect x="35" y="48" width="30" height="22" rx="4" fill="#CCEADD"/>
+      <rect x="70" y="48" width="30" height="22" rx="4" fill="#CCEADD"/>
+    </g>
+  </defs>
+
+  <!-- floor -->
+  <ellipse cx="700" cy="700" rx="520" ry="18" fill="#DEF2E8" opacity="0.6"/>
+
+  <!-- cloud with flat base and horizon line -->
+  <path d="M470 440 H940 A70 70 0 0 0 930 310 A95 95 0 0 0 760 270 A80 80 0 0 0 620 300 A70 70 0 0 0 470 440 Z" fill="#0B1528" opacity="0.08" transform="translate(10 12)"/>
+  <path d="M470 440 H940 A70 70 0 0 0 930 310 A95 95 0 0 0 760 270 A80 80 0 0 0 620 300 A70 70 0 0 0 470 440 Z" fill="#CCEADD" stroke="#0B1528" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M470 440 H1080" stroke="#0B1528" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- server rack: shadow, then three stacked blocks, top face on the top block -->
+  <rect x="572" y="162" width="280" height="238" rx="12" fill="#0B1528" opacity="0.08"/>
+  <use href="#blk" x="560" y="330"/>
+  <use href="#blk" x="560" y="250"/>
+  <use href="#blk" x="560" y="170"/>
+  <path d="M560 170 L590 150 H870 L840 170 Z" fill="#DEF2E8" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- shield with check -->
+  <path d="M1000 262 L1056 282 V340 Q1056 392 1000 414 Q944 392 944 340 V282 Z" fill="#0B1528" opacity="0.08" transform="translate(10 10)"/>
+  <path d="M1000 262 L1056 282 V340 Q1056 392 1000 414 Q944 392 944 340 V282 Z" fill="#FFF0C7" stroke="#0B1528" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M974 340 L994 360 L1030 316" fill="none" stroke="#0B1528" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- the one blue accent: three lines from the cloud down to the devices -->
+  <g fill="none" stroke="#2463EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M600 444 V472 H430 V500"/>
+    <path d="M710 444 V500"/>
+    <path d="M820 444 V472 H920 V520"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="230" y="652" width="960" height="36" rx="18" fill="#0B1528" opacity="0.08"/>
+  <rect x="220" y="640" width="960" height="36" rx="18" fill="#FFE0C2" stroke="#0B1528" stroke-width="7"/>
+  <path d="M300 676 V704 M1100 676 V704" stroke="#0B1528" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- laptop -->
+  <rect x="330" y="500" width="200" height="130" rx="14" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <use href="#page" transform="translate(360 520) scale(1.4 1.25)"/>
+  <path d="M296 630 H564 a8 8 0 0 1 0 16 H296 a8 8 0 0 1 0 -16 Z" fill="#0B1528"/>
+
+  <!-- tablet -->
+  <rect x="640" y="500" width="140" height="140" rx="14" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <use href="#page" transform="translate(660 520) scale(1 1.35)"/>
+  <circle cx="710" cy="628" r="5" fill="#B8C0CC"/>
+
+  <!-- phone -->
+  <rect x="880" y="520" width="80" height="120" rx="14" fill="#FFFFFF" stroke="#0B1528" stroke-width="7"/>
+  <use href="#page" transform="translate(892 538) scale(0.56 1.1)"/>
+  <circle cx="920" cy="628" r="4" fill="#B8C0CC"/>
+</svg>

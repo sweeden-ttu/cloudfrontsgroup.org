@@ -1,5 +1,11 @@
 # Documentation
 
+## Site
+
+- [Writing a blog post](./blog-authoring.md): front matter fields, preview, and how to share posts to social media.
+- [Design critique, 2026-10-30](./design-critique-2026-10-30.md): Site Design Critic report with a "Ship this" list and per-page media findings.
+- [Media and logo generation prompts](./media-prompts.md): style lock, logo system, and a prompt for every image slot; machine-readable copy in `imagespecs/media-prompts.yml`; the SVG drawing contract is `imagespecs/svg-style-guide.md`.
+
 Reference material kept alongside the cloudfrontsgroup.org site. These pages are repository documentation only; the Jekyll build excludes the `docs/` folder, so nothing here is published to the live site.
 
 ## VS Code agent customization

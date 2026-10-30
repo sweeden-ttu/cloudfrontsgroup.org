@@ -1551,3 +1551,21 @@ header h1 .brand-mark { height: 1em; width: auto; vertical-align: -0.12em; margi
 .social-links a:hover, .social-links a:focus-visible { border-color: var(--brand-blue); background: var(--brand-teal); color: var(--brand-navy); }
 .social-links svg { width: 1.15em; height: 1.15em; }
 [data-theme="dark"] .social-links a:hover { background: rgba(255,255,255,.1); color: var(--color-text); }
+
+/* ── Person contact lines (about, team, contact) ───────────────────────────── */
+.person-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem 1rem; margin: .5rem 0 0; font-size: .92rem; }
+.person-contact a { display: inline-flex; align-items: center; gap: .35rem; min-height: 32px; color: var(--color-link); text-decoration: none; font-weight: 600; }
+.person-contact a:hover, .person-contact a:focus-visible { text-decoration: underline; }
+.person-contact svg { width: 1em; height: 1em; opacity: .8; }
+.card-team .person-contact, .callout .person-contact { justify-content: center; }
+.footer-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1.5rem; }
+.footer-contact a { color: inherit; }
+
+/* ── Email click-to-reveal buttons ─────────────────────────────────────────── */
+.eml-btn { display: inline-flex; align-items: center; gap: .35rem; min-height: 32px; padding: 0 .75rem; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-link); font: inherit; font-weight: 600; font-size: .92rem; cursor: pointer; transition: background var(--transition), border-color var(--transition); }
+.eml-btn:hover, .eml-btn:focus-visible { border-color: var(--brand-blue); background: var(--brand-teal); color: var(--brand-navy); }
+.eml-btn svg { width: 1em; height: 1em; opacity: .8; }
+.eml-revealed { font-weight: 600; word-break: break-all; }
+.eml-btn-inline { min-height: 26px; padding: 0 .6rem; font-size: .85rem; background: transparent; color: inherit; border-color: rgba(255,255,255,.35); }
+.eml-btn-inline:hover, .eml-btn-inline:focus-visible { background: rgba(255,255,255,.12); color: inherit; border-color: rgba(255,255,255,.7); }
+footer .eml-revealed { color: inherit; }

@@ -1,0 +1,30 @@
+{
+  // Let the "jekyll: serve" task start automatically when the folder opens.
+  "task.allowAutomaticTasks": "on",
+
+  "files.exclude": {
+    "_site": true,
+    ".jekyll-cache": true,
+    ".jekyll-metadata": true,
+    ".vscode/.chrome-profile": true,
+    ".vscode/.edge-profile": true
+  },
+  "search.exclude": {
+    "_site": true,
+    ".jekyll-cache": true,
+    "style.min.css": true
+  },
+  "files.watcherExclude": {
+    "**/_site/**": true,
+    "**/.jekyll-cache/**": true,
+    "**/.vscode/.chrome-profile/**": true,
+    "**/.vscode/.edge-profile/**": true
+  },
+  "files.associations": {
+    "_partials/*.html": "html",
+    "_pages/*.html": "html",
+    "*.html.src": "html"
+  },
+  "html.format.wrapLineLength": 0,
+  "html.format.indentInnerHtml": false
+}

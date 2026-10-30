@@ -1,0 +1,48 @@
+# Jekyll config for LOCAL preview only.
+# Production is served by GitHub Pages as raw static files (.nojekyll),
+# so nothing here affects the live site.
+
+title: Cloud Fronts Group
+url: "https://cloudfrontsgroup.org"
+baseurl: ""
+
+# Pages at the repo root have no front matter, so Jekyll copies them
+# through untouched as static files.
+markdown: kramdown
+permalink: pretty
+
+# Keep the local build output out of the way of the source tree.
+destination: _site
+
+# Source-only tooling that must not be copied into _site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - IMAGES_NEEDED.txt
+  - deploy.sh
+  - gen_images.py
+  - imagespecs/
+  - scripts/
+  - images/split/
+  - images/split_v2/
+  - images/split_v3/
+  - node_modules/
+  - vendor/
+  - .vscode/
+  - .opencode/
+  - .Jules/
+  - .aider*
+  - "*.tar.gz"
+  - "*.zip"
+  - "backup-*"
+
+# Files Jekyll would normally skip (dotfiles) that the site needs.
+include:
+  - .nojekyll
+
+# Dev server
+host: 127.0.0.1
+port: 4000
+livereload: true
+livereload_port: 35729

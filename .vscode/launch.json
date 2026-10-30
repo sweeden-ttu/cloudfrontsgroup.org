@@ -1,0 +1,55 @@
+{
+  // Press F5: starts `jekyll serve` (waits for "Server running..."),
+  // opens the site in a debugger-attached browser, and stops the
+  // server when the debug session ends.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Jekyll: Serve & Debug in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:4000/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "jekyll: serve",
+      "postDebugTask": "jekyll: stop",
+      "pathMapping": {
+        "/": "${workspaceFolder}/"
+      },
+      "sourceMaps": true,
+      "userDataDir": "${workspaceFolder}/.vscode/.chrome-profile"
+    },
+    {
+      "name": "Jekyll: Serve & Debug in Edge",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://127.0.0.1:4000/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "jekyll: serve",
+      "postDebugTask": "jekyll: stop",
+      "pathMapping": {
+        "/": "${workspaceFolder}/"
+      },
+      "sourceMaps": true,
+      "userDataDir": "${workspaceFolder}/.vscode/.edge-profile"
+    },
+    {
+      "name": "Jekyll: Attach to running server (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:4000/",
+      "webRoot": "${workspaceFolder}",
+      "pathMapping": {
+        "/": "${workspaceFolder}/"
+      },
+      "userDataDir": "${workspaceFolder}/.vscode/.chrome-profile"
+    },
+    {
+      "name": "Python: _build/build.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/_build/build.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

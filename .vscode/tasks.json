@@ -1,0 +1,122 @@
+{
+  // Jekyll build / serve tasks for cloudfrontsgroup.org (local preview only).
+  // Ruby comes from rbenv (.ruby-version -> 3.4.8), so PATH is prepended with
+  // the rbenv shims; `bundle` then resolves to the right Ruby automatically.
+  "version": "2.0.0",
+  "options": {
+    "cwd": "${workspaceFolder}",
+    "env": {
+      "PATH": "${env:HOME}/.rbenv/shims:${env:HOME}/.rbenv/bin:/opt/homebrew/bin:${env:PATH}",
+      "JEKYLL_ENV": "development"
+    }
+  },
+  "presentation": {
+    "reveal": "always",
+    "panel": "dedicated",
+    "clear": false
+  },
+  "tasks": [
+    {
+      "label": "jekyll: install",
+      "detail": "bundle install — install Jekyll and dependencies from the Gemfile",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["install"],
+      "problemMatcher": []
+    },
+    {
+      "label": "jekyll: build",
+      "detail": "bundle exec jekyll build — one-shot build into _site/",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["exec", "jekyll", "build", "--trace"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        "owner": "jekyll",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^\\s*(Liquid Exception|Error|Conversion error):\\s*(.*?)(?: in (\\S+))?$",
+          "severity": 1,
+          "message": 2,
+          "file": 3
+        }
+      }
+    },
+    {
+      "label": "jekyll: serve",
+      "detail": "bundle exec jekyll serve --livereload — dev server at http://127.0.0.1:4000 (auto-starts on folder open)",
+      "type": "shell",
+      "command": "bundle",
+      "args": [
+        "exec", "jekyll", "serve",
+        "--livereload",
+        "--incremental",
+        "--trace",
+        "--host", "127.0.0.1",
+        "--port", "4000"
+      ],
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen",
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "jekyll"
+      },
+      "problemMatcher": {
+        "owner": "jekyll",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^\\s*(Liquid Exception|Error|Conversion error):\\s*(.*?)(?: in (\\S+))?$",
+          "severity": 1,
+          "message": 2,
+          "file": 3
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^\\s*(Configuration file:|Regenerating:)",
+          "endsPattern": "(Server running\\.\\.\\. press ctrl-c to stop\\.|\\.\\.\\.done in [0-9.]+ seconds\\.)"
+        }
+      }
+    },
+    {
+      "label": "jekyll: stop",
+      "detail": "Kill whatever is listening on port 4000 (the jekyll serve task)",
+      "type": "shell",
+      "command": "lsof -ti tcp:4000 | xargs -r kill 2>/dev/null; lsof -ti tcp:35729 | xargs -r kill 2>/dev/null; echo 'Jekyll server stopped.'",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "jekyll: clean",
+      "detail": "bundle exec jekyll clean — remove _site/ and .jekyll-cache/",
+      "type": "shell",
+      "command": "bundle",
+      "args": ["exec", "jekyll", "clean"],
+      "problemMatcher": []
+    },
+    {
+      "label": "jekyll: rebuild",
+      "detail": "clean then build",
+      "dependsOrder": "sequence",
+      "dependsOn": ["jekyll: clean", "jekyll: build"],
+      "problemMatcher": []
+    },
+    {
+      "label": "site: assemble pages (python)",
+      "detail": "python3 _build/build.py — regenerate root HTML from _pages/ + _partials/ (the site's own templating step; run before jekyll build if you edited _pages or _partials)",
+      "type": "shell",
+      "command": "python3",
+      "args": ["_build/build.py"],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "Shopify.ruby-lsp",
+    "sissel.shopify-liquid",
+    "ms-python.python",
+    "ms-python.debugpy"
+  ]
+}

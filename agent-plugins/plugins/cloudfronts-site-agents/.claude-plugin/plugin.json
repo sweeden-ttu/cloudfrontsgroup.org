@@ -1,0 +1,14 @@
+{
+  "name": "cloudfronts-site-agents",
+  "displayName": "Cloud Fronts Group site agents",
+  "version": "1.0.0",
+  "description": "Four roles for maintaining cloudfrontsgroup.org: Jekyll site expert, site design critic, site content editor, and social media distributor. Each is available as a subagent and as a slash-command skill.",
+  "author": {
+    "name": "Cloud Fronts Group",
+    "url": "https://cloudfrontsgroup.org"
+  },
+  "homepage": "https://cloudfrontsgroup.org",
+  "repository": "https://github.com/sweeden-ttu/cloudfrontsgroup.org",
+  "license": "UNLICENSED",
+  "keywords": ["jekyll", "static-site", "ux", "content", "social-media", "github-pages"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cloudfronts-agents",
+  "description": "Local plugin marketplace for the cloudfrontsgroup.org repository",
+  "owner": {
+    "name": "Cloud Fronts Group",
+    "url": "https://cloudfrontsgroup.org"
+  },
+  "plugins": [
+    {
+      "name": "cloudfronts-site-agents",
+      "source": "./plugins/cloudfronts-site-agents",
+      "description": "Jekyll expert, design critic, content editor and social media distributor for cloudfrontsgroup.org",
+      "category": "productivity",
+      "tags": ["jekyll", "content", "ux", "social-media"]
+    }
+  ]
+}

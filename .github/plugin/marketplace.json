@@ -1,0 +1,19 @@
+{
+  "name": "cloudfronts",
+  "owner": {
+    "name": "Cloud Fronts Group"
+  },
+  "metadata": {
+    "description": "Agent plugins published from the cloudfrontsgroup.org repository.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "cloudfronts-site-agents",
+      "source": "./.github/plugins/cloudfronts-site-agents",
+      "description": "Custom agents and a Jekyll conventions skill for maintaining cloudfrontsgroup.org.",
+      "version": "0.1.0",
+      "keywords": ["jekyll", "static-site", "ux-review", "code-review"]
+    }
+  ]
+}

@@ -29,3 +29,6 @@ _site/
 .sass-cache/
 .vscode/.chrome-profile/
 .vscode/.edge-profile/
+
+# Parity-check snapshot of generated HTML (scripts/compare_build.py)
+_baseline/

@@ -2,6 +2,9 @@
   // Let the "jekyll: serve" task start automatically when the folder opens.
   "task.allowAutomaticTasks": "on",
 
+  // Agent plugins (see .github/plugins/cloudfronts-site-agents/README.md)
+  "chat.plugins.enabled": true,
+
   "files.exclude": {
     "_site": true,
     ".jekyll-cache": true,

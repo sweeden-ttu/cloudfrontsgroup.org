@@ -1,1 +1,0 @@
-## 2026-06-09 - [Content/Layout Fix] **Learning:** Found invalid HTML multiple class attributes on the same element (`class="container" class="newsletter-box"`) and a typo where a class name ended with `""` (`class="img-headshot-founder""`). **Action:** Merged them into one `class="..."` and removed the double quote.

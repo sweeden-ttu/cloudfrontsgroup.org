@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "cloudfronts": {
+      "source": {
+        "source": "github",
+        "repo": "sweeden-ttu/cloudfrontsgroup.org"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "cloudfronts-site-agents@cloudfronts": true
+  }
+}

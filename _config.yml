@@ -17,6 +17,7 @@ destination: _site
 # Source-only tooling that must not be copied into _site.
 exclude:
   - Gemfile
+  - _baseline/
   - Gemfile.lock
   - README.md
   - IMAGES_NEEDED.txt
@@ -24,12 +25,15 @@ exclude:
   - gen_images.py
   - imagespecs/
   - scripts/
+  - agent-plugins/
   - images/split/
   - images/split_v2/
   - images/split_v3/
   - node_modules/
   - vendor/
   - .vscode/
+  - .github/
+  - docs/
   - .opencode/
   - .Jules/
   - .aider*

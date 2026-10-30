@@ -117,6 +117,22 @@
       "command": "python3",
       "args": ["_build/build.py"],
       "problemMatcher": []
+    },
+    {
+      "label": "site: snapshot baseline",
+      "detail": "python3 scripts/compare_build.py snapshot — copy current root HTML into _baseline/ before a Jekyll migration",
+      "type": "shell",
+      "command": "python3",
+      "args": ["scripts/compare_build.py", "snapshot"],
+      "problemMatcher": []
+    },
+    {
+      "label": "site: check parity",
+      "detail": "jekyll build, then diff _site/ against _baseline/ (whitespace-normalized)",
+      "type": "shell",
+      "command": "bundle exec jekyll build --trace && python3 scripts/compare_build.py compare",
+      "group": "test",
+      "problemMatcher": []
     }
   ]
 }

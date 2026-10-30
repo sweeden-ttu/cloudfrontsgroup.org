@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "cloudfronts-agents": {
+      "source": {
+        "source": "directory",
+        "path": "./agent-plugins"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "cloudfronts-site-agents@cloudfronts-agents": true
+  }
+}

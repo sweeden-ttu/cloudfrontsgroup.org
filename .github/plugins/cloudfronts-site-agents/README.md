@@ -29,18 +29,43 @@ Pick one. All three are described in [docs/agent-plugins-in-vs-code.md](../../..
 
 Or run **Chat: Install Plugin from Source** from the Command Palette and paste the same path or the Git URL `https://github.com/sweeden-ttu/cloudfrontsgroup.org`.
 
-### B. GitHub Copilot CLI
+### B. GitHub Copilot CLI, from the published repository
 
 ```bash
-# from the published repository
-copilot plugin install sweeden-ttu/cloudfrontsgroup.org:.github/plugins/cloudfronts-site-agents
-
-# or register the repo as a marketplace, then install by qualified name
+# once .github/plugin/marketplace.json is on the default branch
 copilot plugin marketplace add sweeden-ttu/cloudfrontsgroup.org
 copilot plugin install cloudfronts-site-agents@cloudfronts
+
+# or install the subdirectory directly, without the marketplace
+copilot plugin install sweeden-ttu/cloudfrontsgroup.org:.github/plugins/cloudfronts-site-agents
 ```
 
 VS Code automatically discovers plugins the CLI installs under `~/.copilot/installed-plugins/`.
+
+### B2. GitHub Copilot CLI, from this local checkout (verified with CLI 1.0.65)
+
+Two quirks of the CLI shape these steps. Pointing `marketplace add` at a folder that is a git checkout makes the CLI resolve it to the GitHub remote and clone that instead of reading your files. And a marketplace entry whose `source` resolves outside the marketplace folder is rejected with "Plugin path escapes marketplace directory". The fix is a small non-git wrapper folder containing a symlink to the plugin:
+
+```bash
+REPO=/Users/you/cloudfrontsgroup.org            # your checkout
+M=~/.copilot/local-marketplaces/cloudfronts-local
+mkdir -p "$M/plugins"
+ln -sfn "$REPO/.github/plugins/cloudfronts-site-agents" "$M/plugins/cloudfronts-site-agents"
+cat > "$M/marketplace.json" <<'JSON'
+{
+  "name": "cloudfronts-local",
+  "owner": { "name": "Cloud Fronts Group" },
+  "plugins": [
+    { "name": "cloudfronts-site-agents", "source": "./plugins/cloudfronts-site-agents", "version": "0.1.0" }
+  ]
+}
+JSON
+copilot plugin marketplace add "$M"
+copilot plugin install cloudfronts-site-agents@cloudfronts-local
+copilot plugin list      # -> cloudfronts-site-agents@cloudfronts-local (v0.1.0)
+```
+
+The install is a copy, not a live link. After editing an agent here, bump `version` in `plugin.json` and the wrapper's `marketplace.json`, then run `copilot plugin update cloudfronts-site-agents` (or **Check for and Apply Updates** in VS Code).
 
 ### C. Workspace recommendation (automatic for teammates)
 

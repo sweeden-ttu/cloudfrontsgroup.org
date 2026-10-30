@@ -2,7 +2,9 @@
 """
 Generate the Claude Code plugin from the VS Code agent definitions.
 
-Source of truth: .github/agents/*.agent.md (VS Code custom agent format, with handoffs).
+Source of truth: .github/plugins/cloudfronts-site-agents/com.github.copilot/agents/*.agent.md
+                 (VS Code custom agent format, with handoffs; also the Agent Plugins 1.0 package
+                 that VS Code / Copilot CLI install directly).
 Output:          agent-plugins/plugins/cloudfronts-site-agents/{agents,skills}/
 
 Usage:  python3 agent-plugins/build_plugin.py
@@ -11,7 +13,9 @@ Then:   claude plugin validate ./agent-plugins
 import re, pathlib, shutil, yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SRC = ROOT / '.github' / 'agents'
+SRC = ROOT / '.github' / 'plugins' / 'cloudfronts-site-agents' / 'com.github.copilot' / 'agents'
+if not SRC.exists():  # pre-2026-10-30 layout
+    SRC = ROOT / '.github' / 'agents'
 PLUGIN = ROOT / 'agent-plugins' / 'plugins' / 'cloudfronts-site-agents'
 AGENTS = ['jekyll-site-expert', 'site-design-critic', 'site-content-editor', 'social-media-distributor']
 TOOLMAP = {'read': ['Read', 'Glob'], 'search': ['Grep', 'Glob'], 'edit': ['Edit', 'Write'],

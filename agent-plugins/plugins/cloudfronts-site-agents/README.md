@@ -25,8 +25,10 @@ VS Code: Chat > Open Customizations > Plugins > "+" > enter the folder path
 
 ## Editing
 
-Do not edit `agents/` or `skills/` here. The source of truth is `.github/agents/*.agent.md`
-(VS Code custom agent format, with handoffs). After changing those, run:
+Do not edit `agents/` or `skills/` here. The source of truth is
+`.github/plugins/cloudfronts-site-agents/com.github.copilot/agents/*.agent.md` (VS Code custom
+agent format, with handoffs; that folder is itself the Agent Plugins 1.0 package VS Code and
+Copilot CLI install, see its README). After changing those, run:
 
 ```
 python3 agent-plugins/build_plugin.py

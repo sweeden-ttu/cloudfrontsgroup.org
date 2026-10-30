@@ -1,39 +1,30 @@
 # Session state (auto-saved — last known reality)
 
-_Updated: 2026-10-30 00:09:57_  ·  branch: `master`
+_Updated: 2026-10-30 00:14:43_  ·  branch: `master`
 
 ## Uncommitted changes
 ```
- D .Jules/palette.md
  M .anchor/session-state.md
- M .gitignore
- M .vscode/settings.json
- M .vscode/tasks.json
+ M .github/plugins/cloudfronts-site-agents/README.md
  M _config.yml
-?? " Agent plugins in VS Code.pdf"
-?? .claude/
-?? .github/
-?? "Configure agent hooks.pdf"
-?? "Custom agents in VS Code.pdf"
-?? "Use custom instructions in VS Code.pdf"
-?? agent-plugins/
-?? docs/
-?? scripts/compare_build.py
+ M agent-plugins/build_plugin.py
+ M agent-plugins/plugins/cloudfronts-site-agents/README.md
+?? Makefile
 ```
 
 Diff stat:
 ```
- .Jules/palette.md        |  1 -
- .anchor/session-state.md | 41 +++++++++++++++--------------------------
- .gitignore               |  3 +++
- .vscode/settings.json    |  3 +++
- .vscode/tasks.json       | 16 ++++++++++++++++
- _config.yml              |  4 ++++
- 6 files changed, 41 insertions(+), 27 deletions(-)
+ .anchor/session-state.md                                | 43 +++++--------------------------------------
+ .github/plugins/cloudfronts-site-agents/README.md       | 35 ++++++++++++++++++++++++++++++-----
+ _config.yml                                             |  1 +
+ agent-plugins/build_plugin.py                           |  8 ++++++--
+ agent-plugins/plugins/cloudfronts-site-agents/README.md |  6 ++++--
+ 5 files changed, 46 insertions(+), 47 deletions(-)
 ```
 
 ## Recent commits
 ```
+8c21491 Add documentation for custom instructions in VS Code and a script for comparing Jekyll build outputs
 0f73942 ✨ Add Jekyll configuration and development setup for local preview
 9d56c71 Merge pull request #5 from sweeden-ttu/palette-layout-improvement-16689316532200072459
 887f005 🎨 Palette: Content & Layout Enhancements
@@ -41,7 +32,6 @@ Diff stat:
 457116b Remove visitor counter and document policy against backend-dependent features
 33ab173 Swap Johnathan's profile picture with Scott's
 7ad68d4 Remove testimonials completely from all pages
-c6f839a added images
 ```
 
 ## Resume

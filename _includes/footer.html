@@ -12,7 +12,7 @@
   </div>
    <p class="footer-contact">
 {%- for entry in site.data.people %}{%- assign person = entry[1] %}
-   <span class="footer-person">{{ person.name }}: <button type="button" class="eml-btn eml-btn-inline" data-u="{{ person.email_user_enc }}" data-d="{{ person.email_domain_enc }}" aria-label="Show email address for {{ person.name }}">Email</button> &middot; <a href="tel:{{ person.tel }}">{{ person.phone }}</a></span>
+   <span class="footer-person">{{ person.name }}: <button type="button" class="eml-btn eml-btn-inline" data-u="{{ person.email_user_enc }}" data-d="{{ person.email_domain_enc }}" aria-label="Show email address for {{ person.name }}">Email</button></span>
 {%- endfor %}
    </p>
   <p class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>

@@ -54,9 +54,10 @@
   --header-text:        var(--color-text);
   --header-nav-hover:   rgba(0,0,0,0.05);
   --header-nav-active:  var(--brand-blue);
-  --header-dropdown-bg: var(--color-surface);
-  --header-dropdown-border: var(--color-border);
-  --header-dropdown-hover:  rgba(0,0,0,0.05);
+  --header-dropdown-bg: #0b1528;
+  --header-dropdown-border: #24385c;
+  --header-dropdown-hover: rgba(204,234,221,0.14);
+  --header-dropdown-text: #ffffff;
 
   /* Cards */
   --card-bg:            var(--color-surface);
@@ -133,8 +134,9 @@
 
     --header-bg:             var(--color-bg);
     --header-border:         var(--color-border);
-    --header-dropdown-bg:    var(--color-surface);
-    --header-dropdown-border:var(--color-border);
+    --header-dropdown-bg:    #111f38;
+    --header-dropdown-border:hsl(220, 15%, 22%);
+    --header-dropdown-text:  #ffffff;
     --header-dropdown-hover: hsla(207, 80%, 60%, 0.10);
 
     --card-bg:     var(--color-surface);
@@ -438,15 +440,16 @@ header nav > a.active {
   padding: 0.7rem 1.1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--color-text);
+  color: #ffffff;
   border-bottom: 1px solid var(--header-dropdown-border);
   transition: background var(--transition), color var(--transition), padding var(--transition);
   text-decoration: none;
 }
 .dropdown-content a:last-child { border-bottom: none; }
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus-visible {
   background: var(--header-dropdown-hover);
-  color: var(--color-accent);
+  color: #cceadd;
   padding-left: 1.4rem;
   text-decoration: none;
 }
@@ -981,7 +984,7 @@ footer .inner-footer {
     position: static; min-width: auto;
     box-shadow: none; border-radius: 0;
     border: none; border-top: 1px solid var(--header-dropdown-border);
-    background: hsl(220, 28%, 11%);
+    background: var(--header-dropdown-bg);
     animation: none;
     display: none;
   }

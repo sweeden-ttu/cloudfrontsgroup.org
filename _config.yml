@@ -93,6 +93,13 @@ defaults:
       type: pages
     values:
       layout: default
+  # Markdown pages live in pages/ while their public URLs stay at the site root.
+  - scope:
+      path: "pages"
+      type: pages
+    values:
+      layout: default
+      permalink: /:basename.html
   # Blog posts live in _posts/ and publish under /blog/<slug>.html
   - scope:
       path: ""

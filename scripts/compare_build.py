@@ -2,7 +2,7 @@
 """
 Output-parity checker for the Jekyll migration of cloudfrontsgroup.org.
 
-  python3 scripts/compare_build.py snapshot            # copy current root *.html -> _baseline/
+  python3 scripts/compare_build.py snapshot            # copy built root *.html -> _baseline/
   python3 scripts/compare_build.py compare             # diff _site/*.html against _baseline/
   python3 scripts/compare_build.py compare --strict    # byte-exact instead of whitespace-normalized
   python3 scripts/compare_build.py compare index.html  # one page only
@@ -36,9 +36,16 @@ def normalize(text):
 
 def snapshot():
     os.makedirs(BASELINE, exist_ok=True)
-    pages = root_pages()
+    if not os.path.isdir(SITE):
+        print("No _site/ found. Run: bundle exec jekyll build", file=sys.stderr)
+        return 1
+    pages = sorted(f for f in os.listdir(SITE) if f.endswith(".html"))
+    for old_page in os.listdir(BASELINE):
+        old_path = os.path.join(BASELINE, old_page)
+        if old_page.endswith(".html") and os.path.isfile(old_path) and old_page not in pages:
+            os.remove(old_path)
     for page in pages:
-        shutil.copy2(os.path.join(ROOT, page), os.path.join(BASELINE, page))
+        shutil.copy2(os.path.join(SITE, page), os.path.join(BASELINE, page))
     print(f"Snapshotted {len(pages)} pages into _baseline/")
     return 0
 

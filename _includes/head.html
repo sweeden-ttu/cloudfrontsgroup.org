@@ -50,7 +50,6 @@
  "name": "{{ site.title }}",
  "url": "{{ site.url }}",
  "description": "{{ page.schema_desc | default: site.schema_default }}",
- "email": [{% for e in site.emails %}"{{ e }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
  "telephone": "{{ site.phone_tel }}",
  "areaServed": "{{ site.area_served }}",
  "foundingDate": "{{ site.founding_date }}"

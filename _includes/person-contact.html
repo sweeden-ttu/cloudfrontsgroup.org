@@ -1,0 +1,10 @@
+{%- comment -%}
+Contact line for one founder. Usage: {% include person-contact.html person=site.data.people.scott %}
+{%- endcomment -%}
+<p class="person-contact">
+ <a href="tel:{{ include.person.tel }}"><i data-lucide="phone" aria-hidden="true"></i> {{ include.person.phone }}</a>
+ <button type="button" class="eml-btn" data-u="{{ include.person.email_user_enc }}" data-d="{{ include.person.email_domain_enc }}" aria-label="Show email address for {{ include.person.name }}"><i data-lucide="mail" aria-hidden="true"></i> Email</button>
+{%- if include.person.link_url %}
+ <a href="{{ include.person.link_url }}" target="_blank" rel="noopener me"><i data-lucide="{{ include.person.link_icon }}" aria-hidden="true"></i> {{ include.person.link_label }}</a>
+{%- endif %}
+</p>

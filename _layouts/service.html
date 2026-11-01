@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{%- comment -%}
+Shared service and product page template.
+Parameters:
+  page.title - Page browser title
+  page.heading - Visible H1
+  page.hero_image - Optional opening image
+  page.hero_alt - Opening image alt text
+  page.hero_class - Opening image CSS class
+  page.hero_width/height - Opening image dimensions
+  page.content_class - Wrapper CSS class
+  page.secondary_image/alt/class/width/height - Optional image in the body
+{%- endcomment -%}
+<div class="container" id="main-content">
+{%- if page.hero_image %}
+ <img src="{{ page.hero_image }}" alt="{{ page.hero_alt }}" class="{{ page.hero_class | default: 'img-service-bot' }}" width="{{ page.hero_width | default: 1400 }}" height="{{ page.hero_height | default: 800 }}">
+{%- endif %}
+ <div class="{{ page.content_class | default: 'service-content' }}">
+  <h1>{{ page.heading | default: page.title }}</h1>
+{{ content }}
+{%- if page.secondary_image %}
+  <img src="{{ page.secondary_image }}" alt="{{ page.secondary_alt }}" class="{{ page.secondary_class | default: 'img-service-center' }}" width="{{ page.secondary_width | default: 1400 }}" height="{{ page.secondary_height | default: 800 }}">
+{%- endif %}
+ </div>
+</div><!-- end #main-content -->
+
+{% include connect.html %}

@@ -72,13 +72,26 @@
     });
   });
 
-  // Email obfuscation
-  doc.querySelectorAll('.eml').forEach(function(e){
-    var a = e.dataset.eml + '@' + e.dataset.dom;
-    e.href = 'mailto:' + a;
-    e.textContent = a;
-    e.removeAttribute('data-eml');
-    e.removeAttribute('data-dom');
+  // Email click-to-reveal. Addresses are stored encoded (each char code +3,
+  // string reversed; see scripts/encode_email.py) and only assembled here,
+  // on click, so nothing resembling an address sits in the HTML for scrapers.
+  function decodePart(enc){
+    var out = '';
+    for (var i = enc.length - 1; i >= 0; i--) { out += String.fromCharCode(enc.charCodeAt(i) - 3); }
+    return out;
+  }
+  doc.querySelectorAll('.eml-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = [decodePart(btn.dataset.u), decodePart(btn.dataset.d)];
+      var addr = parts.join(String.fromCharCode(64));
+      var a = doc.createElement('a');
+      a.className = 'eml-revealed';
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+      a.setAttribute('aria-label', 'Email ' + addr);
+      btn.replaceWith(a);
+      a.focus();
+    });
   });
 
   // Print button

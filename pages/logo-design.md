@@ -1,0 +1,17 @@
+---
+layout: service
+title: Cloud Fronts Group — Logo Design | Central Texas Digital Services
+description: Custom logo design for Central Texas businesses — discovery, concepting, refinement, delivery.
+heading: Logo Design
+hero_image: images/before-after-logo.svg
+hero_alt: A cluttered logo on the left redesigned into a simple geometric mark on the right
+---
+Your logo is the face of your brand — the first thing customers see and the image they remember. At Cloud Fronts Group, we craft custom logo designs that capture your business identity and communicate your value at a glance. Our proven design process moves through four phases: discovery, concepting, refinement, and delivery.
+
+During discovery, we learn about your business, your target audience, your competitors, and your brand personality. We explore what makes you unique and identify visual directions that align with your goals. In concepting, our designers sketch multiple logo concepts across different style categories. We explore wordmarks that emphasize your name, lettermarks that use initials, pictorial marks that illustrate your offering, abstract marks that suggest your brand feeling, mascots that personify your business, emblems that convey tradition, and combination marks that pair a symbol with your name for maximum flexibility.
+
+Once we present concepts, you choose your favorites and we move into refinement. We iterate on color palettes, typography, spacing, and proportions until every detail feels right. We provide unlimited revisions because we will not stop until you are completely satisfied. The final delivery includes your logo in multiple formats — PNG, SVG, EPS, and PDF — for use across print, web, social media, and merchandise.
+
+<img src="images/service-logo-design.svg" alt="Logo design process from sketches to the finished mark on a card and cup" class="img-service-center" width="1400" height="800">
+
+Every logo project also includes a comprehensive brand style guide. This document captures your color palette with hex, RGB, and CMYK values, specifies your primary and secondary typefaces, defines clear space and minimum size rules, and shows correct and incorrect logo usage. With a Cloud Fronts Group logo and style guide, you have everything you need to present a consistent, professional brand across every channel.

@@ -1,0 +1,23 @@
+# Founders' contact details. Rendered by _includes/person-contact.html on
+# about-us.html, team.html, contact.html and the footer. Emails are split so
+# site.js can assemble them client-side (basic scraper protection).
+# email_*_enc are produced by scripts/encode_email.py (char shift +3, reversed);
+# nothing resembling the address appears in the HTML until the button is clicked.
+scott:
+  name: Scott Weeden
+  phone: "(971) 444-2625"
+  tel: "+19714442625"
+  email_user_enc: "qhghhzwwrfv"
+  email_domain_enc: "jur1sxrujvwqruigxrof"
+  link_label: scottweeden.online
+  link_url: https://scottweeden.online
+  link_icon: globe
+johnathan:
+  name: Johnathan King
+  phone: "(254) 317-6688"
+  tel: "+12543176688"
+  email_user_enc: "jqlnfm"
+  email_domain_enc: "sxruj1vwqruigxrof"
+  link_label: GitHub
+  link_url: https://github.com/jcking1278
+  link_icon: github

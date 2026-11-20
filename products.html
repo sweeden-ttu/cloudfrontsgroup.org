@@ -1,0 +1,44 @@
+---
+layout: default
+title: Cloud Fronts Group — Products | Visual Studio Code Extensions
+description: Free Visual Studio Code extensions from Cloud Fronts Group, published on the Visual Studio Marketplace — Cloud AI and Sound Lab.
+active: products
+---
+<div class="container" id="main-content">
+
+  <h1>Our Products</h1>
+  <p class="subtitle">Free Visual Studio Code extensions, built by Cloud Fronts Group and published on the Visual Studio Marketplace.</p>
+
+  <div class="product-grid">
+  {% for ext in site.data.extensions.items %}
+    <article class="card product-card">
+      <div class="product-head">
+        <img src="{{ ext.icon }}" alt="{{ ext.name }} extension icon" class="product-icon" width="72" height="72" loading="lazy">
+        <div>
+          <h2 class="product-title">{{ ext.name }}</h2>
+          <p class="product-meta">{{ ext.tagline }} · v{{ ext.version }} · Free</p>
+        </div>
+      </div>
+      <p>{{ ext.summary }}</p>
+      <ul class="product-features">
+        {% for f in ext.features %}<li>{{ f }}</li>{% endfor %}
+      </ul>
+      <p class="product-install">Install from VS Code Quick Open (<kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>P</kbd>):<br>
+        <code class="inline-code">ext install {{ ext.id }}</code></p>
+      <div class="product-actions">
+        <a href="{{ ext.marketplace }}" class="btn btn-primary" target="_blank" rel="noopener">View on Marketplace</a>
+        <a href="{{ ext.source }}" class="btn btn-outline" target="_blank" rel="noopener">Source on GitHub</a>
+      </div>
+    </article>
+  {% endfor %}
+  </div>
+
+  <div class="cta-banner">
+    <h2>See everything we publish</h2>
+    <p>New extensions and updates appear on our Marketplace publisher page first.</p>
+    <a href="{{ site.data.extensions.publisher_url }}" class="btn btn-gold" target="_blank" rel="noopener">Visit our publisher page</a>
+  </div>
+
+</div><!-- end #main-content -->
+
+{% include connect.html %}

@@ -13,6 +13,8 @@
       href: about-us.html
 - label: Our Products
   items:
+    - label: VS Code Extensions
+      href: products.html
     - label: Domain Names
       href: domain-names.html
     - label: Promotional Items
@@ -21,8 +23,6 @@
       href: site-hosting.html
     - label: Marketing
       href: marketing.html
-    - label: Political Advertisements
-      href: political-advertisements.html
 - label: Our Services
   items:
     - label: Logo Design

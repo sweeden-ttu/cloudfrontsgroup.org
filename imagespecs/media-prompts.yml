@@ -132,20 +132,6 @@ slots:
       line chart and a funnel sketch, a tablet showing simple bar charts as colored blocks, three
       pastel sticky notes left blank, a pencil, a coffee mug, and a sprig of bluebonnets in a small
       jar. Overhead view, soft shadows, cream desk surface, horizontal.
-  - id: P1
-    page: political-advertisements.html
-    role: opener
-    css: .featured-image
-    file: images/political-advertisements-opener.svg
-    size: [1400, 800]
-    aspect: "7:4"
-    alt: Yard sign, mailer, phone ad and calendar arranged on a table
-    prompt: >-
-      Non-partisan campaign materials laid out on a table: a yard sign on wire stakes with a bold
-      blank panel and a single star shape, a tri-fold mailer standing half open, a phone showing a
-      simple ad layout as colored blocks, and a wall calendar with a few dates circled. Red, white
-      and blue kept to navy, cream and brand blue only; one small red-orange star is the only warm
-      accent. Clean, civic, horizontal.
   - id: SM1
     page: social-media-marketing.html
     role: opener

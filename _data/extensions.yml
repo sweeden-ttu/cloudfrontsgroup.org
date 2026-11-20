@@ -1,0 +1,40 @@
+# Visual Studio Code extensions published by Cloud Fronts Group on the
+# Visual Studio Marketplace. Rendered by products.html and the Products
+# section of index.html. Source of truth:
+#   https://marketplace.visualstudio.com/publishers/cloud-fronts-group
+# Refresh version numbers here when a new release is published.
+publisher_url: https://marketplace.visualstudio.com/publishers/cloud-fronts-group
+
+items:
+  - id: cloud-fronts-group.cloud-ai
+    name: Cloud AI
+    version: 0.6.0
+    icon: images/products/cloud-ai.png
+    tagline: AI and data science coding assistant for VS Code
+    summary: >-
+      A dedicated sidebar chat with 14 slash commands for exploratory analysis, machine
+      learning, RAG, fine-tuning and agents. Streams large open-weight models (Qwen, Gemma)
+      from Google Colab into the editor.
+    features:
+      - "General coding: explain, refactor, generate and fix code in any language, with tool calls you approve"
+      - "Data analytics: /explore, /question, /chart, /drill and /report turn a dataset into a business-ready report"
+      - "Data science: /engineer, /eda, /model and /explain, including SHAP and LIME feature importance"
+      - "AI engineering: /rag, /prompt, /finetune, /eval and /agent for production LLM work"
+    marketplace: https://marketplace.visualstudio.com/items?itemName=cloud-fronts-group.cloud-ai
+    source: https://github.com/cloud-fronts-group/cloud-ai
+
+  - id: cloud-fronts-group.sound-lab
+    name: Sound Lab — FFmpeg Audio Toolkit
+    version: 0.1.0
+    icon: images/products/sound-lab.png
+    tagline: Audio sampling and editing inside VS Code
+    summary: >-
+      Sound sampling, slicing, loudness, effects, spectrograms and speech-to-text
+      transcription in VS Code, powered by FFmpeg.
+    features:
+      - "Convert, trim, slice by BPM, split on silence and batch-convert whole folders"
+      - "EBU R128 loudness normalization and a chainable effects and filter rack"
+      - "Waveform and spectrogram rendering, plus transcription and local speech AI through mlx-audio"
+      - "Studio tools for beats, chords, sound effects, auto-tune and DJ-style transitions"
+    marketplace: https://marketplace.visualstudio.com/items?itemName=cloud-fronts-group.sound-lab
+    source: https://github.com/cloud-fronts-group/sound-lab

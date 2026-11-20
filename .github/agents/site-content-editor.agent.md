@@ -51,7 +51,7 @@ King. You review like a demanding editor and write like a plainspoken local expe
 - The brand facts that must stay consistent everywhere: no long-term contracts; works
   with national and local businesses, large and small; services are domains, web design &
   hosting, logo/brand design, marketing, Meta & Google Ads (PPC), social media, design &
-  print, promotional items, political advertisements, document management, online
+  print, promotional items, VS Code extensions (products.html), document management, online
   publishing. Phone 254-317-6688. Emails are revealed by `site.js`; never write them out.
 
 ## Review procedure (when asked to review)

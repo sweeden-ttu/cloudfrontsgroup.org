@@ -90,6 +90,31 @@ schema_desc: Central Texas digital services — web design, logo design, marketi
  </div>
  </div>
 
+ <section class="products-section" aria-labelledby="products-heading">
+ <div class="section-heading">
+ <h2 id="products-heading">Our Products</h2>
+ <p>Free Visual Studio Code extensions we build and publish on the Visual Studio Marketplace.</p>
+ </div>
+ <div class="product-grid">
+ {% for ext in site.data.extensions.items %}
+ <div class="card product-card">
+ <div class="product-head">
+ <img src="{{ ext.icon }}" alt="{{ ext.name }} extension icon" class="product-icon" width="72" height="72" loading="lazy">
+ <div>
+ <h3 class="product-title">{{ ext.name }}</h3>
+ <p class="product-meta">{{ ext.tagline }} · Free</p>
+ </div>
+ </div>
+ <p>{{ ext.summary }}</p>
+ <div class="product-actions">
+ <a href="{{ ext.marketplace }}" class="btn btn-primary" target="_blank" rel="noopener">Get it on the Marketplace</a>
+ <a href="products.html" class="btn btn-outline">Details</a>
+ </div>
+ </div>
+ {% endfor %}
+ </div>
+ </section>
+
   <div class="impact-section">
  <h2>YOU</h2>
  <p>are the reason we are here. We are customer driven and understand that if we do not perform for you, someone else will. We work hard every day to put your best foot forward in your online presence as well as printed and promotional pieces. Our job is to get you noticed and make sure you make a great impression that sets you apart from your competitors.</p>

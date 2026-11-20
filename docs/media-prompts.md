@@ -124,14 +124,6 @@ Alt text: "Servers on a cloud connected to a laptop, tablet and phone"
 
 Alt text: "Overhead view of a marketing planning desk with charts and notes"
 
-### political-advertisements.html
-
-**P1. Opener**, replaces `images/political-advertisements-opener.jpg` (currently a notebook stock slide), 1400×800, `.featured-image`.
-
-> Non-partisan campaign materials laid out on a table: a yard sign on wire stakes with a bold blank panel and a single star shape, a tri-fold mailer standing half open, a phone showing a simple ad layout as colored blocks, and a wall calendar with a few dates circled. Red, white and blue kept to navy, cream and brand blue only; one small red-orange star is the only warm accent. Clean, civic, horizontal.
-
-Alt text: "Yard sign, mailer, phone ad and calendar arranged on a table"
-
 ### social-media-marketing.html
 
 **SM1. Opener**, replaces `images/social-media-marketing-opener.avif` (square), 1400×800, `.featured-image`.

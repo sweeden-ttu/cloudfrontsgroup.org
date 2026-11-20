@@ -1551,3 +1551,24 @@ header h1 .brand-mark { height: 1em; width: auto; vertical-align: -0.12em; margi
 .social-links a:hover, .social-links a:focus-visible { border-color: var(--brand-blue); background: var(--brand-teal); color: var(--brand-navy); }
 .social-links svg { width: 1.15em; height: 1.15em; }
 [data-theme="dark"] .social-links a:hover { background: rgba(255,255,255,.1); color: var(--color-text); }
+
+/* --------------------------------------------------------------------------
+   PRODUCTS (VS Code extensions; products.html and the home page section)
+   -------------------------------------------------------------------------- */
+.products-section { margin: 3rem 0; }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 1.5rem;
+  margin: 1.75rem 0;
+}
+.product-card { display: flex; flex-direction: column; margin-bottom: 0; }
+.product-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.product-icon { width: 72px; height: 72px; border-radius: var(--radius); flex-shrink: 0; }
+.product-title { margin: 0; font-size: 1.35rem; }
+.product-meta { margin: .25rem 0 0; font-size: .9rem; color: var(--color-text-muted); }
+.product-features { margin: 0 0 1rem 1.1rem; padding: 0; }
+.product-features li { margin-bottom: .4rem; }
+.product-install { font-size: .9rem; }
+.product-install kbd { font-family: inherit; font-size: .85em; padding: 0 .3em; border: 1px solid var(--card-border); border-radius: 4px; }
+.product-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: auto; padding-top: .5rem; }
